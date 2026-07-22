@@ -1,12 +1,12 @@
 # Standard-RAG-System
 
-Dieses Projekt implementiert ein einfaches Standard-RAG-System in Python. Es folgt exakt der klassischen Architektur:
+Dieses Projekt implementiert ein einfaches Standard-RAG-System in Python. Die fachliche Kernpipeline folgt der klassischen Architektur:
 
 **Retrieval -> Augmentation -> Generation**
 
 Die Pipeline besteht aus folgenden Schritten:
 
-1. Ein PDF-Dokument inklusive Text, Tabellen und Bildern laden
+1. Ein PDF-Dokument inklusive Text, Tabellen, Bildern, Diagrammen und Formeln laden
 2. Die extrahierten Inhalte in kleinere Textabschnitte aufteilen
 3. Chunks mit einem Embedding-Modell in Vektoren umwandeln
 4. Chunks und Embeddings lokal speichern
@@ -17,14 +17,19 @@ Die Pipeline besteht aus folgenden Schritten:
 9. Antwort mit einem Large Language Model generieren
 10. Antwort ausgeben
 
-Es werden bewusst keine zusaetzlichen Verfahren wie Re-Ranking, Query Expansion, Agenten, Memory, Evaluation, Websuche oder hybride Suche eingesetzt.
+Die Kernpipeline ist bewusst einfach gehalten. Sie nutzt keine zusaetzlichen RAG-Verfahren wie Re-Ranking, Query Expansion, Agenten, Memory, Websuche oder hybride Suche. Fuer Experimente und Auswertung gibt es aber ein separates Evaluationsmodul unter `src/evaluation/`.
 
 ## Projektstruktur
 
 ```text
 standard-rag/
 ├── data/
-│   └── elektrotechnik_3.pdf
+│   ├── Elektrotechnik 3.pdf
+│   └── documents/
+├── docs/
+│   └── standard_rag_class_diagram.md
+├── graph_db_elektrotechnik_3/
+│   └── knowledge_graph.json
 ├── src/
 │   ├── document_loader.py
 │   ├── chunking.py
@@ -32,7 +37,22 @@ standard-rag/
 │   ├── vector_store.py
 │   ├── retrieval.py
 │   ├── generation.py
-│   └── main.py
+│   ├── main.py
+│   ├── ui.py
+│   ├── README_*.md
+│   └── evaluation/
+│       ├── config.py
+│       ├── evaluation.py
+│       ├── loader_test.py
+│       ├── chunk_test.py
+│       ├── retrieval_test.py
+│       ├── generation_test.py
+│       ├── metrics.py
+│       ├── test_questions.json
+│       └── results/
+├── vector_db*/
+│   ├── chunks.json
+│   └── embeddings.npy
 ├── .env.example
 ├── requirements.txt
 └── README.md
@@ -81,17 +101,21 @@ OPENAI_LLM_MODEL=gpt-4.1-mini
 OPENAI_VISION_MODEL=gpt-4.1-mini
 ```
 
-## PDF-Dokument hinzufuegen
+## PDF-Dokument
 
-Das System arbeitet mit genau einer PDF-Datei als Wissensbasis:
+Die enthaltene Beispiel-PDF liegt aktuell unter:
 
 ```text
-data/elektrotechnik_3.pdf
+data/Elektrotechnik 3.pdf
 ```
 
-Du kannst beim Start des Programms den Pfad zu deinem eigenen PDF eingeben. Wenn du nichts eingibst, wird die Beispiel-PDF verwendet.
+Du kannst beim Start des Programms den Pfad zu einer eigenen PDF-Datei eingeben. Fuer die enthaltene Datei gibst du diesen Pfad ein:
 
-## Start
+```text
+data/Elektrotechnik 3.pdf
+```
+
+## Start ueber die Konsole
 
 Fuehre das System aus:
 
@@ -99,10 +123,10 @@ Fuehre das System aus:
 python src/main.py
 ```
 
-Danach gibst du zuerst optional den Pfad zu deiner PDF-Datei ein und danach deine Frage. Das System:
+Danach gibst du zuerst den Pfad zur PDF-Datei und danach deine Frage ein. Das System:
 
 - laedt das PDF-Dokument,
-- beschreibt sichtbare Tabellen, Bilder und Diagramme als Text,
+- beschreibt sichtbare Tabellen, Bilder, Diagramme und Formeln als Text,
 - erstellt Chunks,
 - erzeugt Embeddings,
 - speichert Chunks und Embeddings lokal,
@@ -118,13 +142,7 @@ Die einfache Benutzeroberflaeche startest du mit:
 streamlit run src/ui.py
 ```
 
-Die UI nutzt automatisch:
-
-```text
-data/elektrotechnik_3.pdf
-```
-
-Wenn `vector_db_elektrotechnik_3_full_visuals` bereits vorhanden ist, wird die Wissensbasis direkt geladen. Falls sie noch nicht vorhanden ist, baut die UI sie beim ersten Start automatisch auf. Dabei wird jede PDF-Seite als Text extrahiert und zusaetzlich visuell gelesen, damit Bilder, Tabellen, Formeln und Diagramme beruecksichtigt werden.
+Die UI arbeitet mit der lokalen Wissensbasis `vector_db_elektrotechnik_3_full_visuals`. Wenn diese Vektordatenbank bereits vorhanden ist, wird sie direkt geladen. Falls sie noch nicht vorhanden ist, baut die UI sie beim ersten Start neu auf. Dabei muss der in `src/ui.py` gesetzte PDF-Pfad zur vorhandenen PDF-Datei passen. Beim Neuaufbau wird jede PDF-Seite als Text extrahiert und zusaetzlich visuell gelesen, damit Bilder, Tabellen, Formeln und Diagramme beruecksichtigt werden.
 
 Danach kannst du:
 
@@ -132,11 +150,66 @@ Danach kannst du:
 - Antworten generieren,
 - die verwendeten Chunks anzeigen.
 
+## Lokale Wissensbasen
+
+Im Projekt liegen mehrere vorbereitete lokale Vector Stores. Jede Variante besteht aus:
+
+- `chunks.json`: die gespeicherten Textabschnitte
+- `embeddings.npy`: die dazugehoerigen Embedding-Vektoren
+
+Beispiele fuer vorhandene Varianten:
+
+- `vector_db_elektrotechnik_3_full_visuals`: Wissensbasis mit vollstaendiger visueller Analyse
+- `vector_db_elektrotechnik_3_targeted_visuals`: Wissensbasis mit gezielter visueller Analyse bestimmter Seiten
+- `vector_db_elektrotechnik_3_text`: Wissensbasis nur aus direkt auslesbarem PDF-Text
+- `vector_db_elektrotechnik_3_text_chunks_250`: Textvariante mit Chunk-Groesse 250
+- `vector_db_elektrotechnik_3_graph_rag`: vorbereitete Daten fuer den Vergleich mit einer Graph-RAG-Variante
+
+Der Ordner `graph_db_elektrotechnik_3/` enthaelt einen Knowledge-Graph-Export. Er gehoert nicht zur Standard-RAG-Kernpipeline, kann aber fuer Architekturvergleiche oder Graph-RAG-Auswertungen relevant sein.
+
+## Evaluation
+
+Das Verzeichnis `src/evaluation/` enthaelt ein separates Evaluationsmodul. Es dient dazu, verschiedene Parameter und Varianten des RAG-Systems vergleichbar zu testen.
+
+Die zentrale Startdatei ist:
+
+```bash
+python src/evaluation/evaluation.py
+```
+
+Das Menue bietet folgende Tests:
+
+1. Dokumentloader testen
+2. Chunk Size testen
+3. Overlap testen
+4. Top-k testen
+5. Temperature testen
+
+Die Standard- und Testparameter stehen in:
+
+```text
+src/evaluation/config.py
+```
+
+Wichtige Parameter sind:
+
+- `DOCUMENT_LOADER`: verwendeter Loader, z. B. `text`, `targeted_visual` oder `full_visual`
+- `CHUNK_SIZE`: Anzahl der Woerter pro Chunk
+- `OVERLAP`: Ueberlappung zwischen Chunks
+- `TOP_K`: Anzahl der abgerufenen Chunks
+- `TEMPERATURE`: Temperatur fuer die Antwortgenerierung
+
+Die Ergebnisdateien werden als CSV unter `src/evaluation/results/` gespeichert.
+
 ## Beschreibung der Module
 
 ### `document_loader.py`
 
-Laedt genau eine PDF-Datei und gibt Text plus beschriebene Tabellen-, Bild- und Diagramminhalte als String zurueck.
+Laedt genau eine PDF-Datei und gibt Text plus beschriebene Tabellen-, Bild-, Diagramm- und Formelinhalte als String zurueck. Es gibt drei Loader-Varianten:
+
+- `load_pdf_text()`: nur direkt auslesbarer PDF-Text
+- `load_pdf_text_with_targeted_visuals()`: Text plus visuelle Analyse ausgewaehlter Seiten
+- `load_pdf_with_visuals()`: Text plus visuelle Analyse aller Seiten
 
 ### `chunking.py`
 
@@ -160,7 +233,7 @@ Erstellt den Prompt aus Nutzerfrage und relevanten Chunks und uebergibt ihn an e
 
 ### `main.py`
 
-Fuehrt die gesamte Pipeline in der vorgesehenen Reihenfolge aus.
+Fuehrt die gesamte Standard-RAG-Pipeline in der vorgesehenen Reihenfolge als Konsolenanwendung aus.
 
 ### `ui.py`
 
