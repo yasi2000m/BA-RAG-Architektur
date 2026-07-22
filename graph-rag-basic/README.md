@@ -13,17 +13,36 @@ Der Standard-RAG bleibt unveraendert. Dieses Projekt nutzt dieselbe Grundidee mi
 
 Damit folgt das Projekt der normalen Graph-RAG-Definition fuer eine Bachelorarbeit: vorhandene Daten werden in einem Wissensgraphen strukturiert, relevante Entitaeten werden zur Anfrage gesucht, zusammenhaengende Informationen werden ueber Graph-Verknuepfungen erschlossen und anschliessend fuer die Antwortgenerierung genutzt.
 
+## Aktueller Stand
+
+Die aktuelle Konfiguration verarbeitet das PDF `data/Elektrotechnik 3.pdf`.
+Standardmaessig werden die ersten 20 Seiten genutzt (`MAX_PAGES = 20`).
+Dabei wird nicht nur der direkt auslesbare PDF-Text geladen, sondern jede Seite
+zusaetzlich visuell analysiert, damit Bilder, Tabellen, Diagramme, Formeln und
+Beschriftungen ebenfalls als Text in den Knowledge Graph einfliessen.
+
+Der aktuell verwendete lokale Graph liegt in:
+
+```text
+graph_db_elektrotechnik_3_first_20_full_visuals/knowledge_graph.json
+```
+
+Die Streamlit-App laedt diesen gespeicherten Graph zuerst. Nur wenn die Datei
+nicht vorhanden ist, wird der Graph aus dem PDF neu aufgebaut.
+
 ## Pipeline
 
-1. PDF laden
-2. Text in Chunks aufteilen
-3. Entitaeten und Beziehungen aus jedem Chunk extrahieren
-4. Lokalen Knowledge Graph als JSON speichern
-5. Nutzerfrage entgegennehmen
-6. Relevante Entitaeten in der Frage erkennen
-7. Graph Traversal ueber 1 bis 2 Hops durchfuehren
-8. Graph-Kontext an das Sprachmodell geben
-9. Antwort generieren
+1. PDF laden und auf die ersten 20 Seiten begrenzen
+2. Direkt auslesbaren PDF-Text extrahieren
+3. Seiten als Bilder analysieren und visuelle Inhalte als Text beschreiben
+4. Text in ueberlappende Chunks aufteilen
+5. Entitaeten und Beziehungen aus jedem Chunk extrahieren
+6. Lokalen Knowledge Graph als JSON speichern
+7. Nutzerfrage entgegennehmen
+8. Relevante Entitaeten in der Frage erkennen
+9. Graph Traversal ueber 1 bis 2 Hops durchfuehren
+10. Graph-Kontext an das Sprachmodell geben
+11. Antwort generieren
 
 ## Projektstruktur
 
@@ -32,6 +51,10 @@ graph-rag-basic/
   data/
     Elektrotechnik 3.pdf
   graph_db/
+    knowledge_graph.json
+  graph_db_elektrotechnik_3_first_20_full_visuals/
+    knowledge_graph.json
+  graph_db_elektrotechnik_3_full_visuals/
     knowledge_graph.json
   src/
     chunking.py
@@ -72,6 +95,12 @@ python src/main.py
 
 ```bash
 streamlit run src/ui.py
+```
+
+Durch `.streamlit/config.toml` startet die App lokal unter:
+
+```text
+http://127.0.0.1:8503
 ```
 
 ## Abgrenzung zum Standard-RAG
