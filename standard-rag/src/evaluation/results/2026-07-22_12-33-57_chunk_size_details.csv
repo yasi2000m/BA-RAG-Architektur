@@ -1,0 +1,16 @@
+﻿testart;chunk_size;overlap_konstant;top_k_konstant;id;question;expected_keywords;treffer
+chunk_size;100;50;5;1;Was ist das Ohmsche Gesetz?;spannung, strom, widerstand;1
+chunk_size;100;50;5;2;Wie wird der elektrische Widerstand berechnet?;widerstand, spannung, stromstärke;1
+chunk_size;100;50;5;3;Was besagt die Kirchhoffsche Knotenregel?;knotenregel, summe, ströme;1
+chunk_size;150;50;5;1;Was ist das Ohmsche Gesetz?;spannung, strom, widerstand;1
+chunk_size;150;50;5;2;Wie wird der elektrische Widerstand berechnet?;widerstand, spannung, stromstärke;1
+chunk_size;150;50;5;3;Was besagt die Kirchhoffsche Knotenregel?;knotenregel, summe, ströme;1
+chunk_size;250;50;5;1;Was ist das Ohmsche Gesetz?;spannung, strom, widerstand;1
+chunk_size;250;50;5;2;Wie wird der elektrische Widerstand berechnet?;widerstand, spannung, stromstärke;1
+chunk_size;250;50;5;3;Was besagt die Kirchhoffsche Knotenregel?;knotenregel, summe, ströme;1
+chunk_size;400;50;5;1;Was ist das Ohmsche Gesetz?;spannung, strom, widerstand;1
+chunk_size;400;50;5;2;Wie wird der elektrische Widerstand berechnet?;widerstand, spannung, stromstärke;1
+chunk_size;400;50;5;3;Was besagt die Kirchhoffsche Knotenregel?;knotenregel, summe, ströme;1
+chunk_size;600;50;5;1;Was ist das Ohmsche Gesetz?;spannung, strom, widerstand;1
+chunk_size;600;50;5;2;Wie wird der elektrische Widerstand berechnet?;widerstand, spannung, stromstärke;1
+chunk_size;600;50;5;3;Was besagt die Kirchhoffsche Knotenregel?;knotenregel, summe, ströme;1

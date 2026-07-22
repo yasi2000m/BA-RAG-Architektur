@@ -1,0 +1,6 @@
+﻿testart;pdf_datei;document_loader;chunk_size;overlap_konstant;top_k_konstant;anzahl_chunks;woerter_gesamt_mit_overlap;chunk_woerter_mittelwert;chunk_woerter_minimum;chunk_woerter_maximum;speicher_bytes;speicher_kib;chunking_laufzeit_sekunden;embedding_laufzeit_sekunden;retrieval_laufzeit_sekunden;auswertbare_fragen;retrieval_treffer;retrieval_trefferquote_prozent
+chunk_size;data/Elektrotechnik 3.pdf;text;100;50;5;24;2330;97.08;40;100;17004;16.61;8.8e-05;0.0;0.0;0;0;0.0
+chunk_size;data/Elektrotechnik 3.pdf;text;150;50;5;12;1740;145.0;90;150;12722;12.42;5.5e-05;0.0;0.0;0;0;0.0
+chunk_size;data/Elektrotechnik 3.pdf;text;250;50;5;6;1440;240.0;190;250;10394;10.15;4e-05;0.0;0.0;0;0;0.0
+chunk_size;data/Elektrotechnik 3.pdf;text;400;50;5;4;1340;335.0;140;400;9701;9.47;3.7e-05;0.0;0.0;0;0;0.0
+chunk_size;data/Elektrotechnik 3.pdf;text;600;50;5;3;1290;430.0;90;600;9625;9.4;3.8e-05;0.0;0.0;0;0;0.0

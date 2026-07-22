@@ -1,0 +1,6092 @@
+{
+  "entities": [
+    {
+      "name": "Europa-Lehrmittel",
+      "type": "Organisation",
+      "description": "Verlag, der Fachkunde Elektrotechnik veröffentlicht",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Fachkunde Elektrotechnik",
+      "type": "Sonstiges",
+      "description": "Lehrbuch zur Elektrotechnik, 27. und 33. Auflage",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Prof. Dr. Marcus Liebschner",
+      "type": "Person",
+      "description": "Autor des Skripts im Studiengang Elektrotechnik",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Wintersemester 2022/2023",
+      "type": "Sonstiges",
+      "description": "Zeitraum, für den die Unterlagen zur eigenständigen Arbeit dienen",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Formeln Elektrotechniker",
+      "type": "Sonstiges",
+      "description": "Literatur von Tkotz et al., Verlag Europa-Lehrmittel",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Tabellenbuch Elektrotechnik",
+      "type": "Sonstiges",
+      "description": "Literatur von Häberle et al., Verlag Europa-Lehrmittel",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Die vorschriftsmäßige Elektroinstallation",
+      "type": "Sonstiges",
+      "description": "Literatur von Hösl/Ayx/Busch, Hüthig Verlag",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Gefahren",
+      "type": "Konzept",
+      "description": "Thema im Skript, umfasst Risiken im Umgang mit elektrischem Strom",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Messtechnik",
+      "type": "Konzept",
+      "description": "Thema im Skript; Grundbegriffe der Messtechnik",
+      "chunk_ids": [
+        0,
+        9
+      ]
+    },
+    {
+      "name": "Wechsel- und Drehstromsystem",
+      "type": "Konzept",
+      "description": "Thema im Skript",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "VDE",
+      "type": "Organisation",
+      "description": "Verband der Elektrotechnik Elektronik Informationstechnik e.V.",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Gefahren im Umgang mit el. Strom",
+      "type": "Konzept",
+      "description": "Unterthema der Gefahren, behandelt Risiken bei elektrischem Strom",
+      "chunk_ids": [
+        0
+      ]
+    },
+    {
+      "name": "Leiterschluss",
+      "type": "Konzept",
+      "description": "Fehlerhafte Verbindung zwischen Leitern mit nahezu widerstandsloser Verbindung",
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Kurzschluss",
+      "type": "Konzept",
+      "description": "Fehlerhafte Verbindung zwischen Leitern, bei der der Fehlerstrom den Nutzwiderstand begrenzt; Fehlerart, bei der SLS nicht sofort auslöst",
+      "chunk_ids": [
+        1,
+        21
+      ]
+    },
+    {
+      "name": "Körperschluss",
+      "type": "Konzept",
+      "description": "Leitende Verbindung zwischen Gehäuse (Körper) und aktiven Teilen durch Isolationsfehler",
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Erdschluss",
+      "type": "Konzept",
+      "description": "Unerwünschte leitende Verbindung zwischen spannungsführenden Teilen und Erde",
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Nutzwiderstand",
+      "type": "Messwert",
+      "description": "Widerstand im Fehlerstromkreis, der den Fehlerstrom begrenzt",
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Fehlerstrom",
+      "type": "Messwert",
+      "description": "Strom, der bei fehlerhaften Verbindungen fließt; Strom, der bei Fehlern in elektrischen Anlagen fließt; Strom, der durch Fehler in elektrischen Anlagen fließt",
+      "chunk_ids": [
+        1,
+        4,
+        20
+      ]
+    },
+    {
+      "name": "Spannungsquelle",
+      "type": "Bauteil",
+      "description": "Quelle, die zwei Schaltpunkte mit verschiedenen Potentialen bereitstellt",
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Isolationsfehler",
+      "type": "Konzept",
+      "description": "Fehler, der zu Körperschluss führt; Fehlerhafte Isolation, hier Schutzleiter nicht ordnungsgemäß angeschlossen",
+      "chunk_ids": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "Kabelbrücke",
+      "type": "Konzept",
+      "description": "Unerwünschte leitende Verbindung, die zu Körperschluss führen kann",
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Phase zur Erde",
+      "type": "Konzept",
+      "description": "Direkte Verbindung zwischen Phase und Erde",
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "Gleichstrom",
+      "type": "Konzept",
+      "description": "Stromart mit konstantem Stromfluss, gut für Übertragung; Elektrische Stromart Gleichstrom; Elektrischer Strom mit konstanter Richtung",
+      "chunk_ids": [
+        1,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "Wechselstrom",
+      "type": "Konzept",
+      "description": "Stromart mit wechselnder Richtung; Art des elektrischen Stroms; Elektrische Stromart Wechselstrom; Elektrischer Strom mit periodischer Richtungsänderung",
+      "chunk_ids": [
+        1,
+        9,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "Gefahren_el_Strom",
+      "type": "Konzept",
+      "description": "Gefahren im Umgang mit elektrischem Strom",
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Fehlerstelle",
+      "type": "Bauteil",
+      "description": "Punkt, an dem der Fehlerstrom in die Erde fließt",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Erdpotential",
+      "type": "Konzept",
+      "description": "Potential an der Erdoberfläche",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Spannungstrichter",
+      "type": "Konzept",
+      "description": "Bereich um die Fehlerstelle mit abfallender Spannung",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "U_E",
+      "type": "Messwert",
+      "description": "Erderspannung am Fehlerpunkt, vertikal nach unten",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "U_S",
+      "type": "Messwert",
+      "description": "Schrittspannung, Differenz der Spannung zwischen zwei Füßen einer Person",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Person_10m",
+      "type": "Person",
+      "description": "Person, die 10 Meter vom Fehlerpunkt entfernt steht",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Person_20m",
+      "type": "Person",
+      "description": "Person, die 20 Meter vom Fehlerpunkt entfernt steht",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Strommast",
+      "type": "Bauteil",
+      "description": "Mast mit Stromleitungen, von dem der Fehlerstrom in den Boden fließt",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "EUROPA_LEHRMITTEL",
+      "type": "Organisation",
+      "description": "Logo unten rechts auf der PDF-Seite",
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "Sicherheitsregeln",
+      "type": "Regel",
+      "description": "5 Sicherheitsregeln im Umgang mit elektrischem Strom; Fünf Sicherheitsregeln für Arbeiten im spannungsfreien Zustand nach DIN VDE 0105; Maßnahmen zum sicheren Arbeiten an elektrischen Anlagen; Fünf Regeln zur Sicherheit bei elektrischen Installationen; Regeln zur Vermeidung von Unfällen",
+      "chunk_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "Spannung",
+      "type": "Konzept",
+      "description": "Elektrische Spannung zwischen zwei Füßen einer Person im Spannungstrichter; Elektrische Spannung, die in den Wicklungen induziert wird",
+      "chunk_ids": [
+        3,
+        15
+      ]
+    },
+    {
+      "name": "Erderspannung",
+      "type": "Messwert",
+      "description": "Spannung am Erdpunkt der Fehlerstelle; Spannung in der Erde bei Fehlerströmen",
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "EUROPA_LEHRMITTEL_Logo",
+      "type": "Sonstiges",
+      "description": "Logo 'EUROPA LEHRMITTEL' unten rechts",
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Freischalten",
+      "type": "Regel",
+      "description": "Freischalten aller Teile der Anlage, an denen gearbeitet wird; Sicherheitsmaßnahme zum Abschalten der Anlage; Erste Sicherheitsregel",
+      "chunk_ids": [
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Gegen_Wiedereinschalten_sichern",
+      "type": "Regel",
+      "description": "Sichern gegen Wiedereinschalten durch Schloss, Verbotsschilder etc.",
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Spannungsfreiheit_feststellen",
+      "type": "Regel",
+      "description": "Feststellen der Spannungsfreiheit durch Fachkraft mit zweipoligem Spannungsprüfer",
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Erden_und_kurzschließen",
+      "type": "Regel",
+      "description": "Erden und kurzschließen der Anlage vor Arbeiten",
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Benachbarte_Teile_abdecken",
+      "type": "Regel",
+      "description": "Abdecken oder Abschranken benachbarter unter Spannung stehender Teile",
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Horst_der_Elektriker",
+      "type": "Person",
+      "description": "Handschriftliche Notiz unten im Dokument",
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "DIN_VDE_0105",
+      "type": "Regel",
+      "description": "Norm, nach der die fünf Sicherheitsregeln definiert sind; Norm, auf der die Sicherheitsregeln basieren",
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "AnlagenUnter1kV",
+      "type": "Regel",
+      "description": "Abdecken mit isolierenden Tüchern, Schläuchen, Formstücken bei Anlagen unter 1 kV",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "AnlagenUeber1kV",
+      "type": "Regel",
+      "description": "Abdecken mit isolierenden Tüchern plus Absperrtafeln, Seile, Wartafeln bei Anlagen über 1 kV",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Koerperschutz",
+      "type": "Regel",
+      "description": "Tragen von Schutzhelm mit Gesichtsschutz, eng anliegender Kleidung und Handschuhen",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Schrittspannung",
+      "type": "Konzept",
+      "description": "Spannung zwischen den Füßen einer Person im Bereich eines Fehlerstroms in der Erde",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "SichernGegenWiedereinschalten",
+      "type": "Regel",
+      "description": "Sicherheitsmaßnahme zum Verhindern des Wiedereinschaltens",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "FeststellenSpannungsfreiheit",
+      "type": "Regel",
+      "description": "Sicherheitsmaßnahme zum Prüfen der Spannungsfreiheit",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "ErdenUndKurzschliessen",
+      "type": "Regel",
+      "description": "Sicherheitsmaßnahme zum Erden und Kurzschließen der Anlage",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "AbdeckenOderAbschranken",
+      "type": "Regel",
+      "description": "Sicherheitsmaßnahme zum Abdecken oder Abschranken benachbarter spannungsführender Teile",
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "Elektroinstallateur",
+      "type": "Person",
+      "description": "Person, die eine Lampe repariert; Person, die bei Reparatur die Netzwechselspannung berührt",
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Netzwechselspannung",
+      "type": "Messwert",
+      "description": "Spannung von 230 V bei der Installation; Spannung im Netz von 230 V",
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Körperwiderstand",
+      "type": "Messwert",
+      "description": "Widerstand des menschlichen Körpers, z.B. 1 kΩ oder 1,2 kΩ; Widerstand des menschlichen Körpers von 1 kΩ; Widerstand des menschlichen Körpers, 1,2 kΩ",
+      "chunk_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "Körperstrom",
+      "type": "Messwert",
+      "description": "Strom, der durch den Körper fließt; Strom durch den Körper bei Berührung der Netzspannung",
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Einwirkdauer",
+      "type": "Messwert",
+      "description": "Zeitdauer des Stromflusses, z.B. 0,1 s",
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "Gefährdung",
+      "type": "Konzept",
+      "description": "Gefahr für den Verunglückten bei Stromfluss; Gefahrenstufe bei Stromdurchfluss durch den Körper",
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Fehlerhafte Installation",
+      "type": "Konzept",
+      "description": "Installation mit Fehler, die zu elektrischem Schlag führt; Ursache für elektrischen Schlag bei 230 V; Installation mit Schutzleiterfehler, führt zu elektrischem Schlag",
+      "chunk_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "Leitungswiderstand",
+      "type": "Messwert",
+      "description": "Widerstand der Leitung, 0,4 Ω; Widerstand der Leitung, 0,4 Ω",
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Fehlerwiderstand",
+      "type": "Messwert",
+      "description": "Widerstand durch Fehler, 50 Ω; Widerstand im Fehlerfall, 50 Ω",
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Standortwiderstand",
+      "type": "Messwert",
+      "description": "Widerstand am Standort, 2,2 kΩ; Widerstand des Standortes, 2,2 kΩ",
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Erdübergangswiderstand",
+      "type": "Messwert",
+      "description": "Widerstand am Erdübergang, 50 Ω; Widerstand des Erdübergangs, 50 Ω",
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Herzflimmern",
+      "type": "Konzept",
+      "description": "Gefahr bei Stromdurchfluss im Bereich 3",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Gegen Wiedereinschalten sichern",
+      "type": "Regel",
+      "description": "Zweite Sicherheitsregel",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Spannungsfreiheit feststellen",
+      "type": "Regel",
+      "description": "Dritte Sicherheitsregel",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Erden und kurzschließen",
+      "type": "Regel",
+      "description": "Vierte Sicherheitsregel",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Benachbarte unter Spannung stehende Teile abdecken oder abschranken",
+      "type": "Regel",
+      "description": "Fünfte Sicherheitsregel",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Schutzleiter nicht angeschlossen",
+      "type": "Konzept",
+      "description": "Fehler bei Installation, Isolationsfehler",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "IF",
+      "type": "Messwert",
+      "description": "Fehlerstrom",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "UB",
+      "type": "Messwert",
+      "description": "Berührspannung",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Rk'",
+      "type": "Messwert",
+      "description": "Körperwiderstand in Formel zur Berührspannung",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "66mA",
+      "type": "Messwert",
+      "description": "Stromwert in Berechnung der Berührspannung",
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "Schutzleiter",
+      "type": "Bauteil",
+      "description": "Leiter zum Schutz vor elektrischem Schlag; Leiter zur Erdung und Schutz vor elektrischen Fehlern",
+      "chunk_ids": [
+        7,
+        22
+      ]
+    },
+    {
+      "name": "230V",
+      "type": "Messwert",
+      "description": "Spannung der elektrischen Anlage",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Fehlerstromkreis",
+      "type": "Sonstiges",
+      "description": "Schaltbild mit Widerständen und Person, die Stromkreis schließt",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Person",
+      "type": "Person",
+      "description": "Person, die den Fehlerstromkreis schließt",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Fehlerstromschutzschalter",
+      "type": "Bauteil",
+      "description": "Schalter (F1) zum Schutz vor Fehlerströmen",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Schalter Q1",
+      "type": "Bauteil",
+      "description": "Schalter im Schaltbild",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Körperstrom I_K",
+      "type": "Messwert",
+      "description": "Berechneter Strom durch den Körper, 66 mA",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Gesamtwiderstand R_g",
+      "type": "Messwert",
+      "description": "Summe der Widerstände R_F + R_K + R_X + R_E = 3,5 kΩ",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Berührungsspannung U_B",
+      "type": "Messwert",
+      "description": "Spannung am Körper, 79,2 V",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Spannung gegen Erde U_F",
+      "type": "Messwert",
+      "description": "Spannung gegen Erde, 224 V",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Leitungen L1_L2_L3_N_PE",
+      "type": "Bauteil",
+      "description": "Beschriftete Leitungen im Schaltbild",
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "Berührungsspannung_UB",
+      "type": "Messwert",
+      "description": "Spannung, die bei Berührung im Fehlerfall auftritt",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Körperstrom_IK",
+      "type": "Messwert",
+      "description": "Strom, der durch den Körper im Fehlerfall fließt",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Spannung_gegen_Erde_UF",
+      "type": "Messwert",
+      "description": "Spannung gegen Erde im Fehlerstromkreis",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Widerstand_RK",
+      "type": "Messwert",
+      "description": "Körperwiderstand im Fehlerstromkreis",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Widerstand_RF",
+      "type": "Messwert",
+      "description": "Fehlerwiderstand im Stromkreis",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Widerstand_RX",
+      "type": "Messwert",
+      "description": "Zusätzlicher Widerstand im Fehlerstromkreis",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Widerstand_RE",
+      "type": "Messwert",
+      "description": "Erdwiderstand im Fehlerstromkreis",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Fehlerstrom_IF",
+      "type": "Messwert",
+      "description": "Fehlerstrom im Stromkreis",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Gefährdung_0_23A",
+      "type": "Sonstiges",
+      "description": "Gefährdungsstufe bei 0,23 A Stromfluss (Herzflimmern)",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Fehlerhafte_Installation",
+      "type": "Sonstiges",
+      "description": "Installation ohne angeschlossenen Schutzleiter",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Schaltbild",
+      "type": "Sonstiges",
+      "description": "Visualisierung des Fehlerstromkreises und der Widerstände",
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "Sinnbilder",
+      "type": "Konzept",
+      "description": "Darstellung von Messwerken",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Messwerke",
+      "type": "Bauteil",
+      "description": "Geräte zur Messwerterfassung",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Messfehler",
+      "type": "Konzept",
+      "description": "Fehlerarten bei Messungen",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Persönliche Fehler",
+      "type": "Konzept",
+      "description": "Fehler durch den Bediener",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Einflussfehler",
+      "type": "Konzept",
+      "description": "Fehler durch äußere Einflüsse",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Systematische Fehler",
+      "type": "Konzept",
+      "description": "Fehler, die systematisch auftreten",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Anzeigefehler",
+      "type": "Konzept",
+      "description": "Fehler bei der Anzeige des Messwerts",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Digitalmessgerät",
+      "type": "Bauteil",
+      "description": "Messgerät mit digitaler Anzeige",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Messwert",
+      "type": "Messwert",
+      "description": "Angezeigter Wert eines Messgeräts",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Absoluter Fehler",
+      "type": "Messwert",
+      "description": "zulässiger absoluter Fehler F",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Relativer Fehler",
+      "type": "Messwert",
+      "description": "relativer Fehler f in Prozent",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Skalenkonstante",
+      "type": "Messwert",
+      "description": "Konstante zur Umrechnung der Anzeige",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Obergrenze",
+      "type": "Messwert",
+      "description": "Obergrenze wo des Messwerts",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Untergrenze",
+      "type": "Messwert",
+      "description": "Untergrenze wu des Messwerts",
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "Drehstromsystem",
+      "type": "Konzept",
+      "description": "System mit Drehstrom; System mit drei Wechselstromphasen; Elektrisches System mit drei Phasen",
+      "chunk_ids": [
+        9,
+        14,
+        16
+      ]
+    },
+    {
+      "name": "Kompensation",
+      "type": "Konzept",
+      "description": "Ausgleich von Fehlern oder Einflüssen; Maßnahmen zur Kompensation von Blindleistung im Wechselstrom; Maßnahme zur Veränderung des cos φ; Durch Kompensation wird Cosφ = 0,9 erreicht",
+      "chunk_ids": [
+        9,
+        13,
+        17,
+        18
+      ]
+    },
+    {
+      "name": "Elektroenergiesystem",
+      "type": "Konzept",
+      "description": "Struktur eines Systems zur Erzeugung, Übertragung und Verteilung elektrischer Energie",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Großkraftwerk",
+      "type": "Bauteil",
+      "description": "Große Kraftwerke zur Stromerzeugung",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Höchstspannungsnetz",
+      "type": "Bauteil",
+      "description": "Netz mit sehr hoher Spannung, z.B. 380kV",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Hochspannungsnetz",
+      "type": "Bauteil",
+      "description": "Netz mit hoher Spannung, z.B. 245kV oder 123kV",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Mittlere Spannung",
+      "type": "Konzept",
+      "description": "Spannungsebene um 123kV bzw. 110kV",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Ortsnetz",
+      "type": "Bauteil",
+      "description": "Netz für kleinsteinspeiser und Großabnehmer vor Ort",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Transformator",
+      "type": "Bauteil",
+      "description": "Gerät zur Spannungswandlung im Elektroenergiesystem; Elektrisches Gerät, das bei 50Hz Netz mit 100Hz brummt",
+      "chunk_ids": [
+        10,
+        14
+      ]
+    },
+    {
+      "name": "Zuwachsraten",
+      "type": "Messwert",
+      "description": "Wachstumsraten der Elektrizitätsversorgung in Industrieländern bis 1989",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Elektrizitätswirtschaft",
+      "type": "Konzept",
+      "description": "Wirtschaftliche und technische Aspekte der Energieversorgung",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Speichermöglichkeit",
+      "type": "Konzept",
+      "description": "Technische Möglichkeit zur Speicherung elektrischer Energie",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Anschlussverpflichtung",
+      "type": "Regel",
+      "description": "Verpflichtung zur sicheren Stromversorgung und Anschluss",
+      "chunk_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "Investitionskosten",
+      "type": "Messwert",
+      "description": "Hohe Kosten für Investitionen in die Elektrizitätswirtschaft",
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "Gleichzeitigkeit",
+      "type": "Konzept",
+      "description": "Faktor zur Bestimmung der gleichzeitigen Last mehrerer Verbraucher",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "sichere Stromversorgung",
+      "type": "Konzept",
+      "description": "Ziel der Stromversorgung ohne Unterbrechungen",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Wirtschaftlichkeit",
+      "type": "Konzept",
+      "description": "Ökonomische Effizienz der Stromversorgung",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Umweltschutz",
+      "type": "Konzept",
+      "description": "Schutz der Umwelt im Zusammenhang mit Stromerzeugung",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Wettbewerb",
+      "type": "Konzept",
+      "description": "Marktwettbewerb im Stromsektor",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Trennung Erzeugung-Transport-Vertrieb",
+      "type": "Regel",
+      "description": "Regel zur Aufteilung der Stromversorgung in Erzeugung, Transport und Vertrieb",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Hohe Investitionskosten",
+      "type": "Messwert",
+      "description": "Wirtschaftliche Besonderheit von Grundlastkraftwerken",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Lange Lebensdauer",
+      "type": "Messwert",
+      "description": "Lebensdauer von ca. 40 Jahren bei Kraftwerken",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Lange Planungszeiträume",
+      "type": "Messwert",
+      "description": "Erforderliche lange Planungszeiten bei Kraftwerken",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Grundlastkraftwerke",
+      "type": "Bauteil",
+      "description": "Kraftwerke mit hoher Investition, niedrigen Brennstoffkosten und schlechter Regelbarkeit",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Spitzenlast",
+      "type": "Messwert",
+      "description": "Abweichung zwischen Fahrplan und aktueller Leistungsnachfrage",
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "Regelenergie",
+      "type": "Konzept",
+      "description": "Schnelle Regelbarkeit zur Anpassung der Leistung; Energie mit schneller Regelbarkeit",
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "Pumpspeicherkraftwerke",
+      "type": "Bauteil",
+      "description": "Speicherkraftwerke mit schneller Regelbarkeit",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Gasturbinenkraftwerke",
+      "type": "Bauteil",
+      "description": "Kraftwerke mit schneller Regelbarkeit, aber teurem Brennstoff und Verschleiß",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Fremdeinspeiser",
+      "type": "Organisation",
+      "description": "Industriekraftwerke, die Strom einspeisen; Einspeiser von außerhalb, z.B. Industriekraftwerke",
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "Lastprognose",
+      "type": "Konzept",
+      "description": "Vorhersage der Stromlast basierend auf Vergleichsdaten",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Einspeiseprognose",
+      "type": "Konzept",
+      "description": "Vorhersage der Einspeisung unter Berücksichtigung besonderer Ereignisse",
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "Pumpspeicherkraftwerk",
+      "type": "Bauteil",
+      "description": "Speicherkraftwerk mit Pumpspeicherfunktion",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Gasturbinenkraftwerk",
+      "type": "Bauteil",
+      "description": "Kraftwerk mit Gasturbinen",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Industriekraftwerk",
+      "type": "Organisation",
+      "description": "Kraftwerk in der Industrie als Fremdeinspeiser",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Pumpspeicher",
+      "type": "Messwert",
+      "description": "Anteil der Pumpspeicherleistung an der installierten Leistung (4%)",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Spitzenlastkraftwerk",
+      "type": "Bauteil",
+      "description": "Kraftwerk zur Deckung der Spitzenlast",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Gas",
+      "type": "Messwert",
+      "description": "Anteil der Gasleistung an der installierten Leistung (>15%)",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Steinkohle",
+      "type": "Messwert",
+      "description": "Anteil der Steinkohleleistung an der installierten Leistung (~30%); Energiequelle Steinkohle mit 18% Anteil 2011",
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "Braunkohle",
+      "type": "Messwert",
+      "description": "Anteil der Braunkohleleistung an der installierten Leistung (>15%)",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Kernenergie",
+      "type": "Messwert",
+      "description": "Anteil der Kernenergie an der installierten Leistung (~20%); Energiequelle Kernenergie mit 8% Anteil 2011",
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "Wind",
+      "type": "Messwert",
+      "description": "Anteil der Windenergie an der installierten Leistung (~20%)",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Verbundnetz",
+      "type": "Konzept",
+      "description": "Netzverbund zur Erhöhung der Versorgungssicherheit und Effizienz",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Einzelgenerator",
+      "type": "Bauteil",
+      "description": "Generator für Inselnetz mit 100% Reserverhaltung",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Stromerzeugungskosten",
+      "type": "Konzept",
+      "description": "Kosten der Stromerzeugung unterteilt in feste und bewegliche Kosten",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Gasturbine",
+      "type": "Bauteil",
+      "description": "Komponente im Gasturbinenkraftwerk mit schnellem Verschleiß; Gasturbine als Teil der Stromerzeugung",
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "Lautwasser-KW",
+      "type": "Bauteil",
+      "description": "Wasserkraftwerk mit teuren Anlagen",
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "Kapitaldienst",
+      "type": "Konzept",
+      "description": "Kosten für Kapitaldienst im Zusammenhang mit Stromerzeugung",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Bewegliche_Kosten",
+      "type": "Konzept",
+      "description": "Variable Kosten bei der Stromerzeugung",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Brennstoff",
+      "type": "Konzept",
+      "description": "Kostenfaktor für Brennstoff bei Stromerzeugung",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Verwaltung",
+      "type": "Konzept",
+      "description": "Verwaltungskosten bei der Stromerzeugung",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Zusätzliche_Betriebskosten",
+      "type": "Konzept",
+      "description": "Weitere Betriebskosten bei der Stromerzeugung",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Unterhalt",
+      "type": "Konzept",
+      "description": "Kosten für Unterhalt bei der Stromerzeugung",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Betriebskosten",
+      "type": "Konzept",
+      "description": "Gesamtkosten für den Betrieb der Kraftwerke",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Windenergie",
+      "type": "Konzept",
+      "description": "Erneuerbare Energiequelle Wind mit 3% Anteil 2011",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Photovoltaik",
+      "type": "Konzept",
+      "description": "Erneuerbare Energiequelle Photovoltaik mit 20% Anteil 2011",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Erneuerbare_Energien",
+      "type": "Konzept",
+      "description": "Erneuerbare Energiequellen insgesamt",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Erdgas",
+      "type": "Konzept",
+      "description": "Energiequelle Erdgas mit 5% Anteil 2011",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Biomasse",
+      "type": "Konzept",
+      "description": "Energiequelle Biomasse mit 14% Anteil 2011",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Biogener_Hausmüll",
+      "type": "Konzept",
+      "description": "Energiequelle biogener Hausmüll mit 3% Anteil 2011",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Wasser",
+      "type": "Konzept",
+      "description": "Energiequelle Wasser mit 25% Anteil 2011",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Leistungsfaktor",
+      "type": "Konzept",
+      "description": "Verhältnis von Wirkleistung zu Scheinleistung im Wechselstrom",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Induktivität",
+      "type": "Konzept",
+      "description": "Elektrische Größe Induktivität in Wechselstromkreisen",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Kapazität",
+      "type": "Konzept",
+      "description": "Elektrische Größe Kapazität in Wechselstromkreisen",
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "Blind- und Wirkwiderstand",
+      "type": "Konzept",
+      "description": "Elektrische Größe mit Y² = G² + BL²",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Parallelschaltung",
+      "type": "Konzept",
+      "description": "Schaltung mit Leitwerten, vorwiegend kapazitiv oder induktiv",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Leitwert",
+      "type": "Messwert",
+      "description": "Maß für den elektrischen Leitwert in Parallelschaltungen",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Blindanteil",
+      "type": "Messwert",
+      "description": "Blindleistungskomponente, die im Netz geliefert wird",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Dauermagnet",
+      "type": "Bauteil",
+      "description": "Magnet mit dauerhaftem Nord- und Südpol",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Glühbirne",
+      "type": "Bauteil",
+      "description": "Leuchtmittel, das bei 50Hz Netz mit 100Hz dimmert",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Eisenkern",
+      "type": "Bauteil",
+      "description": "Geschichteter Kern, der gegen Wirbelströme schützt",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Synchronmaschine",
+      "type": "Bauteil",
+      "description": "Maschine mit Ständerwicklung und Erregerstrom",
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "Erregerstrom_Ie",
+      "type": "Messwert",
+      "description": "Gleichstrom, der ein magnetisches Feld erzeugt",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "magnetisches_Feld",
+      "type": "Konzept",
+      "description": "Magnetfeld, das sich über den Ständer schließt",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "Ständerwicklung_1",
+      "type": "Bauteil",
+      "description": "Erste Ständerwicklung im System",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "Ständerwicklung_3",
+      "type": "Bauteil",
+      "description": "Dritte Ständerwicklung im System",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "Wicklung_41",
+      "type": "Bauteil",
+      "description": "Wicklung, in der eine Spannung induziert wird",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "Wicklung_12",
+      "type": "Bauteil",
+      "description": "Wicklung, in der eine Spannung induziert wird",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "Wicklung_3",
+      "type": "Bauteil",
+      "description": "Wicklung, in der eine Spannung induziert wird",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "Phasenverschiebung_120Grad",
+      "type": "Konzept",
+      "description": "Phasenverschiebung der induzierten Spannungen um 120 Grad",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "Drehung_Erregerfeld",
+      "type": "Konzept",
+      "description": "Drehung des magnetischen Erregerfeldes",
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "P",
+      "type": "Messwert",
+      "description": "Wirkleistung in einem Drehstromsystem",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "Q",
+      "type": "Messwert",
+      "description": "Blindleistung in einem Drehstromsystem",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "S",
+      "type": "Messwert",
+      "description": "Scheinleistung in einem Drehstromsystem",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "E",
+      "type": "Messwert",
+      "description": "Spannung im Drehstromsystem",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "I",
+      "type": "Messwert",
+      "description": "Strom im Drehstromsystem; Strom von 4,8 mA",
+      "chunk_ids": [
+        16,
+        17
+      ]
+    },
+    {
+      "name": "symmetrische Belastung",
+      "type": "Konzept",
+      "description": "Belastung mit gleichen Strömen in allen Phasen",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "unsymmetrische Belastung",
+      "type": "Konzept",
+      "description": "Belastung mit unterschiedlichen Strömen in den Phasen",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "TN-C",
+      "type": "Konzept",
+      "description": "Drehstromsystem-Kennzeichnung mit kombiniertem PEN-Leiter",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "TN-S",
+      "type": "Konzept",
+      "description": "Drehstromsystem-Kennzeichnung mit separiertem PEN-Leiter",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "TN-C-S",
+      "type": "Konzept",
+      "description": "Drehstromsystem-Kennzeichnung mit kombiniertem und separiertem PEN-Leiter",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "TT",
+      "type": "Konzept",
+      "description": "Drehstromsystem-Kennzeichnung",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "IT",
+      "type": "Konzept",
+      "description": "Drehstromsystem-Kennzeichnung",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "Phase",
+      "type": "Bauteil",
+      "description": "Leiter im Drehstromsystem",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "Neutralleiter",
+      "type": "Bauteil",
+      "description": "Neutralleiter im Drehstromsystem",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "PEN-Leiter",
+      "type": "Bauteil",
+      "description": "Kombinierter Schutz- und Neutralleiter",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "RCD",
+      "type": "Bauteil",
+      "description": "Fehlerstrom-Schutzschalter; Fehlerstrom-Schutzeinrichtung mit Auslösestrom IΔn ≤ 30 mA",
+      "chunk_ids": [
+        16,
+        21
+      ]
+    },
+    {
+      "name": "Herd",
+      "type": "Sonstiges",
+      "description": "Haushaltsgerät, das Spannungsschwankungen verursachen kann",
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "Reihenschaltung",
+      "type": "Konzept",
+      "description": "Schaltung aus Widerstand und induktivem Blindwiderstand",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "R",
+      "type": "Messwert",
+      "description": "Widerstand von 1 kΩ",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "InduktiverBlindwiderstand",
+      "type": "Messwert",
+      "description": "Blindwiderstand in der Reihenschaltung",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "U",
+      "type": "Messwert",
+      "description": "Spannung von 24 V",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "Z",
+      "type": "Messwert",
+      "description": "Scheinwiderstand der Reihenschaltung",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "XL",
+      "type": "Messwert",
+      "description": "Induktiver Blindwiderstand",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "UW",
+      "type": "Messwert",
+      "description": "Teilspannung am Widerstand",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "UL",
+      "type": "Messwert",
+      "description": "Teilspannung am Blindwiderstand",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "Leuchtstofflampen",
+      "type": "Bauteil",
+      "description": "20 Lampen mit 230 V / 58 W",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "Vorschaltgerät",
+      "type": "Bauteil",
+      "description": "Gerät, das für jede Lampe 11 W aufnimmt",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "cosPhi",
+      "type": "Messwert",
+      "description": "Leistungsfaktor, z.B. 0,5 und 0,9",
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "Cosy",
+      "type": "Sonstiges",
+      "description": "Berechnung mit Formel 20.(58W + 1w) 0,5 S = 2,76 KVA",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Spannung_230V",
+      "type": "Messwert",
+      "description": "Spannung von 230 Volt",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Strom_I",
+      "type": "Messwert",
+      "description": "Strom I = 1,53 kA bei 230V",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Strom_Iz",
+      "type": "Messwert",
+      "description": "Strom Iz = Sz 230V = 6,667A",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Cosφ",
+      "type": "Messwert",
+      "description": "Leistungsfaktor Cosφ = 0,9",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Leitungen_und_Kabel",
+      "type": "Konzept",
+      "description": "Kapitel 4.1 über Leitungen und Kabel",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "3_adrig",
+      "type": "Konzept",
+      "description": "3-adrige Leitung",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "5_adrig",
+      "type": "Konzept",
+      "description": "5-adrige Leitung",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Mantelleitung_NYM",
+      "type": "Bauteil",
+      "description": "Genormte Mantelleitung mit Kunststoffisolierung",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Stegleitung_IF",
+      "type": "Bauteil",
+      "description": "Stegleitung, die vermieden werden soll",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Strombelastbarkeit_Faktoren",
+      "type": "Konzept",
+      "description": "Faktoren, die die Strombelastbarkeit von Kabeln beeinflussen",
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "Steckdosenleitung",
+      "type": "Bauteil",
+      "description": "Leitung in Mantelleitung NYM 3 x 1,5 mm² mit 32 m Länge",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Mantelleitung_NYM_3x1.5mm2",
+      "type": "Bauteil",
+      "description": "Mantelleitung mit Querschnitt 3 x 1,5 mm²",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Leitungsschutzschalter_B_13A",
+      "type": "Bauteil",
+      "description": "Leitungsschutzschalter vom Typ B mit 13 Ampere",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Querschnitt",
+      "type": "Messwert",
+      "description": "Querschnitt der Leitung in mm²",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Spannungsfall",
+      "type": "Messwert",
+      "description": "Maximaler Spannungsabfall von 3% der Nennspannung",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Nennspannung",
+      "type": "Messwert",
+      "description": "Nennspannung der elektrischen Anlage",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "IP_Schutzarten",
+      "type": "Konzept",
+      "description": "Schutzarten nach IP-Code für elektrische Geräte",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Berührschutz",
+      "type": "Konzept",
+      "description": "Schutz gegen Berührung elektrischer Teile",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Wasserschutz",
+      "type": "Konzept",
+      "description": "Schutz gegen Wasser nach IP-Schutzarten",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Erdung",
+      "type": "Regel",
+      "description": "Erdung mit Metallgehäuse als Schutzmaßnahme",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "Schutzschalter",
+      "type": "Bauteil",
+      "description": "Schalter mit thermischem Auslöser zum Schutz vor Überlast; Schalter zum Schutz elektrischer Leitungen und Verbraucher vor Überlast und Kurzschluss",
+      "chunk_ids": [
+        19,
+        20
+      ]
+    },
+    {
+      "name": "Thermischer_Auslöser",
+      "type": "Bauteil",
+      "description": "Komponente des Schutzschalters für verzögertes Auslösen",
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "IP-Schutzarten",
+      "type": "Konzept",
+      "description": "Schutzarten für elektrische Geräte gegen Eindringen von Fremdkörpern und Wasser",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "Schutzklassen",
+      "type": "Konzept",
+      "description": "Klassifizierung des Schutzes elektrischer Geräte gegen elektrischen Schlag",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "Thermischer Auslöser",
+      "type": "Bauteil",
+      "description": "Komponente im Schutzschalter für verzögertes Auslösen bei Überlast",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "Elektromagnetischer Auslöser",
+      "type": "Bauteil",
+      "description": "Komponente im Schutzschalter für schnelles Auslösen bei Kurzschluss",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "Fehlerstrom-Schutzeinrichtung",
+      "type": "Bauteil",
+      "description": "Schutzeinrichtung (RCD) zum Schutz gegen Fehlerströme und elektrischen Schlag; Schutzeinrichtung, die bei Fehlerstrom auslöst; Schutzvorrichtung zur Fehlerstromüberwachung",
+      "chunk_ids": [
+        20,
+        22,
+        23
+      ]
+    },
+    {
+      "name": "RCD Typ A",
+      "type": "Bauteil",
+      "description": "Fehlerstrom-Schutzeinrichtung, die auf sinusförmige Wechselfehlerströme und pulsierende Gleichfehlerströme reagiert",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "RCD Typ B",
+      "type": "Bauteil",
+      "description": "Fehlerstrom-Schutzeinrichtung, die auch glatte Gleichfehlströme und Fehlerströme unterschiedlicher Frequenz verarbeitet",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "Schutz vor Überlast",
+      "type": "Regel",
+      "description": "Funktion des thermischen Auslösers im Schutzschalter",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "Schutz vor Kurzschluss",
+      "type": "Regel",
+      "description": "Funktion des elektromagnetischen Auslösers im Schutzschalter",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "Prüfung der RCD-Auslösung",
+      "type": "Regel",
+      "description": "RCD-Auslösung ist vom Betreiber bei stationären Anlagen mindestens alle 6 Monate zu prüfen",
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "IΔn",
+      "type": "Messwert",
+      "description": "Auslösestrom eines RCDs, maximal 30 mA vorgeschrieben",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Steckdosenstromkreis",
+      "type": "Konzept",
+      "description": "Stromkreis mit Bemessungsstrom ≤ 20 A, für Laien und allgemeine Verwendung",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Endstromkreis Außenbereich",
+      "type": "Konzept",
+      "description": "Endstromkreis für tragbare Betriebsmittel im Außenbereich mit Bemessungsstrom ≤ 32 A",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Abschaltzeit RCD",
+      "type": "Messwert",
+      "description": "Maximale Abschaltzeit von RCDs darf 0,2 s nicht überschreiten",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Schutzpotenzialausgleich",
+      "type": "Konzept",
+      "description": "Beseitigung von Potenzialunterschieden zwischen Körpern und fremden Anlagenteilen",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Haupterdungsschiene",
+      "type": "Bauteil",
+      "description": "Verbindungspunkt für Schutzpotenzialausgleich",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Schutzpotenzialausgleichsleitung",
+      "type": "Bauteil",
+      "description": "Leitung mit Querschnitt mindestens halb so groß wie Hauptschutzleiter",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Hauptschutzleiter",
+      "type": "Bauteil",
+      "description": "Leiter mit definiertem Querschnitt, Bezug für Schutzpotenzialausgleichsleitung",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "NH-Sicherung",
+      "type": "Bauteil",
+      "description": "Sicherung im Hausanschlusskasten",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "SLS",
+      "type": "Bauteil",
+      "description": "Selektiver Leitungsschutzschalter, löst zeitverzögert bei Kurzschluss aus",
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "Inbetriebnahme",
+      "type": "Regel",
+      "description": "Erste Prüfung nach Erweiterung, Änderung oder Instandsetzung durch den Errichter",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Errichter",
+      "type": "Person",
+      "description": "Person, die Erweiterungen, Änderungen oder Instandsetzungen durchführt",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "DIN_VDE_0100_Teil_600",
+      "type": "Regel",
+      "description": "Norm zur Prüfung der Schutzmaßnahmen in der Elektrotechnik",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Schutzmaßnahmen",
+      "type": "Konzept",
+      "description": "Maßnahmen zum Schutz in elektrischen Anlagen",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Isolationswiderstand",
+      "type": "Messwert",
+      "description": "Messgröße zur Überprüfung der Isolation von Leitungen",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "TN-System",
+      "type": "Konzept",
+      "description": "Netzsystem mit direkter Erdung des Neutralleiters",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Überstrom-Schutzeinrichtung",
+      "type": "Bauteil",
+      "description": "Schutzeinrichtung, die bei Überstrom auslöst, z.B. Leitungsschutzschalter",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Leitungsschutzschalter",
+      "type": "Bauteil",
+      "description": "Schalter, der bei Überstrom den Stromkreis unterbricht",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "DIN_VDE_0100_Teil_410",
+      "type": "Regel",
+      "description": "Norm, die Abschaltzeiten für Schutzgeräte im TN-System regelt",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Schleifenimpedanz",
+      "type": "Messwert",
+      "description": "Summe aller Widerstände im Verteilungsnetz und Endstromkreis",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Blitzschutzsysteme",
+      "type": "Konzept",
+      "description": "Systeme zum Schutz vor Blitzwirkungen",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Blitzstrom",
+      "type": "Messwert",
+      "description": "Strom, der bei einem Blitz auftritt; Elektrischer Strom bei Blitzeinschlag mit thermischen, dynamischen und elektromagnetischen Wirkungen",
+      "chunk_ids": [
+        22,
+        23
+      ]
+    },
+    {
+      "name": "Durchschlagfestigkeit_Luft",
+      "type": "Messwert",
+      "description": "Elektrische Festigkeit von Luft, ca. 3 kV/mm; Durchschlagfestigkeit von Luft etwa 3 kV/mm",
+      "chunk_ids": [
+        22,
+        23
+      ]
+    },
+    {
+      "name": "Wirkungen_Blitzstrom",
+      "type": "Konzept",
+      "description": "Thermische, dynamische und elektromagnetische Effekte des Blitzstroms",
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "Blitzschutzsystem",
+      "type": "Konzept",
+      "description": "System zum Schutz baulicher Anlagen vor Blitzeinschlägen",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Äußerer_Blitzschutz",
+      "type": "Konzept",
+      "description": "Teil des Blitzschutzsystems mit Auffangvorrichtungen, Ableitungen und Erdungsanlage",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Innerer_Blitzschutz",
+      "type": "Konzept",
+      "description": "Teil des Blitzschutzsystems mit Potenzialausgleich, Überspannungs-Schutzgeräten und Trennungsabständen",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Auffangvorrichtungen",
+      "type": "Bauteil",
+      "description": "Bauteile des äußeren Blitzschutzes zum Auffangen von Blitzen",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Ableitungen",
+      "type": "Bauteil",
+      "description": "Leitungen zur Ableitung des Blitzstroms im äußeren Blitzschutz",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Erdungsanlage",
+      "type": "Bauteil",
+      "description": "Anlage zur Erdung im äußeren Blitzschutz",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Blitzschutz-Potenzialausgleich",
+      "type": "Bauteil",
+      "description": "Maßnahme des inneren Blitzschutzes zur Potentialangleichung",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Überspannungs-Schutzgeräte",
+      "type": "Bauteil",
+      "description": "Geräte zum Schutz vor Überspannungen im inneren Blitzschutz",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Trennungsabstände",
+      "type": "Regel",
+      "description": "Abstände, die im inneren Blitzschutz eingehalten werden müssen",
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "Spannung_Steckdose_unbelastet",
+      "type": "Messwert",
+      "description": "Spannung an der Steckdose im unbelasteten Zustand (233 V)",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Schalter_S1",
+      "type": "Bauteil",
+      "description": "Schalter, der geschlossen wird, um Strom fließen zu lassen",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Spannung_Steckdose_belastet",
+      "type": "Messwert",
+      "description": "Spannung an der Steckdose nach Schließen von S1 (229 V)",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Belastungsstrom",
+      "type": "Messwert",
+      "description": "Strom, der nach Schließen von S1 fließt (4 A)",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Leitungsschutzschalter_B16A",
+      "type": "Bauteil",
+      "description": "Leitungsschutzschalter vom Typ B mit 16 A Nennstrom",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Bemessungsstrom_In",
+      "type": "Messwert",
+      "description": "Nennstrom des Leitungsschutzschalters (16 A)",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Strom_Ia",
+      "type": "Messwert",
+      "description": "Strom, der bei ta=0,45 s fließen muss (5-facher Bemessungsstrom, 80 A)",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "DIN_VDE_0100_Teil_600_Anhang_C",
+      "type": "Regel",
+      "description": "Norm, die Bedingungen für Leitungsschutzschalter definiert",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Strom_Zeit_Kennlinie",
+      "type": "Konzept",
+      "description": "Kennlinie zur Bestimmung des zulässigen Stroms über Zeit",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Übung_5",
+      "type": "Sonstiges",
+      "description": "Übung zur Überprüfung des Leitungsschutzschalters",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Übung_6",
+      "type": "Sonstiges",
+      "description": "Übung zum Zeichnen von Schaltplänen",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Schaltplan_Übersicht",
+      "type": "Konzept",
+      "description": "Übersichtsplan mit Steckdose und Wechselschaltung",
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "Übersichtsplan",
+      "type": "Konzept",
+      "description": "Plan mit Steckdose und Wechselschaltung mit Lampe",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Steckdose",
+      "type": "Bauteil",
+      "description": "Elektrische Steckdose im Übersichtsplan",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Wechselschaltung",
+      "type": "Konzept",
+      "description": "Schaltung mit zwei Schaltern zur Lampensteuerung; Schaltungskonzept zum Schalten von Lampen von mehreren Stellen",
+      "chunk_ids": [
+        25,
+        28
+      ]
+    },
+    {
+      "name": "Lampe",
+      "type": "Bauteil",
+      "description": "Beleuchtungselement in der Wechselschaltung",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Schalter",
+      "type": "Bauteil",
+      "description": "Bedienelement zur Steuerung der Wechselschaltung",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Aufputz",
+      "type": "Konzept",
+      "description": "Montageart von elektrischen Bauteilen auf der Wandoberfläche",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Im Putz",
+      "type": "Konzept",
+      "description": "Montageart von elektrischen Bauteilen in der Wand",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Elektromagnetische Schalter",
+      "type": "Konzept",
+      "description": "Schalter, die elektromagnetisch betätigt werden",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Automatisierungstechnik",
+      "type": "Konzept",
+      "description": "Technik zur Automatisierung, z.B. in der Gebäudeautomation; Technik zur Automatisierung, z.B. Gebäudeautomatisierung durch Steuergeräte",
+      "chunk_ids": [
+        25,
+        26
+      ]
+    },
+    {
+      "name": "Steuergerät",
+      "type": "Bauteil",
+      "description": "Gerät zur Steuerung von Eingangs- und Ausgangsgrößen; Gerät zur Steuerung von Prozessen durch Beeinflussung von Ausgangsgrößen mittels Eingangsgrößen; Gerät zur Steuerung von Funktionen in der Gebäudesystemtechnik",
+      "chunk_ids": [
+        25,
+        26,
+        28
+      ]
+    },
+    {
+      "name": "Signalverarbeitung",
+      "type": "Konzept",
+      "description": "Verarbeitung von Signalen in Steuergeräten",
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "Gebäudeautomation",
+      "type": "Konzept",
+      "description": "Automatisierungstechnik angewandt in Gebäuden; Automatisierung von Steuerungs- und Regelungsprozessen in Gebäuden",
+      "chunk_ids": [
+        25,
+        28
+      ]
+    },
+    {
+      "name": "Kleinsteuergerät",
+      "type": "Konzept",
+      "description": "Speicherprogrammierbare Steuerung für einfache Steuerungsaufgaben",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "SPS",
+      "type": "Konzept",
+      "description": "Speicherprogrammierbare Steuerung, Mikrocomputersystem für Steuerungsaufgaben",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Sensor",
+      "type": "Bauteil",
+      "description": "An Eingänge angeschlossenes Bauteil zur Erfassung von Signalen",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Aktor",
+      "type": "Bauteil",
+      "description": "An Ausgänge angeschlossenes Bauteil zur Ausführung von Steuerbefehlen",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Gebäude-Installationsbereich",
+      "type": "Ort",
+      "description": "Anwendungsbereich von Steuergeräten, z.B. Steuerung von Beleuchtungen und Rollläden",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Maschinen- und Apparatebau",
+      "type": "Ort",
+      "description": "Anwendungsbereich von Steuergeräten, z.B. Steuerung von Maschinen und Lüftungsanlagen",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Logische Grundfunktionen",
+      "type": "Konzept",
+      "description": "Grundfunktionen in Steuergeräten wie UND, ODER, NAND, NOR, XOR, NOT",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Sonderfunktionen",
+      "type": "Konzept",
+      "description": "Erweiterte Funktionen in Steuergeräten, z.B. Stromstoßrelais, Zeitfunktionen, Zähler",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Analogsignal-Verarbeitung",
+      "type": "Konzept",
+      "description": "Funktion zur Erfassung und Auswertung von analogen Signalen in Steuergeräten",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "Steuerungsprozess",
+      "type": "Konzept",
+      "description": "Bezeichnung für eine Steuerungsaufgabe",
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "ODER",
+      "type": "Konzept",
+      "description": "Logische Funktion ODER",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "NAND",
+      "type": "Konzept",
+      "description": "Logische Funktion NAND",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "NOR",
+      "type": "Konzept",
+      "description": "Logische Funktion NOR",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "XOR",
+      "type": "Konzept",
+      "description": "Logische Funktion XOR",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "NOT",
+      "type": "Konzept",
+      "description": "Logische Funktion NOT",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "Stromstoßrelais",
+      "type": "Bauteil",
+      "description": "Relais für Stromstoßschaltung; Relais für Schaltfunktionen mit Impulssteuerung",
+      "chunk_ids": [
+        27,
+        28
+      ]
+    },
+    {
+      "name": "Zeitfunktionen",
+      "type": "Konzept",
+      "description": "Funktionen zur zeitlichen Begrenzung oder Verzögerung von Signalen",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "Zähler",
+      "type": "Bauteil",
+      "description": "Bauteil zum Zählen von Ereignissen",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "Taktgeber",
+      "type": "Bauteil",
+      "description": "Bauteil zur Erzeugung von Taktsignalen",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "Zeitschaltuhr",
+      "type": "Bauteil",
+      "description": "Uhr zur zeitgesteuerten Schaltung",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "Komparatoren",
+      "type": "Bauteil",
+      "description": "Bauteile zur Analogsignal-Verarbeitung",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "Schwellwertschalter",
+      "type": "Bauteil",
+      "description": "Bauteile zur Analogsignal-Verarbeitung",
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "Installationsbussystem",
+      "type": "Konzept",
+      "description": "System zur Gebäudesystemtechnik für Messen, Steuern, Regeln, Schalten, Melden und Überwachen",
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "Gebäudesystemtechnik",
+      "type": "Konzept",
+      "description": "Technik zur Steuerung und Überwachung von Gebäuden",
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "KNX",
+      "type": "Organisation",
+      "description": "International anerkannter Standard für Haus- und Gebäudesystemtechnik",
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "EIB",
+      "type": "Organisation",
+      "description": "Europäischer Installations Bus, Teil des KNX-Standards",
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "Ausschalt-Verzögerung",
+      "type": "Funktion",
+      "description": "Zeitfunktion zur verzögerten Abschaltung",
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "Funktionsplan",
+      "type": "Konzept",
+      "description": "Grafische Darstellung von Steuerungsfunktionen; Grafische Darstellung einer Steuerung oder Schaltung",
+      "chunk_ids": [
+        28,
+        29
+      ]
+    },
+    {
+      "name": "Flexibilität",
+      "type": "Messwert",
+      "description": "Vorteil bei Nutzungsänderungen in der Gebäudesystemtechnik",
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "Sicherheit",
+      "type": "Messwert",
+      "description": "Vorteil durch Überwachung in der Gebäudesystemtechnik",
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "Steuerung",
+      "type": "Konzept",
+      "description": "System, bei dem Eingangsgrößen Ausgangsgrößen nach Gesetzmäßigkeit beeinflussen",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "Eingangsgröße",
+      "type": "Konzept",
+      "description": "Messgröße, die in eine Steuerung eingeht",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "Ausgangsgröße",
+      "type": "Konzept",
+      "description": "Größe, die von der Steuerung beeinflusst wird",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "IST-Wert",
+      "type": "Messwert",
+      "description": "Aktueller gemessener Wert in der Regelung",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "SOLL-Wert",
+      "type": "Messwert",
+      "description": "Gewünschter Wert, an den der IST-Wert angeglichen wird",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "Stromstoßschaltung",
+      "type": "Bauteil",
+      "description": "Schaltungstyp, der in Übung 7 gezeichnet werden soll",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "Rückfallsverzögerungsschaltung",
+      "type": "Bauteil",
+      "description": "Schaltungstyp, der in Übung 7 gezeichnet werden soll",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "Gefahrenmeldeanlagen",
+      "type": "Konzept",
+      "description": "Anlagen zur Erkennung von Gefahren",
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "Einbruchmeldeanlagen",
+      "type": "Konzept",
+      "description": "Gefahrenmeldeanlagen zur Einbruchserkennung; Anlagen zur Einbruchüberwachung",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Brandmeldeanlagen",
+      "type": "Konzept",
+      "description": "Gefahrenmeldeanlagen zur Brandmeldung; Anlagen zur Brandüberwachung",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Brandmeldezentrale",
+      "type": "Bauteil",
+      "description": "Zentrale Einheit einer Brandmeldeanlage",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Brandmelder",
+      "type": "Bauteil",
+      "description": "Sensoren zur Branddetektion; Melder zur Branddetektion",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Alarmgeber",
+      "type": "Bauteil",
+      "description": "Geräte, die Alarm auslösen; Geräte zur Alarmierung in Brandmeldeanlagen",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Infrarot-Bewegungsmelder",
+      "type": "Bauteil",
+      "description": "Sensor zur Raumüberwachung in Einbruchmeldeanlagen; Bewegungsmelder, der Infrarot nutzt",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Ultraschall-Bewegungsmelder",
+      "type": "Bauteil",
+      "description": "Sensor zur Raumüberwachung in Einbruchmeldeanlagen; Bewegungsmelder, der Ultraschall nutzt",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Fadenzugmelder",
+      "type": "Bauteil",
+      "description": "Sensor zur Raumüberwachung in Einbruchmeldeanlagen; Melder, der auf Fadenzug reagiert",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Erschütterungsmelder",
+      "type": "Bauteil",
+      "description": "Sensor zur Raumüberwachung in Einbruchmeldeanlagen; Melder, der Erschütterungen erkennt",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Körperschallmelder",
+      "type": "Bauteil",
+      "description": "Sensor zur Raumüberwachung in Einbruchmeldeanlagen; Melder, der Körperschall erfasst",
+      "chunk_ids": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "Meldeeinrichtungen",
+      "type": "Konzept",
+      "description": "Geräte zur Raumüberwachung",
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "Akku",
+      "type": "Bauteil",
+      "description": "Energiequelle zur Absicherung gegen Spannungsunterbrechung",
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "Licht",
+      "type": "Konzept",
+      "description": "Energie in Form elektromagnetischer Wellen",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Wellenlänge",
+      "type": "Konzept",
+      "description": "Bestimmt die Farbe des Lichts",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Farbe",
+      "type": "Konzept",
+      "description": "Eigenschaft des Lichts, bestimmt durch Wellenlänge",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Beleuchtung",
+      "type": "Konzept",
+      "description": "Fördert das Wohlbefinden des Menschen",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Wohlbefinden",
+      "type": "Konzept",
+      "description": "Zustand des Menschen, der durch gute Beleuchtung gefördert wird",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Leistungsbereitschaft",
+      "type": "Konzept",
+      "description": "Steigerung durch gute Beleuchtung",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Unfallrisiko",
+      "type": "Konzept",
+      "description": "Verringert durch gute Beleuchtung",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Beleuchtungsniveau",
+      "type": "Konzept",
+      "description": "Aspekt der Beleuchtung",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Blendung",
+      "type": "Konzept",
+      "description": "Aspekt der Beleuchtung",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Lichtrichtung und Schattenbildung",
+      "type": "Konzept",
+      "description": "Aspekte der Beleuchtung",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "Lichtfarbe und Farbwiedergabe",
+      "type": "Konzept",
+      "description": "Aspekte der Beleuchtung",
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "DIN EN 12464-1 / DIN 5035-7",
+      "type": "Regel",
+      "description": "Normen für Beleuchtung von Innenräumen und Bildschirmarbeitsplätzen",
+      "chunk_ids": [
+        31
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Fachkunde Elektrotechnik",
+      "target": "Europa-Lehrmittel",
+      "relation": "veröffentlicht von",
+      "description": "Das Buch wurde vom Verlag Europa-Lehrmittel herausgegeben",
+      "chunk_id": 0
+    },
+    {
+      "source": "Prof. Dr. Marcus Liebschner",
+      "target": "Fachkunde Elektrotechnik",
+      "relation": "Autor von",
+      "description": "Er ist Autor des Skripts im Studiengang Elektrotechnik",
+      "chunk_id": 0
+    },
+    {
+      "source": "Wintersemester 2022/2023",
+      "target": "Fachkunde Elektrotechnik",
+      "relation": "Nutzungszeitraum",
+      "description": "Die Unterlagen dienen der eigenständigen Arbeit im Wintersemester 2022/2023",
+      "chunk_id": 0
+    },
+    {
+      "source": "Formeln Elektrotechniker",
+      "target": "Europa-Lehrmittel",
+      "relation": "veröffentlicht von",
+      "description": "Literatur wurde vom Verlag Europa-Lehrmittel herausgegeben",
+      "chunk_id": 0
+    },
+    {
+      "source": "Tabellenbuch Elektrotechnik",
+      "target": "Europa-Lehrmittel",
+      "relation": "veröffentlicht von",
+      "description": "Literatur wurde vom Verlag Europa-Lehrmittel herausgegeben",
+      "chunk_id": 0
+    },
+    {
+      "source": "Gefahren",
+      "target": "Gefahren im Umgang mit el. Strom",
+      "relation": "beinhaltet",
+      "description": "Gefahren im Umgang mit elektrischem Strom sind ein Unterthema",
+      "chunk_id": 0
+    },
+    {
+      "source": "VDE",
+      "target": "Gefahren im Umgang mit el. Strom",
+      "relation": "thematisiert",
+      "description": "VDE behandelt Gefahren im Umgang mit elektrischem Strom",
+      "chunk_id": 0
+    },
+    {
+      "source": "Leiterschluss",
+      "target": "Kurzschluss",
+      "relation": "unterscheidet sich von",
+      "description": "Kurzschluss begrenzt den Fehlerstrom durch Nutzwiderstand, Leiterschluss hat nahezu widerstandslose Verbindung",
+      "chunk_id": 1
+    },
+    {
+      "source": "Kurzschluss",
+      "target": "Nutzwiderstand",
+      "relation": "begrenzt",
+      "description": "Der Fehlerstrom wird durch den Nutzwiderstand begrenzt",
+      "chunk_id": 1
+    },
+    {
+      "source": "Körperschluss",
+      "target": "Isolationsfehler",
+      "relation": "entsteht durch",
+      "description": "Körperschluss entsteht durch Isolationsfehler",
+      "chunk_id": 1
+    },
+    {
+      "source": "Körperschluss",
+      "target": "Kabelbrücke",
+      "relation": "kann entstehen durch",
+      "description": "Kabelbrücke kann zu Körperschluss führen",
+      "chunk_id": 1
+    },
+    {
+      "source": "Erdschluss",
+      "target": "Phase zur Erde",
+      "relation": "ist eine Form von",
+      "description": "Erdschluss ist eine unerwünschte Verbindung zwischen Phase und Erde",
+      "chunk_id": 1
+    },
+    {
+      "source": "Fehlerstrom",
+      "target": "Leiterschluss",
+      "relation": "fließt bei",
+      "description": "Fehlerstrom fließt bei Leiterschluss",
+      "chunk_id": 1
+    },
+    {
+      "source": "Fehlerstrom",
+      "target": "Kurzschluss",
+      "relation": "fließt bei",
+      "description": "Fehlerstrom fließt bei Kurzschluss",
+      "chunk_id": 1
+    },
+    {
+      "source": "Wechselstrom",
+      "target": "Gleichstrom",
+      "relation": "unterscheidet sich von",
+      "description": "Wechselstrom hat wechselnde Richtung, Gleichstrom nicht",
+      "chunk_id": 1
+    },
+    {
+      "source": "Fehlerstelle",
+      "target": "Strommast",
+      "relation": "ist_teil_von",
+      "description": "Fehlerstelle befindet sich an der elektrischen Leitung am Strommast",
+      "chunk_id": 2
+    },
+    {
+      "source": "Fehlerstelle",
+      "target": "Erdpotential",
+      "relation": "beeinflusst",
+      "description": "Fehlerstrom fließt in die Erde und beeinflusst das Erdpotential",
+      "chunk_id": 2
+    },
+    {
+      "source": "Spannungstrichter",
+      "target": "Fehlerstelle",
+      "relation": "umgibt",
+      "description": "Spannungstrichter ist der Bereich um die Fehlerstelle mit abfallender Spannung",
+      "chunk_id": 2
+    },
+    {
+      "source": "U_E",
+      "target": "Fehlerstelle",
+      "relation": "ist_spannung_an",
+      "description": "U_E ist die Erderspannung am Fehlerpunkt",
+      "chunk_id": 2
+    },
+    {
+      "source": "U_S",
+      "target": "Person_10m",
+      "relation": "tritt_auf_bei",
+      "description": "Schrittspannung kann bei Person im Bereich des Spannungstrichters auftreten",
+      "chunk_id": 2
+    },
+    {
+      "source": "U_S",
+      "target": "Person_20m",
+      "relation": "tritt_auf_bei",
+      "description": "Schrittspannung kann bei Person im Bereich des Spannungstrichters auftreten",
+      "chunk_id": 2
+    },
+    {
+      "source": "Person_10m",
+      "target": "Fehlerstelle",
+      "relation": "steht_in_abstand_zu",
+      "description": "Person steht 10 Meter vom Fehlerpunkt entfernt",
+      "chunk_id": 2
+    },
+    {
+      "source": "Person_20m",
+      "target": "Fehlerstelle",
+      "relation": "steht_in_abstand_zu",
+      "description": "Person steht 20 Meter vom Fehlerpunkt entfernt",
+      "chunk_id": 2
+    },
+    {
+      "source": "Gefahren_el_Strom",
+      "target": "Sicherheitsregeln",
+      "relation": "werden_behandelt_in",
+      "description": "Gefahren im Umgang mit elektrischem Strom werden in den 5 Sicherheitsregeln behandelt",
+      "chunk_id": 2
+    },
+    {
+      "source": "EUROPA_LEHRMITTEL",
+      "target": "Gefahren_el_Strom",
+      "relation": "ist_logo_zu",
+      "description": "Logo auf der PDF-Seite zum Thema Gefahren im Umgang mit elektrischem Strom",
+      "chunk_id": 2
+    },
+    {
+      "source": "Erderspannung",
+      "target": "Fehlerstelle",
+      "relation": "ist_am",
+      "description": "Erderspannung ist die Spannung am Erdpunkt der Fehlerstelle",
+      "chunk_id": 3
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "DIN_VDE_0105",
+      "relation": "basieren_auf",
+      "description": "Sicherheitsregeln sind nach DIN VDE 0105 definiert",
+      "chunk_id": 3
+    },
+    {
+      "source": "Freischalten",
+      "target": "Sicherheitsregeln",
+      "relation": "ist_teil_von",
+      "description": "Freischalten ist die erste Sicherheitsregel",
+      "chunk_id": 3
+    },
+    {
+      "source": "Gegen_Wiedereinschalten_sichern",
+      "target": "Sicherheitsregeln",
+      "relation": "ist_teil_von",
+      "description": "Gegen Wiedereinschalten sichern ist die zweite Sicherheitsregel",
+      "chunk_id": 3
+    },
+    {
+      "source": "Spannungsfreiheit_feststellen",
+      "target": "Sicherheitsregeln",
+      "relation": "ist_teil_von",
+      "description": "Spannungsfreiheit feststellen ist die dritte Sicherheitsregel",
+      "chunk_id": 3
+    },
+    {
+      "source": "Erden_und_kurzschließen",
+      "target": "Sicherheitsregeln",
+      "relation": "ist_teil_von",
+      "description": "Erden und kurzschließen ist die vierte Sicherheitsregel",
+      "chunk_id": 3
+    },
+    {
+      "source": "Benachbarte_Teile_abdecken",
+      "target": "Sicherheitsregeln",
+      "relation": "ist_teil_von",
+      "description": "Benachbarte Teile abdecken ist die fünfte Sicherheitsregel",
+      "chunk_id": 3
+    },
+    {
+      "source": "AnlagenUnter1kV",
+      "target": "AbdeckenOderAbschranken",
+      "relation": "TeilVon",
+      "description": "Abdecken bei Anlagen unter 1 kV ist eine Form des Abdeckens oder Abschrankens",
+      "chunk_id": 4
+    },
+    {
+      "source": "AnlagenUeber1kV",
+      "target": "AbdeckenOderAbschranken",
+      "relation": "TeilVon",
+      "description": "Abdecken bei Anlagen über 1 kV ist eine Form des Abdeckens oder Abschrankens",
+      "chunk_id": 4
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Freischalten",
+      "relation": "beinhaltet",
+      "description": "Freischalten ist eine der Sicherheitsregeln",
+      "chunk_id": 4
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "SichernGegenWiedereinschalten",
+      "relation": "beinhaltet",
+      "description": "Sichern gegen Wiedereinschalten ist eine der Sicherheitsregeln",
+      "chunk_id": 4
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "FeststellenSpannungsfreiheit",
+      "relation": "beinhaltet",
+      "description": "Feststellen der Spannungsfreiheit ist eine der Sicherheitsregeln",
+      "chunk_id": 4
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "ErdenUndKurzschliessen",
+      "relation": "beinhaltet",
+      "description": "Erden und Kurzschließen ist eine der Sicherheitsregeln",
+      "chunk_id": 4
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "AbdeckenOderAbschranken",
+      "relation": "beinhaltet",
+      "description": "Abdecken oder Abschranken ist eine der Sicherheitsregeln",
+      "chunk_id": 4
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "DIN_VDE_0105",
+      "relation": "basiertAuf",
+      "description": "Die Sicherheitsregeln basieren auf der Norm DIN VDE 0105",
+      "chunk_id": 4
+    },
+    {
+      "source": "Schrittspannung",
+      "target": "Fehlerstrom",
+      "relation": "entstehtDurch",
+      "description": "Schrittspannung entsteht durch Fehlerströme in der Erde",
+      "chunk_id": 4
+    },
+    {
+      "source": "Erderspannung",
+      "target": "Fehlerstrom",
+      "relation": "entstehtDurch",
+      "description": "Erderspannung entsteht durch Fehlerströme",
+      "chunk_id": 4
+    },
+    {
+      "source": "Koerperschutz",
+      "target": "Sicherheitsregeln",
+      "relation": "istTeilVon",
+      "description": "Körperschutz ist Teil der Sicherheitsregeln",
+      "chunk_id": 4
+    },
+    {
+      "source": "Elektroinstallateur",
+      "target": "Netzwechselspannung",
+      "relation": "berührt",
+      "description": "Elektroinstallateur berührt die Netzwechselspannung von 230 V",
+      "chunk_id": 5
+    },
+    {
+      "source": "Elektroinstallateur",
+      "target": "Körperwiderstand",
+      "relation": "hat",
+      "description": "Körperwiderstand beträgt 1 kΩ",
+      "chunk_id": 5
+    },
+    {
+      "source": "Körperwiderstand",
+      "target": "Körperstrom",
+      "relation": "beeinflusst",
+      "description": "Körperwiderstand beeinflusst den Körperstrom IK",
+      "chunk_id": 5
+    },
+    {
+      "source": "Netzwechselspannung",
+      "target": "Körperstrom",
+      "relation": "verursacht",
+      "description": "Netzwechselspannung verursacht Körperstrom IK",
+      "chunk_id": 5
+    },
+    {
+      "source": "Einwirkdauer",
+      "target": "Gefährdung",
+      "relation": "bestimmt",
+      "description": "Einwirkdauer von 0,1 s bestimmt die Gefährdung für den Verunglückten",
+      "chunk_id": 5
+    },
+    {
+      "source": "Leitungswiderstand",
+      "target": "Fehlerwiderstand",
+      "relation": "ist Teil von",
+      "description": "Leitungswiderstand und Fehlerwiderstand sind Teil des Gesamtwiderstands",
+      "chunk_id": 5
+    },
+    {
+      "source": "Fehlerwiderstand",
+      "target": "Körperwiderstand",
+      "relation": "ist Teil von",
+      "description": "Fehlerwiderstand und Körperwiderstand sind Teil des Gesamtwiderstands",
+      "chunk_id": 5
+    },
+    {
+      "source": "Standortwiderstand",
+      "target": "Erdübergangswiderstand",
+      "relation": "ist Teil von",
+      "description": "Standortwiderstand und Erdübergangswiderstand sind Teil des Gesamtwiderstands",
+      "chunk_id": 5
+    },
+    {
+      "source": "Fehlerwiderstand",
+      "target": "Körperstrom",
+      "relation": "beeinflusst",
+      "description": "Fehlerwiderstand beeinflusst den Fehlerstrom IF",
+      "chunk_id": 5
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Gefährdung",
+      "relation": "verringert",
+      "description": "Sicherheitsregeln dienen zur Verringerung der Gefährdung",
+      "chunk_id": 5
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Freischalten",
+      "relation": "beinhaltet",
+      "description": "Freischalten ist eine der Sicherheitsregeln",
+      "chunk_id": 5
+    },
+    {
+      "source": "Elektroinstallateur",
+      "target": "Netzwechselspannung",
+      "relation": "berührt",
+      "description": "Elektroinstallateur berührt Netzwechselspannung bei Reparatur",
+      "chunk_id": 6
+    },
+    {
+      "source": "Körperstrom",
+      "target": "Netzwechselspannung",
+      "relation": "berechnet aus",
+      "description": "Körperstrom wird aus Netzwechselspannung und Körperwiderstand berechnet",
+      "chunk_id": 6
+    },
+    {
+      "source": "Körperstrom",
+      "target": "Körperwiderstand",
+      "relation": "abhängig von",
+      "description": "Körperstrom hängt vom Körperwiderstand ab",
+      "chunk_id": 6
+    },
+    {
+      "source": "Gefährdung",
+      "target": "Körperstrom",
+      "relation": "abhängig von",
+      "description": "Gefährdung hängt vom Körperstrom ab",
+      "chunk_id": 6
+    },
+    {
+      "source": "Gefährdung",
+      "target": "Herzflimmern",
+      "relation": "enthält Gefahr",
+      "description": "Gefährdung im Bereich 3 beinhaltet Gefahr von Herzflimmern",
+      "chunk_id": 6
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Freischalten",
+      "relation": "beinhaltet",
+      "description": "Erste Sicherheitsregel ist Freischalten",
+      "chunk_id": 6
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Gegen Wiedereinschalten sichern",
+      "relation": "beinhaltet",
+      "description": "Zweite Sicherheitsregel ist Gegen Wiedereinschalten sichern",
+      "chunk_id": 6
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Spannungsfreiheit feststellen",
+      "relation": "beinhaltet",
+      "description": "Dritte Sicherheitsregel ist Spannungsfreiheit feststellen",
+      "chunk_id": 6
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Erden und kurzschließen",
+      "relation": "beinhaltet",
+      "description": "Vierte Sicherheitsregel ist Erden und kurzschließen",
+      "chunk_id": 6
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Benachbarte unter Spannung stehende Teile abdecken oder abschranken",
+      "relation": "beinhaltet",
+      "description": "Fünfte Sicherheitsregel ist Benachbarte Teile abdecken oder abschranken",
+      "chunk_id": 6
+    },
+    {
+      "source": "Fehlerhafte Installation",
+      "target": "Schutzleiter nicht angeschlossen",
+      "relation": "ist Ursache",
+      "description": "Fehlerhafte Installation durch nicht angeschlossenen Schutzleiter",
+      "chunk_id": 6
+    },
+    {
+      "source": "IF",
+      "target": "66mA",
+      "relation": "hat Wert",
+      "description": "IF wird mit 66mA angegeben",
+      "chunk_id": 6
+    },
+    {
+      "source": "UB",
+      "target": "Rk'",
+      "relation": "berechnet mit",
+      "description": "Berührspannung UB wird mit Rk' und IF berechnet",
+      "chunk_id": 6
+    },
+    {
+      "source": "UB",
+      "target": "IF",
+      "relation": "abhängig von",
+      "description": "Berührspannung UB hängt vom Fehlerstrom IF ab",
+      "chunk_id": 6
+    },
+    {
+      "source": "Rk'",
+      "target": "66mA",
+      "relation": "verwendet in Berechnung",
+      "description": "Rk' wird mit 66mA in Berechnung verwendet",
+      "chunk_id": 6
+    },
+    {
+      "source": "Fehlerhafte Installation",
+      "target": "Netzwechselspannung",
+      "relation": "führt zu",
+      "description": "Fehlerhafte Installation führt zu elektrischem Schlag bei 230 V",
+      "chunk_id": 6
+    },
+    {
+      "source": "Fehlerhafte Installation",
+      "target": "Schutzleiter",
+      "relation": "hat Fehler an",
+      "description": "Schutzleiter nicht ordnungsgemäß angeschlossen",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerhafte Installation",
+      "target": "230V",
+      "relation": "führt zu",
+      "description": "Fehler führt zu elektrischem Schlag bei 230 V",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Leitungswiderstand",
+      "relation": "enthält",
+      "description": "Widerstand im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Fehlerwiderstand",
+      "relation": "enthält",
+      "description": "Widerstand im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Körperwiderstand",
+      "relation": "enthält",
+      "description": "Widerstand im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Standortwiderstand",
+      "relation": "enthält",
+      "description": "Widerstand im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Erdübergangswiderstand",
+      "relation": "enthält",
+      "description": "Widerstand im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Person",
+      "relation": "geschlossen durch",
+      "description": "Person schließt den Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Fehlerstromschutzschalter",
+      "relation": "beinhaltet",
+      "description": "Schalter F1 im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Schalter Q1",
+      "relation": "beinhaltet",
+      "description": "Schalter Q1 im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Fehlerstromkreis",
+      "target": "Leitungen L1_L2_L3_N_PE",
+      "relation": "beinhaltet",
+      "description": "Beschriftete Leitungen im Fehlerstromkreis",
+      "chunk_id": 7
+    },
+    {
+      "source": "Körperstrom I_K",
+      "target": "230V",
+      "relation": "berechnet aus",
+      "description": "Körperstrom berechnet mit Spannung 230 V",
+      "chunk_id": 7
+    },
+    {
+      "source": "Körperstrom I_K",
+      "target": "Gesamtwiderstand R_g",
+      "relation": "berechnet aus",
+      "description": "Körperstrom berechnet mit Gesamtwiderstand",
+      "chunk_id": 7
+    },
+    {
+      "source": "Gesamtwiderstand R_g",
+      "target": "Fehlerwiderstand",
+      "relation": "besteht aus",
+      "description": "Summe enthält Fehlerwiderstand",
+      "chunk_id": 7
+    },
+    {
+      "source": "Gesamtwiderstand R_g",
+      "target": "Körperwiderstand",
+      "relation": "besteht aus",
+      "description": "Summe enthält Körperwiderstand",
+      "chunk_id": 7
+    },
+    {
+      "source": "Gesamtwiderstand R_g",
+      "target": "Standortwiderstand",
+      "relation": "besteht aus",
+      "description": "Summe enthält Standortwiderstand",
+      "chunk_id": 7
+    },
+    {
+      "source": "Gesamtwiderstand R_g",
+      "target": "Erdübergangswiderstand",
+      "relation": "besteht aus",
+      "description": "Summe enthält Erdübergangswiderstand",
+      "chunk_id": 7
+    },
+    {
+      "source": "Berührungsspannung U_B",
+      "target": "Körperwiderstand",
+      "relation": "berechnet mit",
+      "description": "U_B berechnet mit Körperwiderstand und I_F",
+      "chunk_id": 7
+    },
+    {
+      "source": "Spannung gegen Erde U_F",
+      "target": "Standortwiderstand",
+      "relation": "berechnet mit",
+      "description": "U_F berechnet mit Standortwiderstand und I_F",
+      "chunk_id": 7
+    },
+    {
+      "source": "Spannung gegen Erde U_F",
+      "target": "Körperwiderstand",
+      "relation": "berechnet mit",
+      "description": "U_F berechnet mit Körperwiderstand und I_F",
+      "chunk_id": 7
+    },
+    {
+      "source": "Berührungsspannung_UB",
+      "target": "Widerstand_RK",
+      "relation": "abhängig von",
+      "description": "UB wird berechnet als RK mal IF",
+      "chunk_id": 8
+    },
+    {
+      "source": "Berührungsspannung_UB",
+      "target": "Fehlerstrom_IF",
+      "relation": "abhängig von",
+      "description": "UB wird berechnet als RK mal IF",
+      "chunk_id": 8
+    },
+    {
+      "source": "Körperstrom_IK",
+      "target": "Spannung_gegen_Erde_UF",
+      "relation": "berechnet aus",
+      "description": "IK = U / R",
+      "chunk_id": 8
+    },
+    {
+      "source": "Spannung_gegen_Erde_UF",
+      "target": "Widerstand_RF",
+      "relation": "besteht aus",
+      "description": "UF = (RF + RK + RX + RE) * IF",
+      "chunk_id": 8
+    },
+    {
+      "source": "Spannung_gegen_Erde_UF",
+      "target": "Widerstand_RK",
+      "relation": "besteht aus",
+      "description": "UF = (RF + RK + RX + RE) * IF",
+      "chunk_id": 8
+    },
+    {
+      "source": "Spannung_gegen_Erde_UF",
+      "target": "Widerstand_RX",
+      "relation": "besteht aus",
+      "description": "UF = (RF + RK + RX + RE) * IF",
+      "chunk_id": 8
+    },
+    {
+      "source": "Spannung_gegen_Erde_UF",
+      "target": "Widerstand_RE",
+      "relation": "besteht aus",
+      "description": "UF = (RF + RK + RX + RE) * IF",
+      "chunk_id": 8
+    },
+    {
+      "source": "Spannung_gegen_Erde_UF",
+      "target": "Fehlerstrom_IF",
+      "relation": "abhängig von",
+      "description": "UF = (RF + RK + RX + RE) * IF",
+      "chunk_id": 8
+    },
+    {
+      "source": "Gefährdung_0_23A",
+      "target": "Körperstrom_IK",
+      "relation": "bezieht sich auf",
+      "description": "Gefährdung bei 0,23 A Körperstrom",
+      "chunk_id": 8
+    },
+    {
+      "source": "Sicherheitsregeln",
+      "target": "Gefährdung_0_23A",
+      "relation": "verhindert",
+      "description": "Sicherheitsregeln sollen Unfälle und Gefährdungen vermeiden",
+      "chunk_id": 8
+    },
+    {
+      "source": "Fehlerhafte_Installation",
+      "target": "Fehlerstrom_IF",
+      "relation": "führt zu",
+      "description": "Fehlerhafte Installation kann gefährliche Stromflüsse verursachen",
+      "chunk_id": 8
+    },
+    {
+      "source": "Schaltbild",
+      "target": "Fehlerstrom_IF",
+      "relation": "visualisiert",
+      "description": "Schaltbild zeigt Fehlerstromkreis",
+      "chunk_id": 8
+    },
+    {
+      "source": "Schaltbild",
+      "target": "Widerstand_RF",
+      "relation": "visualisiert",
+      "description": "Schaltbild zeigt beteiligte Widerstände",
+      "chunk_id": 8
+    },
+    {
+      "source": "Schaltbild",
+      "target": "Widerstand_RK",
+      "relation": "visualisiert",
+      "description": "Schaltbild zeigt beteiligte Widerstände",
+      "chunk_id": 8
+    },
+    {
+      "source": "Schaltbild",
+      "target": "Widerstand_RX",
+      "relation": "visualisiert",
+      "description": "Schaltbild zeigt beteiligte Widerstände",
+      "chunk_id": 8
+    },
+    {
+      "source": "Schaltbild",
+      "target": "Widerstand_RE",
+      "relation": "visualisiert",
+      "description": "Schaltbild zeigt beteiligte Widerstände",
+      "chunk_id": 8
+    },
+    {
+      "source": "Messtechnik",
+      "target": "Sinnbilder",
+      "relation": "beinhaltet",
+      "description": "Sinnbilder sind Grundbegriffe der Messtechnik",
+      "chunk_id": 9
+    },
+    {
+      "source": "Messtechnik",
+      "target": "Messwerke",
+      "relation": "beinhaltet",
+      "description": "Messwerke sind Grundbegriffe der Messtechnik",
+      "chunk_id": 9
+    },
+    {
+      "source": "Messfehler",
+      "target": "Persönliche Fehler",
+      "relation": "umfasst",
+      "description": "Messfehler umfassen persönliche Fehler",
+      "chunk_id": 9
+    },
+    {
+      "source": "Messfehler",
+      "target": "Einflussfehler",
+      "relation": "umfasst",
+      "description": "Messfehler umfassen Einflussfehler",
+      "chunk_id": 9
+    },
+    {
+      "source": "Messfehler",
+      "target": "Systematische Fehler",
+      "relation": "umfasst",
+      "description": "Messfehler umfassen systematische Fehler",
+      "chunk_id": 9
+    },
+    {
+      "source": "Messfehler",
+      "target": "Anzeigefehler",
+      "relation": "umfasst",
+      "description": "Messfehler umfassen Anzeigefehler",
+      "chunk_id": 9
+    },
+    {
+      "source": "Digitalmessgerät",
+      "target": "Messwert",
+      "relation": "zeigt an",
+      "description": "Digitalmessgeräte zeigen Messwerte an",
+      "chunk_id": 9
+    },
+    {
+      "source": "Digitalmessgerät",
+      "target": "Absoluter Fehler",
+      "relation": "hat",
+      "description": "Digitalmessgeräte haben einen zulässigen absoluten Fehler F",
+      "chunk_id": 9
+    },
+    {
+      "source": "Digitalmessgerät",
+      "target": "Relativer Fehler",
+      "relation": "hat",
+      "description": "Digitalmessgeräte haben einen relativen Fehler f",
+      "chunk_id": 9
+    },
+    {
+      "source": "Digitalmessgerät",
+      "target": "Skalenkonstante",
+      "relation": "hat",
+      "description": "Digitalmessgeräte besitzen eine Skalenkonstante",
+      "chunk_id": 9
+    },
+    {
+      "source": "Messwert",
+      "target": "Obergrenze",
+      "relation": "bestimmt",
+      "description": "Obergrenze wo wird aus Messwert und Fehler berechnet",
+      "chunk_id": 9
+    },
+    {
+      "source": "Messwert",
+      "target": "Untergrenze",
+      "relation": "bestimmt",
+      "description": "Untergrenze wu wird aus Messwert und Fehler berechnet",
+      "chunk_id": 9
+    },
+    {
+      "source": "Wechselstrom",
+      "target": "Drehstromsystem",
+      "relation": "ist Teil von",
+      "description": "Wechselstrom ist Teil des Drehstromsystems",
+      "chunk_id": 9
+    },
+    {
+      "source": "Drehstromsystem",
+      "target": "Kompensation",
+      "relation": "nutzt",
+      "description": "Kompensation wird im Drehstromsystem angewendet",
+      "chunk_id": 9
+    },
+    {
+      "source": "Skalenkonstante",
+      "target": "Messwert",
+      "relation": "beeinflusst",
+      "description": "Skalenkonstante beeinflusst die Anzeige des Messwerts",
+      "chunk_id": 9
+    },
+    {
+      "source": "Absoluter Fehler",
+      "target": "Obergrenze",
+      "relation": "wird addiert zu",
+      "description": "Absoluter Fehler wird zur Obergrenze addiert",
+      "chunk_id": 9
+    },
+    {
+      "source": "Absoluter Fehler",
+      "target": "Untergrenze",
+      "relation": "wird subtrahiert von",
+      "description": "Absoluter Fehler wird von Untergrenze subtrahiert",
+      "chunk_id": 9
+    },
+    {
+      "source": "Relativer Fehler",
+      "target": "Messwert",
+      "relation": "bezieht sich auf",
+      "description": "Relativer Fehler bezieht sich auf den Messwert",
+      "chunk_id": 9
+    },
+    {
+      "source": "Elektroenergiesystem",
+      "target": "Großkraftwerk",
+      "relation": "beinhaltet",
+      "description": "Das Elektroenergiesystem umfasst Großkraftwerke zur Erzeugung",
+      "chunk_id": 10
+    },
+    {
+      "source": "Elektroenergiesystem",
+      "target": "Höchstspannungsnetz",
+      "relation": "beinhaltet",
+      "description": "Das System enthält das Höchstspannungsnetz mit 380kV",
+      "chunk_id": 10
+    },
+    {
+      "source": "Elektroenergiesystem",
+      "target": "Hochspannungsnetz",
+      "relation": "beinhaltet",
+      "description": "Das System enthält das Hochspannungsnetz mit 245kV und 123kV",
+      "chunk_id": 10
+    },
+    {
+      "source": "Elektroenergiesystem",
+      "target": "Ortsnetz",
+      "relation": "beinhaltet",
+      "description": "Das System umfasst Ortsnetze für Kleinabnehmer",
+      "chunk_id": 10
+    },
+    {
+      "source": "Transformator",
+      "target": "Elektroenergiesystem",
+      "relation": "ist Teil von",
+      "description": "Transformatoren sind Bauteile im Elektroenergiesystem",
+      "chunk_id": 10
+    },
+    {
+      "source": "Großkraftwerk",
+      "target": "Höchstspannungsnetz",
+      "relation": "speist ein",
+      "description": "Großkraftwerke speisen das Höchstspannungsnetz ein",
+      "chunk_id": 10
+    },
+    {
+      "source": "Höchstspannungsnetz",
+      "target": "Hochspannungsnetz",
+      "relation": "verbindet mit",
+      "description": "Das Höchstspannungsnetz verbindet sich mit dem Hochspannungsnetz",
+      "chunk_id": 10
+    },
+    {
+      "source": "Hochspannungsnetz",
+      "target": "Mittlere Spannung",
+      "relation": "führt zu",
+      "description": "Das Hochspannungsnetz führt zur mittleren Spannungsebene",
+      "chunk_id": 10
+    },
+    {
+      "source": "Mittlere Spannung",
+      "target": "Ortsnetz",
+      "relation": "versorgt",
+      "description": "Die mittlere Spannung versorgt Ortsnetze",
+      "chunk_id": 10
+    },
+    {
+      "source": "Zuwachsraten",
+      "target": "Elektrizitätswirtschaft",
+      "relation": "beschreibt",
+      "description": "Zuwachsraten beschreiben das Wachstum der Elektrizitätswirtschaft",
+      "chunk_id": 10
+    },
+    {
+      "source": "Elektrizitätswirtschaft",
+      "target": "Speichermöglichkeit",
+      "relation": "hat Einschränkung",
+      "description": "Technisch gibt es praktisch keine Speichermöglichkeit",
+      "chunk_id": 10
+    },
+    {
+      "source": "Elektrizitätswirtschaft",
+      "target": "Anschlussverpflichtung",
+      "relation": "beinhaltet",
+      "description": "Die Elektrizitätswirtschaft beinhaltet Anschlussverpflichtungen",
+      "chunk_id": 10
+    },
+    {
+      "source": "Elektrizitätswirtschaft",
+      "target": "Investitionskosten",
+      "relation": "erfordert",
+      "description": "Die Elektrizitätswirtschaft erfordert hohe Investitionskosten",
+      "chunk_id": 10
+    },
+    {
+      "source": "Investitionskosten",
+      "target": "Elektrizitätswirtschaft",
+      "relation": "beeinflusst",
+      "description": "Hohe Investitionskosten beeinflussen die Wirtschaftlichkeit",
+      "chunk_id": 10
+    },
+    {
+      "source": "Anschlussverpflichtung",
+      "target": "sichere Stromversorgung",
+      "relation": "sichert",
+      "description": "Anschlussverpflichtung gewährleistet sichere Stromversorgung",
+      "chunk_id": 11
+    },
+    {
+      "source": "Wirtschaftlichkeit",
+      "target": "Grundlastkraftwerke",
+      "relation": "beeinflusst",
+      "description": "Wirtschaftlichkeit ist wichtig bei Grundlastkraftwerken",
+      "chunk_id": 11
+    },
+    {
+      "source": "Wettbewerb",
+      "target": "Trennung Erzeugung-Transport-Vertrieb",
+      "relation": "fördert",
+      "description": "Wettbewerb wird durch Trennung von Erzeugung, Transport und Vertrieb gefördert",
+      "chunk_id": 11
+    },
+    {
+      "source": "Grundlastkraftwerke",
+      "target": "Hohe Investitionskosten",
+      "relation": "hat",
+      "description": "Grundlastkraftwerke haben hohe Investitionskosten",
+      "chunk_id": 11
+    },
+    {
+      "source": "Grundlastkraftwerke",
+      "target": "Lange Lebensdauer",
+      "relation": "hat",
+      "description": "Grundlastkraftwerke haben eine lange Lebensdauer von ca. 40 Jahren",
+      "chunk_id": 11
+    },
+    {
+      "source": "Grundlastkraftwerke",
+      "target": "Lange Planungszeiträume",
+      "relation": "erfordern",
+      "description": "Grundlastkraftwerke benötigen lange Planungszeiträume",
+      "chunk_id": 11
+    },
+    {
+      "source": "Regelenergie",
+      "target": "Spitzenlast",
+      "relation": "regelt",
+      "description": "Regelenergie dient zur schnellen Anpassung bei Spitzenlast",
+      "chunk_id": 11
+    },
+    {
+      "source": "Pumpspeicherkraftwerke",
+      "target": "Regelenergie",
+      "relation": "erbringen",
+      "description": "Pumpspeicherkraftwerke liefern schnelle Regelenergie",
+      "chunk_id": 11
+    },
+    {
+      "source": "Gasturbinenkraftwerke",
+      "target": "Regelenergie",
+      "relation": "erbringen",
+      "description": "Gasturbinenkraftwerke liefern schnelle Regelenergie",
+      "chunk_id": 11
+    },
+    {
+      "source": "Einspeiseprognose",
+      "target": "Lastprognose",
+      "relation": "ergänzt",
+      "description": "Einspeiseprognose ergänzt die Lastprognose",
+      "chunk_id": 11
+    },
+    {
+      "source": "Spitzenlast",
+      "target": "Regelenergie",
+      "relation": "benötigt",
+      "description": "Spitzenlast erfordert schnelle Regelbarkeit der Regelenergie",
+      "chunk_id": 12
+    },
+    {
+      "source": "Regelenergie",
+      "target": "Pumpspeicherkraftwerk",
+      "relation": "wird bereitgestellt von",
+      "description": "Regelenergie wird durch Pumpspeicherkraftwerke bereitgestellt",
+      "chunk_id": 12
+    },
+    {
+      "source": "Regelenergie",
+      "target": "Gasturbinenkraftwerk",
+      "relation": "wird bereitgestellt von",
+      "description": "Regelenergie wird durch Gasturbinenkraftwerke bereitgestellt",
+      "chunk_id": 12
+    },
+    {
+      "source": "Fremdeinspeiser",
+      "target": "Industriekraftwerk",
+      "relation": "umfasst",
+      "description": "Fremdeinspeiser umfassen Industriekraftwerke",
+      "chunk_id": 12
+    },
+    {
+      "source": "Pumpspeicher",
+      "target": "Pumpspeicherkraftwerk",
+      "relation": "repräsentiert Anteil",
+      "description": "Pumpspeicher gibt den Anteil der Pumpspeicherleistung an",
+      "chunk_id": 12
+    },
+    {
+      "source": "Spitzenlastkraftwerk",
+      "target": "Gas",
+      "relation": "Anteil erhöht",
+      "description": "Gasanteil bei Spitzenlastkraftwerken steigt auf über 15%",
+      "chunk_id": 12
+    },
+    {
+      "source": "Spitzenlastkraftwerk",
+      "target": "Steinkohle",
+      "relation": "Anteil ca.",
+      "description": "Steinkohleanteil bei Spitzenlastkraftwerken ca. 30%",
+      "chunk_id": 12
+    },
+    {
+      "source": "Spitzenlastkraftwerk",
+      "target": "Braunkohle",
+      "relation": "Anteil variiert",
+      "description": "Braunkohleanteil bei Spitzenlastkraftwerken variiert zwischen 13% und über 23%",
+      "chunk_id": 12
+    },
+    {
+      "source": "Wind",
+      "target": "Verbundnetz",
+      "relation": "ist Teil von",
+      "description": "Windenergie ist Teil des Verbundnetzes",
+      "chunk_id": 12
+    },
+    {
+      "source": "Verbundnetz",
+      "target": "Einzelgenerator",
+      "relation": "bietet Vorteil gegenüber",
+      "description": "Verbundnetz benötigt weniger Reserverhaltung als Einzelgenerator im Inselnetz",
+      "chunk_id": 12
+    },
+    {
+      "source": "Verbundnetz",
+      "target": "Spitzenlast",
+      "relation": "glättet",
+      "description": "Verbundnetz ermöglicht regionalen Ausgleich der Spitzenlast",
+      "chunk_id": 12
+    },
+    {
+      "source": "Stromerzeugungskosten",
+      "target": "Gasturbine",
+      "relation": "erhöht Kosten",
+      "description": "Gasturbine verursacht hohe Kosten durch Brennstoff und Verschleiß",
+      "chunk_id": 12
+    },
+    {
+      "source": "Stromerzeugungskosten",
+      "target": "Lautwasser-KW",
+      "relation": "erhöht Kosten",
+      "description": "Lautwasser-KW verursacht hohe Anlagenkosten",
+      "chunk_id": 12
+    },
+    {
+      "source": "Kapitaldienst",
+      "target": "Bewegliche_Kosten",
+      "relation": "beinhaltet",
+      "description": "Kapitaldienst umfasst bewegliche Kosten wie Brennstoff und Verwaltung",
+      "chunk_id": 13
+    },
+    {
+      "source": "Bewegliche_Kosten",
+      "target": "Brennstoff",
+      "relation": "umfasst",
+      "description": "Bewegliche Kosten beinhalten Brennstoffkosten",
+      "chunk_id": 13
+    },
+    {
+      "source": "Bewegliche_Kosten",
+      "target": "Verwaltung",
+      "relation": "umfasst",
+      "description": "Bewegliche Kosten beinhalten Verwaltungskosten",
+      "chunk_id": 13
+    },
+    {
+      "source": "Bewegliche_Kosten",
+      "target": "Zusätzliche_Betriebskosten",
+      "relation": "umfasst",
+      "description": "Bewegliche Kosten beinhalten zusätzliche Betriebskosten",
+      "chunk_id": 13
+    },
+    {
+      "source": "Bewegliche_Kosten",
+      "target": "Unterhalt",
+      "relation": "umfasst",
+      "description": "Bewegliche Kosten beinhalten Unterhaltskosten",
+      "chunk_id": 13
+    },
+    {
+      "source": "Bewegliche_Kosten",
+      "target": "Betriebskosten",
+      "relation": "ist Teil von",
+      "description": "Bewegliche Kosten sind Teil der Betriebskosten",
+      "chunk_id": 13
+    },
+    {
+      "source": "Gasturbine",
+      "target": "Brennstoff",
+      "relation": "verursacht",
+      "description": "Gasturbine verursacht Brennstoffkosten",
+      "chunk_id": 13
+    },
+    {
+      "source": "Kernenergie",
+      "target": "Brennstoff",
+      "relation": "verursacht",
+      "description": "Kernenergie verursacht Brennstoffkosten, die wegen Entsorgung steigen",
+      "chunk_id": 13
+    },
+    {
+      "source": "Erneuerbare_Energien",
+      "target": "Photovoltaik",
+      "relation": "beinhaltet",
+      "description": "Erneuerbare Energien beinhalten Photovoltaik",
+      "chunk_id": 13
+    },
+    {
+      "source": "Erneuerbare_Energien",
+      "target": "Windenergie",
+      "relation": "beinhaltet",
+      "description": "Erneuerbare Energien beinhalten Windenergie",
+      "chunk_id": 13
+    },
+    {
+      "source": "Erneuerbare_Energien",
+      "target": "Biomasse",
+      "relation": "beinhaltet",
+      "description": "Erneuerbare Energien beinhalten Biomasse",
+      "chunk_id": 13
+    },
+    {
+      "source": "Erneuerbare_Energien",
+      "target": "Biogener_Hausmüll",
+      "relation": "beinhaltet",
+      "description": "Erneuerbare Energien beinhalten biogenen Hausmüll",
+      "chunk_id": 13
+    },
+    {
+      "source": "Erneuerbare_Energien",
+      "target": "Wasser",
+      "relation": "beinhaltet",
+      "description": "Erneuerbare Energien beinhalten Wasserenergie",
+      "chunk_id": 13
+    },
+    {
+      "source": "Wechselstrom",
+      "target": "Leistungsfaktor",
+      "relation": "beschreibt",
+      "description": "Leistungsfaktor ist eine Eigenschaft von Wechselstrom",
+      "chunk_id": 13
+    },
+    {
+      "source": "Wechselstrom",
+      "target": "Induktivität",
+      "relation": "beeinflusst",
+      "description": "Induktivität ist eine Größe im Wechselstromkreis",
+      "chunk_id": 13
+    },
+    {
+      "source": "Wechselstrom",
+      "target": "Kapazität",
+      "relation": "beeinflusst",
+      "description": "Kapazität ist eine Größe im Wechselstromkreis",
+      "chunk_id": 13
+    },
+    {
+      "source": "Kompensation",
+      "target": "Wechselstrom",
+      "relation": "verbessert",
+      "description": "Kompensation dient zur Verbesserung der Blindleistung im Wechselstrom",
+      "chunk_id": 13
+    },
+    {
+      "source": "Gleichstrom",
+      "target": "Wechselstrom",
+      "relation": "ist Alternative zu",
+      "description": "Gleichstrom wird als Alternative zu Wechselstrom genannt",
+      "chunk_id": 13
+    },
+    {
+      "source": "Blind- und Wirkwiderstand",
+      "target": "Wechselstrom",
+      "relation": "ist Bestandteil von",
+      "description": "Blind- und Wirkwiderstand wird im Wechselstrom betrachtet",
+      "chunk_id": 14
+    },
+    {
+      "source": "Parallelschaltung",
+      "target": "Leitwert",
+      "relation": "verwendet",
+      "description": "Parallelschaltungen rechnen mit Leitwerten",
+      "chunk_id": 14
+    },
+    {
+      "source": "Drehstromsystem",
+      "target": "Wechselstrom",
+      "relation": "ist eine Form von",
+      "description": "Drehstromsystem ist eine Form des Wechselstroms",
+      "chunk_id": 14
+    },
+    {
+      "source": "Gleichstrom",
+      "target": "Dauermagnet",
+      "relation": "erzeugt",
+      "description": "Gleichstrom erzeugt Dauermagnet mit Nord- und Südpol",
+      "chunk_id": 14
+    },
+    {
+      "source": "Erregerstrom_Ie",
+      "target": "magnetisches_Feld",
+      "relation": "erzeugt",
+      "description": "Erregerstrom erzeugt ein magnetisches Feld",
+      "chunk_id": 15
+    },
+    {
+      "source": "magnetisches_Feld",
+      "target": "Ständerwicklung_1",
+      "relation": "schließt sich über",
+      "description": "Magnetfeld schließt sich über den Ständer",
+      "chunk_id": 15
+    },
+    {
+      "source": "magnetisches_Feld",
+      "target": "Drehung_Erregerfeld",
+      "relation": "führt zu",
+      "description": "Drehung des Erregerfeldes entsteht durch das magnetische Feld",
+      "chunk_id": 15
+    },
+    {
+      "source": "Drehung_Erregerfeld",
+      "target": "Wicklung_41",
+      "relation": "induziert Spannung in",
+      "description": "Drehung induziert Spannung in Wicklung 41",
+      "chunk_id": 15
+    },
+    {
+      "source": "Drehung_Erregerfeld",
+      "target": "Wicklung_12",
+      "relation": "induziert Spannung in",
+      "description": "Drehung induziert Spannung in Wicklung 12",
+      "chunk_id": 15
+    },
+    {
+      "source": "Drehung_Erregerfeld",
+      "target": "Wicklung_3",
+      "relation": "induziert Spannung in",
+      "description": "Drehung induziert Spannung in Wicklung 3",
+      "chunk_id": 15
+    },
+    {
+      "source": "Wicklung_41",
+      "target": "Spannung",
+      "relation": "hat",
+      "description": "Wicklung 41 hat eine induzierte Spannung",
+      "chunk_id": 15
+    },
+    {
+      "source": "Wicklung_12",
+      "target": "Spannung",
+      "relation": "hat",
+      "description": "Wicklung 12 hat eine induzierte Spannung",
+      "chunk_id": 15
+    },
+    {
+      "source": "Wicklung_3",
+      "target": "Spannung",
+      "relation": "hat",
+      "description": "Wicklung 3 hat eine induzierte Spannung",
+      "chunk_id": 15
+    },
+    {
+      "source": "Spannung",
+      "target": "Phasenverschiebung_120Grad",
+      "relation": "ist",
+      "description": "Die induzierten Spannungen sind um 120° phasenverschoben",
+      "chunk_id": 15
+    },
+    {
+      "source": "P",
+      "target": "S",
+      "relation": "Teil von",
+      "description": "P ist die Wirkleistung, ein Teil der Scheinleistung S",
+      "chunk_id": 16
+    },
+    {
+      "source": "Q",
+      "target": "S",
+      "relation": "Teil von",
+      "description": "Q ist die Blindleistung, ein Teil der Scheinleistung S",
+      "chunk_id": 16
+    },
+    {
+      "source": "Drehstromsystem",
+      "target": "Phase",
+      "relation": "besteht aus",
+      "description": "Drehstromsystem besteht aus drei Phasen",
+      "chunk_id": 16
+    },
+    {
+      "source": "Drehstromsystem",
+      "target": "Neutralleiter",
+      "relation": "enthält",
+      "description": "Drehstromsystem enthält einen Neutralleiter",
+      "chunk_id": 16
+    },
+    {
+      "source": "TN-C",
+      "target": "PEN-Leiter",
+      "relation": "verwendet",
+      "description": "TN-C System verwendet kombinierten PEN-Leiter",
+      "chunk_id": 16
+    },
+    {
+      "source": "TN-S",
+      "target": "PEN-Leiter",
+      "relation": "trennt",
+      "description": "TN-S System trennt PEN in Neutralleiter und Schutzleiter",
+      "chunk_id": 16
+    },
+    {
+      "source": "TN-C-S",
+      "target": "TN-C",
+      "relation": "kombiniert mit",
+      "description": "TN-C-S kombiniert TN-C und TN-S Eigenschaften",
+      "chunk_id": 16
+    },
+    {
+      "source": "TT",
+      "target": "Drehstromsystem",
+      "relation": "ist eine Variante von",
+      "description": "TT ist eine Kennzeichnung eines Drehstromsystems",
+      "chunk_id": 16
+    },
+    {
+      "source": "IT",
+      "target": "Drehstromsystem",
+      "relation": "ist eine Variante von",
+      "description": "IT ist eine Kennzeichnung eines Drehstromsystems",
+      "chunk_id": 16
+    },
+    {
+      "source": "Herd",
+      "target": "Spannung",
+      "relation": "beeinflusst",
+      "description": "Herdanschalten kann Spannung senken",
+      "chunk_id": 16
+    },
+    {
+      "source": "Spannung",
+      "target": "Drehstromsystem",
+      "relation": "ist Teil von",
+      "description": "Spannung ist eine Größe im Drehstromsystem",
+      "chunk_id": 16
+    },
+    {
+      "source": "symmetrische Belastung",
+      "target": "Drehstromsystem",
+      "relation": "tritt auf in",
+      "description": "Symmetrische Belastung ist eine Belastungsart im Drehstromsystem",
+      "chunk_id": 16
+    },
+    {
+      "source": "unsymmetrische Belastung",
+      "target": "Drehstromsystem",
+      "relation": "tritt auf in",
+      "description": "Unsymmetrische Belastung ist eine Belastungsart im Drehstromsystem",
+      "chunk_id": 16
+    },
+    {
+      "source": "RCD",
+      "target": "TN-C",
+      "relation": "nicht vorhanden in",
+      "description": "TN-C System hat keinen RCD",
+      "chunk_id": 16
+    },
+    {
+      "source": "Phase",
+      "target": "Neutralleiter",
+      "relation": "bezieht sich auf",
+      "description": "Phasen und Neutralleiter sind Leiter im Drehstromsystem",
+      "chunk_id": 16
+    },
+    {
+      "source": "PEN-Leiter",
+      "target": "Neutralleiter",
+      "relation": "kombiniert mit",
+      "description": "PEN-Leiter kombiniert Schutz- und Neutralleiter",
+      "chunk_id": 16
+    },
+    {
+      "source": "I",
+      "target": "Drehstromsystem",
+      "relation": "ist Messwert in",
+      "description": "Strom I ist eine Messgröße im Drehstromsystem",
+      "chunk_id": 16
+    },
+    {
+      "source": "E",
+      "target": "Drehstromsystem",
+      "relation": "ist Messwert in",
+      "description": "Spannung E ist eine Messgröße im Drehstromsystem",
+      "chunk_id": 16
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "R",
+      "relation": "enthält",
+      "description": "Reihenschaltung besteht aus Widerstand R",
+      "chunk_id": 17
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "InduktiverBlindwiderstand",
+      "relation": "enthält",
+      "description": "Reihenschaltung enthält induktiven Blindwiderstand",
+      "chunk_id": 17
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "U",
+      "relation": "wird betrieben mit",
+      "description": "Spannung von 24 V liegt an der Reihenschaltung an",
+      "chunk_id": 17
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "I",
+      "relation": "hat Strom",
+      "description": "Strom von 4,8 mA fließt durch die Reihenschaltung",
+      "chunk_id": 17
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "Z",
+      "relation": "hat",
+      "description": "Scheinwiderstand Z soll berechnet werden",
+      "chunk_id": 17
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "XL",
+      "relation": "hat",
+      "description": "Induktiver Blindwiderstand XL soll berechnet werden",
+      "chunk_id": 17
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "UW",
+      "relation": "hat",
+      "description": "Teilspannung UW am Widerstand soll berechnet werden",
+      "chunk_id": 17
+    },
+    {
+      "source": "Reihenschaltung",
+      "target": "UL",
+      "relation": "hat",
+      "description": "Teilspannung UL am Blindwiderstand soll berechnet werden",
+      "chunk_id": 17
+    },
+    {
+      "source": "Leuchtstofflampen",
+      "target": "Vorschaltgerät",
+      "relation": "benötigt",
+      "description": "Vorschaltgerät ist für den Betrieb aller Lampen notwendig",
+      "chunk_id": 17
+    },
+    {
+      "source": "Vorschaltgerät",
+      "target": "Leuchtstofflampen",
+      "relation": "versorgt",
+      "description": "Vorschaltgerät versorgt jede Lampe mit 11 W",
+      "chunk_id": 17
+    },
+    {
+      "source": "Leuchtstofflampen",
+      "target": "cosPhi",
+      "relation": "hat",
+      "description": "Stromstärke wird für cos φ = 0,5 und 0,9 berechnet",
+      "chunk_id": 17
+    },
+    {
+      "source": "cosPhi",
+      "target": "Kompensation",
+      "relation": "wird verändert durch",
+      "description": "cos φ kann durch Kompensation verändert werden",
+      "chunk_id": 17
+    },
+    {
+      "source": "Kompensation",
+      "target": "cosPhi",
+      "relation": "verändert",
+      "description": "Kompensation verändert den Leistungsfaktor cos φ",
+      "chunk_id": 17
+    },
+    {
+      "source": "Cosy",
+      "target": "Spannung_230V",
+      "relation": "bezieht sich auf",
+      "description": "Cosy wird bei 230V berechnet",
+      "chunk_id": 18
+    },
+    {
+      "source": "Strom_I",
+      "target": "Spannung_230V",
+      "relation": "wird gemessen bei",
+      "description": "Strom I wird bei 230V angegeben",
+      "chunk_id": 18
+    },
+    {
+      "source": "Strom_Iz",
+      "target": "Spannung_230V",
+      "relation": "wird gemessen bei",
+      "description": "Strom Iz wird bei 230V angegeben",
+      "chunk_id": 18
+    },
+    {
+      "source": "Kompensation",
+      "target": "Cosφ",
+      "relation": "führt zu",
+      "description": "Kompensation führt zu Cosφ = 0,9",
+      "chunk_id": 18
+    },
+    {
+      "source": "Cosφ",
+      "target": "Cosy",
+      "relation": "ist Teil von",
+      "description": "Cosφ wird im Zusammenhang mit Cosy berechnet",
+      "chunk_id": 18
+    },
+    {
+      "source": "Leitungen_und_Kabel",
+      "target": "3_adrig",
+      "relation": "beinhaltet",
+      "description": "Kapitel nennt 3-adrige Leitungen als viel verwendet",
+      "chunk_id": 18
+    },
+    {
+      "source": "Leitungen_und_Kabel",
+      "target": "5_adrig",
+      "relation": "beinhaltet",
+      "description": "Kapitel nennt 5-adrige Leitungen als viel verwendet",
+      "chunk_id": 18
+    },
+    {
+      "source": "Leitungen_und_Kabel",
+      "target": "Mantelleitung_NYM",
+      "relation": "beinhaltet",
+      "description": "Mantelleitungen NYM werden als Standard genannt",
+      "chunk_id": 18
+    },
+    {
+      "source": "Leitungen_und_Kabel",
+      "target": "Stegleitung_IF",
+      "relation": "vermeidet",
+      "description": "Stegleitungen IF sollen vermieden werden",
+      "chunk_id": 18
+    },
+    {
+      "source": "Mantelleitung_NYM",
+      "target": "3_adrig",
+      "relation": "kann sein",
+      "description": "Mantelleitung NYM kann 3-adrig sein",
+      "chunk_id": 18
+    },
+    {
+      "source": "Mantelleitung_NYM",
+      "target": "Leitungen_und_Kabel",
+      "relation": "ist Teil von",
+      "description": "Mantelleitung NYM ist eine genormte Leitung im Kapitel Leitungen und Kabel",
+      "chunk_id": 18
+    },
+    {
+      "source": "Steckdosenleitung",
+      "target": "Mantelleitung_NYM_3x1.5mm2",
+      "relation": "ist ausgeführt als",
+      "description": "Steckdosenleitung wird in Mantelleitung NYM 3 x 1,5 mm² ausgeführt",
+      "chunk_id": 19
+    },
+    {
+      "source": "Steckdosenleitung",
+      "target": "Leitungsschutzschalter_B_13A",
+      "relation": "ist abgesichert mit",
+      "description": "Steckdosenleitung ist mit Leitungsschutzschalter B 13 A abgesichert",
+      "chunk_id": 19
+    },
+    {
+      "source": "Querschnitt",
+      "target": "Mantelleitung_NYM_3x1.5mm2",
+      "relation": "beschreibt",
+      "description": "Querschnitt von 3 x 1,5 mm² beschreibt Mantelleitung",
+      "chunk_id": 19
+    },
+    {
+      "source": "Spannungsfall",
+      "target": "Nennspannung",
+      "relation": "bezieht sich auf",
+      "description": "Spannungsfall darf maximal 3% der Nennspannung betragen",
+      "chunk_id": 19
+    },
+    {
+      "source": "Spannungsfall",
+      "target": "Steckdosenleitung",
+      "relation": "ist relevant für",
+      "description": "Spannungsfall wird für die Steckdosenleitung geprüft",
+      "chunk_id": 19
+    },
+    {
+      "source": "IP_Schutzarten",
+      "target": "Berührschutz",
+      "relation": "beinhaltet",
+      "description": "IP-Schutzarten beinhalten Berührschutz",
+      "chunk_id": 19
+    },
+    {
+      "source": "IP_Schutzarten",
+      "target": "Wasserschutz",
+      "relation": "beinhaltet",
+      "description": "IP-Schutzarten beinhalten Wasserschutz",
+      "chunk_id": 19
+    },
+    {
+      "source": "Schutzschalter",
+      "target": "Thermischer_Auslöser",
+      "relation": "enthält",
+      "description": "Schutzschalter enthält thermischen Auslöser",
+      "chunk_id": 19
+    },
+    {
+      "source": "Schutzschalter",
+      "target": "Thermischer Auslöser",
+      "relation": "enthält",
+      "description": "Schutzschalter enthält thermischen Auslöser für verzögertes Auslösen",
+      "chunk_id": 20
+    },
+    {
+      "source": "Schutzschalter",
+      "target": "Elektromagnetischer Auslöser",
+      "relation": "enthält",
+      "description": "Schutzschalter enthält elektromagnetischen Auslöser für schnelles Auslösen",
+      "chunk_id": 20
+    },
+    {
+      "source": "Thermischer Auslöser",
+      "target": "Schutz vor Überlast",
+      "relation": "erfüllt",
+      "description": "Thermischer Auslöser schützt vor Überlast",
+      "chunk_id": 20
+    },
+    {
+      "source": "Elektromagnetischer Auslöser",
+      "target": "Schutz vor Kurzschluss",
+      "relation": "erfüllt",
+      "description": "Elektromagnetischer Auslöser schützt vor Kurzschluss",
+      "chunk_id": 20
+    },
+    {
+      "source": "Fehlerstrom-Schutzeinrichtung",
+      "target": "Fehlerstrom",
+      "relation": "überwacht",
+      "description": "Fehlerstrom-Schutzeinrichtung überwacht Fehlerströme",
+      "chunk_id": 20
+    },
+    {
+      "source": "Fehlerstrom-Schutzeinrichtung",
+      "target": "Schutz vor Überlast",
+      "relation": "unterstützt",
+      "description": "Fehlerstrom-Schutzeinrichtung schützt vor elektrischen Fehlern und Brandgefahr",
+      "chunk_id": 20
+    },
+    {
+      "source": "Fehlerstrom-Schutzeinrichtung",
+      "target": "Prüfung der RCD-Auslösung",
+      "relation": "unterliegt",
+      "description": "RCD-Auslösung muss alle 6 Monate geprüft werden",
+      "chunk_id": 20
+    },
+    {
+      "source": "RCD Typ A",
+      "target": "Fehlerstrom",
+      "relation": "reagiert auf",
+      "description": "RCD Typ A reagiert auf sinusförmige Wechselfehlerströme und pulsierende Gleichfehlerströme",
+      "chunk_id": 20
+    },
+    {
+      "source": "RCD Typ B",
+      "target": "Fehlerstrom",
+      "relation": "reagiert auf",
+      "description": "RCD Typ B reagiert auf glatte Gleichfehlströme und Fehlerströme unterschiedlicher Frequenz",
+      "chunk_id": 20
+    },
+    {
+      "source": "Fehlerstrom-Schutzeinrichtung",
+      "target": "RCD Typ A",
+      "relation": "beinhaltet",
+      "description": "Fehlerstrom-Schutzeinrichtung umfasst RCD Typ A",
+      "chunk_id": 20
+    },
+    {
+      "source": "Fehlerstrom-Schutzeinrichtung",
+      "target": "RCD Typ B",
+      "relation": "beinhaltet",
+      "description": "Fehlerstrom-Schutzeinrichtung umfasst RCD Typ B",
+      "chunk_id": 20
+    },
+    {
+      "source": "RCD",
+      "target": "IΔn",
+      "relation": "hat Auslösestrom",
+      "description": "RCDs mit IΔn ≤ 30 mA sind vorgeschrieben",
+      "chunk_id": 21
+    },
+    {
+      "source": "RCD",
+      "target": "Steckdosenstromkreis",
+      "relation": "ist vorgeschrieben in",
+      "description": "RCDs sind vorgeschrieben in Steckdosenstromkreisen mit Bemessungsstrom ≤ 20 A",
+      "chunk_id": 21
+    },
+    {
+      "source": "RCD",
+      "target": "Endstromkreis Außenbereich",
+      "relation": "ist vorgeschrieben in",
+      "description": "RCDs sind vorgeschrieben für Endstromkreise im Außenbereich mit Bemessungsstrom ≤ 32 A",
+      "chunk_id": 21
+    },
+    {
+      "source": "RCD",
+      "target": "Abschaltzeit RCD",
+      "relation": "hat maximale Abschaltzeit",
+      "description": "Abschaltzeit darf 0,2 s nicht überschreiten",
+      "chunk_id": 21
+    },
+    {
+      "source": "Schutzpotenzialausgleich",
+      "target": "Haupterdungsschiene",
+      "relation": "wird über verbunden",
+      "description": "Schutzpotenzialausgleich erfolgt über Haupterdungsschiene",
+      "chunk_id": 21
+    },
+    {
+      "source": "Schutzpotenzialausgleichsleitung",
+      "target": "Hauptschutzleiter",
+      "relation": "Querschnitt ist halb so groß wie",
+      "description": "Leiterquerschnitt der Schutzpotenzialausgleichsleitung muss halb so groß sein wie Hauptschutzleiter",
+      "chunk_id": 21
+    },
+    {
+      "source": "Schutzpotenzialausgleichsleitung",
+      "target": "Schutzpotenzialausgleich",
+      "relation": "dient für",
+      "description": "Leitung dient dem Schutzpotenzialausgleich",
+      "chunk_id": 21
+    },
+    {
+      "source": "SLS",
+      "target": "Kurzschluss",
+      "relation": "löst zeitverzögert bei",
+      "description": "SLS löst bei Kurzschlüssen zeitverzögert aus",
+      "chunk_id": 21
+    },
+    {
+      "source": "SLS",
+      "target": "NH-Sicherung",
+      "relation": "arbeitet nach",
+      "description": "SLS löst nicht sofort aus, sondern zeitverzögert nach NH-Sicherung",
+      "chunk_id": 21
+    },
+    {
+      "source": "Errichter",
+      "target": "Inbetriebnahme",
+      "relation": "führt durch",
+      "description": "Errichter prüft bei der ersten Inbetriebnahme",
+      "chunk_id": 22
+    },
+    {
+      "source": "Inbetriebnahme",
+      "target": "Schutzmaßnahmen",
+      "relation": "prüft",
+      "description": "Bei Inbetriebnahme werden Schutzmaßnahmen geprüft",
+      "chunk_id": 22
+    },
+    {
+      "source": "Schutzmaßnahmen",
+      "target": "DIN_VDE_0100_Teil_600",
+      "relation": "geregelt durch",
+      "description": "Schutzmaßnahmen sind in DIN VDE 0100 Teil 600 beschrieben",
+      "chunk_id": 22
+    },
+    {
+      "source": "Schutzmaßnahmen",
+      "target": "Schutzleiter",
+      "relation": "umfasst",
+      "description": "Prüfung der Schutzleiter gehört zu den Schutzmaßnahmen",
+      "chunk_id": 22
+    },
+    {
+      "source": "Schutzmaßnahmen",
+      "target": "Isolationswiderstand",
+      "relation": "umfasst",
+      "description": "Messen der Isolationswiderstände gehört zu den Schutzmaßnahmen",
+      "chunk_id": 22
+    },
+    {
+      "source": "TN-System",
+      "target": "Überstrom-Schutzeinrichtung",
+      "relation": "benötigt",
+      "description": "Im TN-System muss bei Körperschluss die Überstrom-Schutzeinrichtung auslösen",
+      "chunk_id": 22
+    },
+    {
+      "source": "Überstrom-Schutzeinrichtung",
+      "target": "Leitungsschutzschalter",
+      "relation": "z.B.",
+      "description": "Leitungsschutzschalter ist ein Beispiel für Überstrom-Schutzeinrichtung",
+      "chunk_id": 22
+    },
+    {
+      "source": "Überstrom-Schutzeinrichtung",
+      "target": "DIN_VDE_0100_Teil_410",
+      "relation": "Abschaltzeit geregelt durch",
+      "description": "Abschaltzeit der Schutzeinrichtung ist in DIN VDE 0100 Teil 410 festgelegt",
+      "chunk_id": 22
+    },
+    {
+      "source": "Fehlerstrom-Schutzeinrichtung",
+      "target": "Schutzmaßnahmen",
+      "relation": "ist Teil von",
+      "description": "Prüfen der Fehlerstrom-Schutzeinrichtung gehört zu Schutzmaßnahmen",
+      "chunk_id": 22
+    },
+    {
+      "source": "Blitzschutzsysteme",
+      "target": "Blitzstrom",
+      "relation": "schützen vor",
+      "description": "Blitzschutzsysteme schützen vor den Wirkungen des Blitzstroms",
+      "chunk_id": 22
+    },
+    {
+      "source": "Wirkungen_Blitzstrom",
+      "target": "Blitzstrom",
+      "relation": "sind Effekte von",
+      "description": "Thermisch, dynamisch und elektromagnetisch sind Wirkungen des Blitzstroms",
+      "chunk_id": 22
+    },
+    {
+      "source": "Blitzschutzsystem",
+      "target": "Äußerer_Blitzschutz",
+      "relation": "besteht aus",
+      "description": "Blitzschutzsysteme bestehen aus äußerem und innerem Blitzschutz",
+      "chunk_id": 23
+    },
+    {
+      "source": "Blitzschutzsystem",
+      "target": "Innerer_Blitzschutz",
+      "relation": "besteht aus",
+      "description": "Blitzschutzsysteme bestehen aus äußerem und innerem Blitzschutz",
+      "chunk_id": 23
+    },
+    {
+      "source": "Äußerer_Blitzschutz",
+      "target": "Auffangvorrichtungen",
+      "relation": "beinhaltet",
+      "description": "Äußerer Blitzschutz umfasst Auffangvorrichtungen",
+      "chunk_id": 23
+    },
+    {
+      "source": "Äußerer_Blitzschutz",
+      "target": "Ableitungen",
+      "relation": "beinhaltet",
+      "description": "Äußerer Blitzschutz umfasst Ableitungen",
+      "chunk_id": 23
+    },
+    {
+      "source": "Äußerer_Blitzschutz",
+      "target": "Erdungsanlage",
+      "relation": "beinhaltet",
+      "description": "Äußerer Blitzschutz umfasst Erdungsanlage",
+      "chunk_id": 23
+    },
+    {
+      "source": "Innerer_Blitzschutz",
+      "target": "Blitzschutz-Potenzialausgleich",
+      "relation": "beinhaltet",
+      "description": "Innerer Blitzschutz umfasst Blitzschutz-Potenzialausgleich",
+      "chunk_id": 23
+    },
+    {
+      "source": "Innerer_Blitzschutz",
+      "target": "Überspannungs-Schutzgeräte",
+      "relation": "beinhaltet",
+      "description": "Innerer Blitzschutz umfasst Überspannungs-Schutzgeräte",
+      "chunk_id": 23
+    },
+    {
+      "source": "Innerer_Blitzschutz",
+      "target": "Trennungsabstände",
+      "relation": "erfordert",
+      "description": "Innerer Blitzschutz erfordert Einhalten von Trennungsabständen",
+      "chunk_id": 23
+    },
+    {
+      "source": "Blitzstrom",
+      "target": "Blitzschutzsystem",
+      "relation": "schützt vor",
+      "description": "Blitzschutzsysteme schützen bauliche Anlagen vor den Folgen von Blitzstrom",
+      "chunk_id": 23
+    },
+    {
+      "source": "Schalter_S1",
+      "target": "Spannung_Steckdose_belastet",
+      "relation": "verändert",
+      "description": "Schließen von S1 senkt die Spannung von 233 V auf 229 V",
+      "chunk_id": 24
+    },
+    {
+      "source": "Schalter_S1",
+      "target": "Belastungsstrom",
+      "relation": "verursacht",
+      "description": "Schließen von S1 lässt einen Belastungsstrom von 4 A fließen",
+      "chunk_id": 24
+    },
+    {
+      "source": "Leitungsschutzschalter_B16A",
+      "target": "Bemessungsstrom_In",
+      "relation": "hat",
+      "description": "Leitungsschutzschalter B16A hat einen Nennstrom von 16 A",
+      "chunk_id": 24
+    },
+    {
+      "source": "Strom_Ia",
+      "target": "Bemessungsstrom_In",
+      "relation": "ist_fachlich_5_fach_von",
+      "description": "Ia ist 5-facher Bemessungsstrom (5 x 16 A = 80 A)",
+      "chunk_id": 24
+    },
+    {
+      "source": "Strom_Zeit_Kennlinie",
+      "target": "Strom_Ia",
+      "relation": "bestimmt",
+      "description": "Strom-Zeit-Kennlinie gibt Ia bei ta=0,45 s vor",
+      "chunk_id": 24
+    },
+    {
+      "source": "DIN_VDE_0100_Teil_600_Anhang_C",
+      "target": "Leitungsschutzschalter_B16A",
+      "relation": "definiert_bedingung_für",
+      "description": "Norm definiert Bedingungen für Einsatz von Leitungsschutzschaltern",
+      "chunk_id": 24
+    },
+    {
+      "source": "Strom_Ia",
+      "target": "DIN_VDE_0100_Teil_600_Anhang_C",
+      "relation": "erfüllt_bedingung_nach",
+      "description": "Gemessener Wert Ia ist kleiner als zulässiger Wert nach DIN VDE",
+      "chunk_id": 24
+    },
+    {
+      "source": "Übung_5",
+      "target": "Leitungsschutzschalter_B16A",
+      "relation": "prüft",
+      "description": "Übung 5 überprüft Einsatz des Leitungsschutzschalters B16A",
+      "chunk_id": 24
+    },
+    {
+      "source": "Übung_6",
+      "target": "Schaltplan_Übersicht",
+      "relation": "fordert_zeichnen_von",
+      "description": "Übung 6 fordert Zeichnen eines Übersichtsplans mit Steckdose und Wechselschaltung",
+      "chunk_id": 24
+    },
+    {
+      "source": "Schaltplan_Übersicht",
+      "target": "Schalter_S1",
+      "relation": "enthält",
+      "description": "Übersichtsplan enthält Schalter S1",
+      "chunk_id": 24
+    },
+    {
+      "source": "Schaltplan_Übersicht",
+      "target": "Spannung_Steckdose_unbelastet",
+      "relation": "bezieht_sich_auf",
+      "description": "Plan bezieht sich auf Steckdose mit Spannung 233 V im unbelasteten Zustand",
+      "chunk_id": 24
+    },
+    {
+      "source": "Übung_6",
+      "target": "Schaltplan_Übersicht",
+      "relation": "erweitert_um",
+      "description": "Übung 6 fordert Erweiterung des Plans um Steckdose an einem Schalter",
+      "chunk_id": 24
+    },
+    {
+      "source": "Übung_6",
+      "target": "Schaltplan_Übersicht",
+      "relation": "ist_wichtig_für",
+      "description": "Übung 6 ist wichtig für Prüfung, da Schaltpläne abgefragt werden",
+      "chunk_id": 24
+    },
+    {
+      "source": "Übersichtsplan",
+      "target": "Steckdose",
+      "relation": "enthält",
+      "description": "Übersichtsplan enthält eine Steckdose",
+      "chunk_id": 25
+    },
+    {
+      "source": "Übersichtsplan",
+      "target": "Wechselschaltung",
+      "relation": "enthält",
+      "description": "Übersichtsplan enthält eine Wechselschaltung",
+      "chunk_id": 25
+    },
+    {
+      "source": "Wechselschaltung",
+      "target": "Lampe",
+      "relation": "steuert",
+      "description": "Wechselschaltung steuert eine Lampe",
+      "chunk_id": 25
+    },
+    {
+      "source": "Wechselschaltung",
+      "target": "Schalter",
+      "relation": "besteht aus",
+      "description": "Wechselschaltung besteht aus Schaltern",
+      "chunk_id": 25
+    },
+    {
+      "source": "Schalter",
+      "target": "Steckdose",
+      "relation": "erweitert um",
+      "description": "Übersichtsplan wird um Steckdose an einem Schalter erweitert",
+      "chunk_id": 25
+    },
+    {
+      "source": "Elektromagnetische Schalter",
+      "target": "Schalter",
+      "relation": "sind",
+      "description": "Elektromagnetische Schalter sind eine Art von Schaltern",
+      "chunk_id": 25
+    },
+    {
+      "source": "Automatisierungstechnik",
+      "target": "Gebäudeautomation",
+      "relation": "beinhaltet",
+      "description": "Automatisierungstechnik wird in der Gebäudeautomation angewandt",
+      "chunk_id": 25
+    },
+    {
+      "source": "Automatisierungstechnik",
+      "target": "Steuergerät",
+      "relation": "nutzt",
+      "description": "Automatisierungstechnik nutzt Steuergeräte",
+      "chunk_id": 25
+    },
+    {
+      "source": "Steuergerät",
+      "target": "Signalverarbeitung",
+      "relation": "führt aus",
+      "description": "Steuergeräte führen Signalverarbeitung durch",
+      "chunk_id": 25
+    },
+    {
+      "source": "Signalverarbeitung",
+      "target": "Steuergerät",
+      "relation": "ist Teil von",
+      "description": "Signalverarbeitung ist Teil der Funktionen in Steuergeräten",
+      "chunk_id": 25
+    },
+    {
+      "source": "Gebäudeautomation",
+      "target": "Steuergerät",
+      "relation": "verwendet",
+      "description": "Gebäudeautomation verwendet Steuergeräte",
+      "chunk_id": 25
+    },
+    {
+      "source": "Schalter",
+      "target": "Aufputz",
+      "relation": "kann sein",
+      "description": "Schalter können aufputz montiert sein",
+      "chunk_id": 25
+    },
+    {
+      "source": "Schalter",
+      "target": "Im Putz",
+      "relation": "kann sein",
+      "description": "Schalter können im Putz montiert sein",
+      "chunk_id": 25
+    },
+    {
+      "source": "Steuergerät",
+      "target": "Automatisierungstechnik",
+      "relation": "wird verwendet in",
+      "description": "Steuergeräte werden in der Automatisierungstechnik eingesetzt, z.B. Gebäudeautomatisierung",
+      "chunk_id": 26
+    },
+    {
+      "source": "Kleinsteuergerät",
+      "target": "SPS",
+      "relation": "gehört zu",
+      "description": "Kleinsteuergeräte sind eine Gruppe der speicherprogrammierbaren Steuerungen (SPS)",
+      "chunk_id": 26
+    },
+    {
+      "source": "Kleinsteuergerät",
+      "target": "Steuergerät",
+      "relation": "ist eine Art von",
+      "description": "Kleinsteuergeräte sind spezielle Steuergeräte für einfache Aufgaben",
+      "chunk_id": 26
+    },
+    {
+      "source": "SPS",
+      "target": "Steuergerät",
+      "relation": "ist eine Art von",
+      "description": "SPS sind Mikrocomputersysteme zur Steuerung, also Steuergeräte",
+      "chunk_id": 26
+    },
+    {
+      "source": "Sensor",
+      "target": "SPS",
+      "relation": "ist angeschlossen an Eingang von",
+      "description": "Sensoren sind an die Eingänge von SPS angeschlossen",
+      "chunk_id": 26
+    },
+    {
+      "source": "Aktor",
+      "target": "SPS",
+      "relation": "ist angeschlossen an Ausgang von",
+      "description": "Aktoren sind an die Ausgänge von SPS angeschlossen",
+      "chunk_id": 26
+    },
+    {
+      "source": "Kleinsteuergerät",
+      "target": "Gebäude-Installationsbereich",
+      "relation": "wird eingesetzt in",
+      "description": "Kleinsteuergeräte steuern Beleuchtungen und Rollläden im Gebäude-Installationsbereich",
+      "chunk_id": 26
+    },
+    {
+      "source": "Kleinsteuergerät",
+      "target": "Maschinen- und Apparatebau",
+      "relation": "wird eingesetzt in",
+      "description": "Kleinsteuergeräte steuern Maschinen und Lüftungsanlagen im Maschinen- und Apparatebau",
+      "chunk_id": 26
+    },
+    {
+      "source": "Steuergerät",
+      "target": "Steuerungsprozess",
+      "relation": "führt aus",
+      "description": "Steuergeräte führen Steuerungsaufgaben, auch Steuerungsprozesse genannt, aus",
+      "chunk_id": 26
+    },
+    {
+      "source": "Steuergerät",
+      "target": "Logische Grundfunktionen",
+      "relation": "verfügt über",
+      "description": "Steuergeräte verfügen über logische Grundfunktionen wie UND, ODER, NAND, NOR, XOR, NOT",
+      "chunk_id": 26
+    },
+    {
+      "source": "Steuergerät",
+      "target": "Sonderfunktionen",
+      "relation": "verfügt über",
+      "description": "Steuergeräte verfügen über Sonderfunktionen wie Stromstoßrelais, Zeitfunktionen, Zähler",
+      "chunk_id": 26
+    },
+    {
+      "source": "Steuergerät",
+      "target": "Analogsignal-Verarbeitung",
+      "relation": "verfügt über",
+      "description": "Steuergeräte erlauben die Erfassung und Auswertung von analogen Signalen",
+      "chunk_id": 26
+    },
+    {
+      "source": "Installationsbussystem",
+      "target": "Gebäudesystemtechnik",
+      "relation": "ermöglicht",
+      "description": "Installationsbussystem ermöglicht Gebäudesystemtechnik zum Messen, Steuern, Regeln, Schalten, Melden und Überwachen",
+      "chunk_id": 28
+    },
+    {
+      "source": "KNX",
+      "target": "EIB",
+      "relation": "beinhaltet",
+      "description": "KNX/EIB ist ein international anerkannter Standard",
+      "chunk_id": 28
+    },
+    {
+      "source": "Gebäudeautomation",
+      "target": "Gebäudesystemtechnik",
+      "relation": "ist Teil von",
+      "description": "Gebäudeautomation ist Teil der Gebäudesystemtechnik",
+      "chunk_id": 28
+    },
+    {
+      "source": "Stromstoßrelais",
+      "target": "Funktionsplan",
+      "relation": "wird dargestellt in",
+      "description": "Funktionsplan der Stromstoßschaltung soll entworfen werden",
+      "chunk_id": 28
+    },
+    {
+      "source": "Ausschalt-Verzögerung",
+      "target": "Funktionsplan",
+      "relation": "wird dargestellt in",
+      "description": "Funktionsplan der Rückfallsverzögerung soll entworfen werden",
+      "chunk_id": 28
+    },
+    {
+      "source": "Steuergerät",
+      "target": "Funktionsplan",
+      "relation": "unterstützt",
+      "description": "Steuergerät erleichtert Funktionsplanänderungen gegenüber verbindungsorientierter Steuerung",
+      "chunk_id": 28
+    },
+    {
+      "source": "Gebäudesystemtechnik",
+      "target": "Flexibilität",
+      "relation": "bietet",
+      "description": "Gebäudesystemtechnik bietet Flexibilität bei Nutzungsänderungen",
+      "chunk_id": 28
+    },
+    {
+      "source": "Gebäudesystemtechnik",
+      "target": "Sicherheit",
+      "relation": "bietet",
+      "description": "Gebäudesystemtechnik bietet Sicherheit durch Überwachung",
+      "chunk_id": 28
+    },
+    {
+      "source": "Steuerung",
+      "target": "Eingangsgröße",
+      "relation": "beeinflusst",
+      "description": "Eingangsgrößen beeinflussen Ausgangsgrößen in der Steuerung",
+      "chunk_id": 29
+    },
+    {
+      "source": "Steuerung",
+      "target": "Ausgangsgröße",
+      "relation": "beeinflusst",
+      "description": "Eingangsgrößen beeinflussen Ausgangsgrößen in der Steuerung",
+      "chunk_id": 29
+    },
+    {
+      "source": "IST-Wert",
+      "target": "SOLL-Wert",
+      "relation": "wird angeglichen an",
+      "description": "IST-Wert wird durch Regeln an SOLL-Wert angeglichen",
+      "chunk_id": 29
+    },
+    {
+      "source": "Funktionsplan",
+      "target": "Stromstoßschaltung",
+      "relation": "stellt dar",
+      "description": "Funktionsplan der Stromstoßschaltung soll gezeichnet werden",
+      "chunk_id": 29
+    },
+    {
+      "source": "Funktionsplan",
+      "target": "Rückfallsverzögerungsschaltung",
+      "relation": "stellt dar",
+      "description": "Funktionsplan der Rückfallsverzögerungsschaltung soll gezeichnet werden",
+      "chunk_id": 29
+    },
+    {
+      "source": "Gefahrenmeldeanlagen",
+      "target": "Einbruchmeldeanlagen",
+      "relation": "beinhaltet",
+      "description": "Gefahrenmeldeanlagen umfassen Einbruchmeldeanlagen",
+      "chunk_id": 29
+    },
+    {
+      "source": "Gefahrenmeldeanlagen",
+      "target": "Brandmeldeanlagen",
+      "relation": "beinhaltet",
+      "description": "Gefahrenmeldeanlagen umfassen Brandmeldeanlagen",
+      "chunk_id": 29
+    },
+    {
+      "source": "Einbruchmeldeanlagen",
+      "target": "Infrarot-Bewegungsmelder",
+      "relation": "nutzt",
+      "description": "Einbruchmeldeanlagen verwenden Infrarot-Bewegungsmelder",
+      "chunk_id": 29
+    },
+    {
+      "source": "Einbruchmeldeanlagen",
+      "target": "Ultraschall-Bewegungsmelder",
+      "relation": "nutzt",
+      "description": "Einbruchmeldeanlagen verwenden Ultraschall-Bewegungsmelder",
+      "chunk_id": 29
+    },
+    {
+      "source": "Einbruchmeldeanlagen",
+      "target": "Fadenzugmelder",
+      "relation": "nutzt",
+      "description": "Einbruchmeldeanlagen verwenden Fadenzugmelder",
+      "chunk_id": 29
+    },
+    {
+      "source": "Einbruchmeldeanlagen",
+      "target": "Erschütterungsmelder",
+      "relation": "nutzt",
+      "description": "Einbruchmeldeanlagen verwenden Erschütterungsmelder",
+      "chunk_id": 29
+    },
+    {
+      "source": "Einbruchmeldeanlagen",
+      "target": "Körperschallmelder",
+      "relation": "nutzt",
+      "description": "Einbruchmeldeanlagen verwenden Körperschallmelder",
+      "chunk_id": 29
+    },
+    {
+      "source": "Brandmeldeanlagen",
+      "target": "Brandmeldezentrale",
+      "relation": "besteht aus",
+      "description": "Brandmeldeanlagen bestehen aus Brandmeldezentrale",
+      "chunk_id": 29
+    },
+    {
+      "source": "Brandmeldeanlagen",
+      "target": "Brandmelder",
+      "relation": "besteht aus",
+      "description": "Brandmeldeanlagen bestehen aus Brandmeldern",
+      "chunk_id": 29
+    },
+    {
+      "source": "Brandmeldeanlagen",
+      "target": "Alarmgeber",
+      "relation": "besteht aus",
+      "description": "Brandmeldeanlagen bestehen aus Alarmgebern",
+      "chunk_id": 29
+    },
+    {
+      "source": "Meldeeinrichtungen",
+      "target": "Infrarot-Bewegungsmelder",
+      "relation": "besteht aus",
+      "description": "Infrarot-Bewegungsmelder sind Meldeeinrichtungen zur Raumüberwachung",
+      "chunk_id": 30
+    },
+    {
+      "source": "Meldeeinrichtungen",
+      "target": "Ultraschall-Bewegungsmelder",
+      "relation": "besteht aus",
+      "description": "Ultraschall-Bewegungsmelder sind Meldeeinrichtungen zur Raumüberwachung",
+      "chunk_id": 30
+    },
+    {
+      "source": "Meldeeinrichtungen",
+      "target": "Fadenzugmelder",
+      "relation": "besteht aus",
+      "description": "Fadenzugmelder sind Meldeeinrichtungen zur Raumüberwachung",
+      "chunk_id": 30
+    },
+    {
+      "source": "Meldeeinrichtungen",
+      "target": "Erschütterungsmelder",
+      "relation": "besteht aus",
+      "description": "Erschütterungsmelder sind Meldeeinrichtungen zur Raumüberwachung",
+      "chunk_id": 30
+    },
+    {
+      "source": "Meldeeinrichtungen",
+      "target": "Körperschallmelder",
+      "relation": "besteht aus",
+      "description": "Körperschallmelder sind Meldeeinrichtungen zur Raumüberwachung",
+      "chunk_id": 30
+    },
+    {
+      "source": "Brandmeldeanlagen",
+      "target": "Brandmeldezentrale",
+      "relation": "besteht aus",
+      "description": "Brandmeldeanlagen bestehen aus der Brandmeldezentrale",
+      "chunk_id": 30
+    },
+    {
+      "source": "Brandmeldeanlagen",
+      "target": "Brandmelder",
+      "relation": "besteht aus",
+      "description": "Brandmeldeanlagen bestehen aus Brandmeldern",
+      "chunk_id": 30
+    },
+    {
+      "source": "Brandmeldeanlagen",
+      "target": "Alarmgeber",
+      "relation": "besteht aus",
+      "description": "Brandmeldeanlagen bestehen aus Alarmgebern",
+      "chunk_id": 30
+    },
+    {
+      "source": "Brandmeldeanlagen",
+      "target": "Akku",
+      "relation": "ist abgesichert durch",
+      "description": "Brandmeldeanlagen müssen gegen Spannungsunterbrechung abgesichert sein, z.B. durch Akku",
+      "chunk_id": 30
+    },
+    {
+      "source": "Einbruchmeldeanlagen",
+      "target": "Meldeeinrichtungen",
+      "relation": "nutzt",
+      "description": "Einbruchmeldeanlagen verwenden Meldeeinrichtungen zur Raumüberwachung",
+      "chunk_id": 30
+    },
+    {
+      "source": "Licht",
+      "target": "Wellenlänge",
+      "relation": "hat Eigenschaft",
+      "description": "Licht ist elektromagnetische Wellen mit Wellenlänge",
+      "chunk_id": 31
+    },
+    {
+      "source": "Wellenlänge",
+      "target": "Farbe",
+      "relation": "bestimmt",
+      "description": "Die Wellenlänge des Lichts bestimmt seine Farbe",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "Wohlbefinden",
+      "relation": "fördert",
+      "description": "Eine gute Beleuchtung fördert das Wohlbefinden des Menschen",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "Leistungsbereitschaft",
+      "relation": "steigert",
+      "description": "Eine gute Beleuchtung steigert die Leistungsbereitschaft",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "Unfallrisiko",
+      "relation": "verringert",
+      "description": "Eine gute Beleuchtung verringert das Unfallrisiko",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "Beleuchtungsniveau",
+      "relation": "beinhaltet",
+      "description": "Beleuchtungsniveau ist ein Aspekt der Beleuchtung",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "Blendung",
+      "relation": "beinhaltet",
+      "description": "Blendung ist ein Aspekt der Beleuchtung",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "Lichtrichtung und Schattenbildung",
+      "relation": "beinhaltet",
+      "description": "Lichtrichtung und Schattenbildung sind Aspekte der Beleuchtung",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "Lichtfarbe und Farbwiedergabe",
+      "relation": "beinhaltet",
+      "description": "Lichtfarbe und Farbwiedergabe sind Aspekte der Beleuchtung",
+      "chunk_id": 31
+    },
+    {
+      "source": "Beleuchtung",
+      "target": "DIN EN 12464-1 / DIN 5035-7",
+      "relation": "geregelt durch",
+      "description": "Beleuchtung von Innenräumen und Bildschirmarbeitsplätzen wird durch diese Normen geregelt",
+      "chunk_id": 31
+    }
+  ],
+  "chunk_entities": {
+    "0": [
+      "Die vorschriftsmäßige Elektroinstallation",
+      "Europa-Lehrmittel",
+      "Fachkunde Elektrotechnik",
+      "Formeln Elektrotechniker",
+      "Gefahren",
+      "Gefahren im Umgang mit el. Strom",
+      "Messtechnik",
+      "Prof. Dr. Marcus Liebschner",
+      "Tabellenbuch Elektrotechnik",
+      "VDE",
+      "Wechsel- und Drehstromsystem",
+      "Wintersemester 2022/2023"
+    ],
+    "1": [
+      "Erdschluss",
+      "Fehlerstrom",
+      "Gleichstrom",
+      "Isolationsfehler",
+      "Kabelbrücke",
+      "Kurzschluss",
+      "Körperschluss",
+      "Leiterschluss",
+      "Nutzwiderstand",
+      "Phase zur Erde",
+      "Spannungsquelle",
+      "Wechselstrom"
+    ],
+    "2": [
+      "EUROPA_LEHRMITTEL",
+      "Erdpotential",
+      "Fehlerstelle",
+      "Gefahren_el_Strom",
+      "Person_10m",
+      "Person_20m",
+      "Sicherheitsregeln",
+      "Spannungstrichter",
+      "Strommast",
+      "U_E",
+      "U_S"
+    ],
+    "3": [
+      "Benachbarte_Teile_abdecken",
+      "DIN_VDE_0105",
+      "EUROPA_LEHRMITTEL_Logo",
+      "Erden_und_kurzschließen",
+      "Erderspannung",
+      "Freischalten",
+      "Gefahren_el_Strom",
+      "Gegen_Wiedereinschalten_sichern",
+      "Horst_der_Elektriker",
+      "Sicherheitsregeln",
+      "Spannung",
+      "Spannungsfreiheit_feststellen"
+    ],
+    "4": [
+      "AbdeckenOderAbschranken",
+      "AnlagenUeber1kV",
+      "AnlagenUnter1kV",
+      "DIN_VDE_0105",
+      "ErdenUndKurzschliessen",
+      "Erderspannung",
+      "Fehlerstrom",
+      "FeststellenSpannungsfreiheit",
+      "Freischalten",
+      "Koerperschutz",
+      "Schrittspannung",
+      "Sicherheitsregeln",
+      "SichernGegenWiedereinschalten"
+    ],
+    "5": [
+      "Einwirkdauer",
+      "Elektroinstallateur",
+      "Erdübergangswiderstand",
+      "Fehlerhafte Installation",
+      "Fehlerwiderstand",
+      "Gefährdung",
+      "Körperstrom",
+      "Körperwiderstand",
+      "Leitungswiderstand",
+      "Netzwechselspannung",
+      "Sicherheitsregeln",
+      "Standortwiderstand"
+    ],
+    "6": [
+      "66mA",
+      "Benachbarte unter Spannung stehende Teile abdecken oder abschranken",
+      "Elektroinstallateur",
+      "Erden und kurzschließen",
+      "Fehlerhafte Installation",
+      "Freischalten",
+      "Gefährdung",
+      "Gegen Wiedereinschalten sichern",
+      "Herzflimmern",
+      "IF",
+      "Körperstrom",
+      "Körperwiderstand",
+      "Netzwechselspannung",
+      "Rk'",
+      "Schutzleiter nicht angeschlossen",
+      "Sicherheitsregeln",
+      "Spannungsfreiheit feststellen",
+      "UB"
+    ],
+    "7": [
+      "230V",
+      "Berührungsspannung U_B",
+      "Erdübergangswiderstand",
+      "Fehlerhafte Installation",
+      "Fehlerstromkreis",
+      "Fehlerstromschutzschalter",
+      "Fehlerwiderstand",
+      "Gesamtwiderstand R_g",
+      "Isolationsfehler",
+      "Körperstrom I_K",
+      "Körperwiderstand",
+      "Leitungen L1_L2_L3_N_PE",
+      "Leitungswiderstand",
+      "Person",
+      "Schalter Q1",
+      "Schutzleiter",
+      "Spannung gegen Erde U_F",
+      "Standortwiderstand"
+    ],
+    "8": [
+      "Berührungsspannung_UB",
+      "Fehlerhafte_Installation",
+      "Fehlerstrom_IF",
+      "Gefährdung_0_23A",
+      "Körperstrom_IK",
+      "Schaltbild",
+      "Sicherheitsregeln",
+      "Spannung_gegen_Erde_UF",
+      "Widerstand_RE",
+      "Widerstand_RF",
+      "Widerstand_RK",
+      "Widerstand_RX"
+    ],
+    "9": [
+      "Absoluter Fehler",
+      "Anzeigefehler",
+      "Digitalmessgerät",
+      "Drehstromsystem",
+      "Einflussfehler",
+      "Kompensation",
+      "Messfehler",
+      "Messtechnik",
+      "Messwerke",
+      "Messwert",
+      "Obergrenze",
+      "Persönliche Fehler",
+      "Relativer Fehler",
+      "Sinnbilder",
+      "Skalenkonstante",
+      "Systematische Fehler",
+      "Untergrenze",
+      "Wechselstrom"
+    ],
+    "10": [
+      "Anschlussverpflichtung",
+      "Elektrizitätswirtschaft",
+      "Elektroenergiesystem",
+      "Großkraftwerk",
+      "Hochspannungsnetz",
+      "Höchstspannungsnetz",
+      "Investitionskosten",
+      "Mittlere Spannung",
+      "Ortsnetz",
+      "Speichermöglichkeit",
+      "Transformator",
+      "Zuwachsraten"
+    ],
+    "11": [
+      "Anschlussverpflichtung",
+      "Einspeiseprognose",
+      "Fremdeinspeiser",
+      "Gasturbinenkraftwerke",
+      "Gleichzeitigkeit",
+      "Grundlastkraftwerke",
+      "Hohe Investitionskosten",
+      "Lange Lebensdauer",
+      "Lange Planungszeiträume",
+      "Lastprognose",
+      "Pumpspeicherkraftwerke",
+      "Regelenergie",
+      "Spitzenlast",
+      "Trennung Erzeugung-Transport-Vertrieb",
+      "Umweltschutz",
+      "Wettbewerb",
+      "Wirtschaftlichkeit",
+      "sichere Stromversorgung"
+    ],
+    "12": [
+      "Braunkohle",
+      "Einzelgenerator",
+      "Fremdeinspeiser",
+      "Gas",
+      "Gasturbine",
+      "Gasturbinenkraftwerk",
+      "Industriekraftwerk",
+      "Kernenergie",
+      "Lautwasser-KW",
+      "Pumpspeicher",
+      "Pumpspeicherkraftwerk",
+      "Regelenergie",
+      "Spitzenlast",
+      "Spitzenlastkraftwerk",
+      "Steinkohle",
+      "Stromerzeugungskosten",
+      "Verbundnetz",
+      "Wind"
+    ],
+    "13": [
+      "Betriebskosten",
+      "Bewegliche_Kosten",
+      "Biogener_Hausmüll",
+      "Biomasse",
+      "Brennstoff",
+      "Erdgas",
+      "Erneuerbare_Energien",
+      "Gasturbine",
+      "Gleichstrom",
+      "Induktivität",
+      "Kapazität",
+      "Kapitaldienst",
+      "Kernenergie",
+      "Kompensation",
+      "Leistungsfaktor",
+      "Photovoltaik",
+      "Steinkohle",
+      "Unterhalt",
+      "Verwaltung",
+      "Wasser",
+      "Wechselstrom",
+      "Windenergie",
+      "Zusätzliche_Betriebskosten"
+    ],
+    "14": [
+      "Blind- und Wirkwiderstand",
+      "Blindanteil",
+      "Dauermagnet",
+      "Drehstromsystem",
+      "Eisenkern",
+      "Gleichstrom",
+      "Glühbirne",
+      "Leitwert",
+      "Parallelschaltung",
+      "Synchronmaschine",
+      "Transformator",
+      "Wechselstrom"
+    ],
+    "15": [
+      "Drehung_Erregerfeld",
+      "Erregerstrom_Ie",
+      "Phasenverschiebung_120Grad",
+      "Spannung",
+      "Ständerwicklung_1",
+      "Ständerwicklung_3",
+      "Wicklung_12",
+      "Wicklung_3",
+      "Wicklung_41",
+      "magnetisches_Feld"
+    ],
+    "16": [
+      "Drehstromsystem",
+      "E",
+      "Herd",
+      "I",
+      "IT",
+      "Neutralleiter",
+      "P",
+      "PEN-Leiter",
+      "Phase",
+      "Q",
+      "RCD",
+      "S",
+      "TN-C",
+      "TN-C-S",
+      "TN-S",
+      "TT",
+      "symmetrische Belastung",
+      "unsymmetrische Belastung"
+    ],
+    "17": [
+      "I",
+      "InduktiverBlindwiderstand",
+      "Kompensation",
+      "Leuchtstofflampen",
+      "R",
+      "Reihenschaltung",
+      "U",
+      "UL",
+      "UW",
+      "Vorschaltgerät",
+      "XL",
+      "Z",
+      "cosPhi"
+    ],
+    "18": [
+      "3_adrig",
+      "5_adrig",
+      "Cosy",
+      "Cosφ",
+      "Kompensation",
+      "Leitungen_und_Kabel",
+      "Mantelleitung_NYM",
+      "Spannung_230V",
+      "Stegleitung_IF",
+      "Strom_I",
+      "Strom_Iz",
+      "Strombelastbarkeit_Faktoren"
+    ],
+    "19": [
+      "Berührschutz",
+      "Erdung",
+      "IP_Schutzarten",
+      "Leitungsschutzschalter_B_13A",
+      "Mantelleitung_NYM_3x1.5mm2",
+      "Nennspannung",
+      "Querschnitt",
+      "Schutzschalter",
+      "Spannungsfall",
+      "Steckdosenleitung",
+      "Thermischer_Auslöser",
+      "Wasserschutz"
+    ],
+    "20": [
+      "Elektromagnetischer Auslöser",
+      "Fehlerstrom",
+      "Fehlerstrom-Schutzeinrichtung",
+      "IP-Schutzarten",
+      "Prüfung der RCD-Auslösung",
+      "RCD Typ A",
+      "RCD Typ B",
+      "Schutz vor Kurzschluss",
+      "Schutz vor Überlast",
+      "Schutzklassen",
+      "Schutzschalter",
+      "Thermischer Auslöser"
+    ],
+    "21": [
+      "Abschaltzeit RCD",
+      "Endstromkreis Außenbereich",
+      "Haupterdungsschiene",
+      "Hauptschutzleiter",
+      "IΔn",
+      "Kurzschluss",
+      "NH-Sicherung",
+      "RCD",
+      "SLS",
+      "Schutzpotenzialausgleich",
+      "Schutzpotenzialausgleichsleitung",
+      "Steckdosenstromkreis"
+    ],
+    "22": [
+      "Blitzschutzsysteme",
+      "Blitzstrom",
+      "DIN_VDE_0100_Teil_410",
+      "DIN_VDE_0100_Teil_600",
+      "Durchschlagfestigkeit_Luft",
+      "Errichter",
+      "Fehlerstrom-Schutzeinrichtung",
+      "Inbetriebnahme",
+      "Isolationswiderstand",
+      "Leitungsschutzschalter",
+      "Schleifenimpedanz",
+      "Schutzleiter",
+      "Schutzmaßnahmen",
+      "TN-System",
+      "Wirkungen_Blitzstrom",
+      "Überstrom-Schutzeinrichtung"
+    ],
+    "23": [
+      "Ableitungen",
+      "Auffangvorrichtungen",
+      "Blitzschutz-Potenzialausgleich",
+      "Blitzschutzsystem",
+      "Blitzstrom",
+      "Durchschlagfestigkeit_Luft",
+      "Erdungsanlage",
+      "Fehlerstrom-Schutzeinrichtung",
+      "Innerer_Blitzschutz",
+      "Trennungsabstände",
+      "Äußerer_Blitzschutz",
+      "Überspannungs-Schutzgeräte"
+    ],
+    "24": [
+      "Belastungsstrom",
+      "Bemessungsstrom_In",
+      "DIN_VDE_0100_Teil_600_Anhang_C",
+      "Leitungsschutzschalter_B16A",
+      "Schalter_S1",
+      "Schaltplan_Übersicht",
+      "Spannung_Steckdose_belastet",
+      "Spannung_Steckdose_unbelastet",
+      "Strom_Ia",
+      "Strom_Zeit_Kennlinie",
+      "Übung_5",
+      "Übung_6"
+    ],
+    "25": [
+      "Aufputz",
+      "Automatisierungstechnik",
+      "Elektromagnetische Schalter",
+      "Gebäudeautomation",
+      "Im Putz",
+      "Lampe",
+      "Schalter",
+      "Signalverarbeitung",
+      "Steckdose",
+      "Steuergerät",
+      "Wechselschaltung",
+      "Übersichtsplan"
+    ],
+    "26": [
+      "Aktor",
+      "Analogsignal-Verarbeitung",
+      "Automatisierungstechnik",
+      "Gebäude-Installationsbereich",
+      "Kleinsteuergerät",
+      "Logische Grundfunktionen",
+      "Maschinen- und Apparatebau",
+      "SPS",
+      "Sensor",
+      "Sonderfunktionen",
+      "Steuergerät",
+      "Steuerungsprozess"
+    ],
+    "27": [
+      "Komparatoren",
+      "NAND",
+      "NOR",
+      "NOT",
+      "ODER",
+      "Schwellwertschalter",
+      "Stromstoßrelais",
+      "Taktgeber",
+      "XOR",
+      "Zeitfunktionen",
+      "Zeitschaltuhr",
+      "Zähler"
+    ],
+    "28": [
+      "Ausschalt-Verzögerung",
+      "EIB",
+      "Flexibilität",
+      "Funktionsplan",
+      "Gebäudeautomation",
+      "Gebäudesystemtechnik",
+      "Installationsbussystem",
+      "KNX",
+      "Sicherheit",
+      "Steuergerät",
+      "Stromstoßrelais",
+      "Wechselschaltung"
+    ],
+    "29": [
+      "Alarmgeber",
+      "Ausgangsgröße",
+      "Brandmeldeanlagen",
+      "Brandmelder",
+      "Brandmeldezentrale",
+      "Einbruchmeldeanlagen",
+      "Eingangsgröße",
+      "Erschütterungsmelder",
+      "Fadenzugmelder",
+      "Funktionsplan",
+      "Gefahrenmeldeanlagen",
+      "IST-Wert",
+      "Infrarot-Bewegungsmelder",
+      "Körperschallmelder",
+      "Rückfallsverzögerungsschaltung",
+      "SOLL-Wert",
+      "Steuerung",
+      "Stromstoßschaltung",
+      "Ultraschall-Bewegungsmelder"
+    ],
+    "30": [
+      "Akku",
+      "Alarmgeber",
+      "Brandmeldeanlagen",
+      "Brandmelder",
+      "Brandmeldezentrale",
+      "Einbruchmeldeanlagen",
+      "Erschütterungsmelder",
+      "Fadenzugmelder",
+      "Infrarot-Bewegungsmelder",
+      "Körperschallmelder",
+      "Meldeeinrichtungen",
+      "Ultraschall-Bewegungsmelder"
+    ],
+    "31": [
+      "Beleuchtung",
+      "Beleuchtungsniveau",
+      "Blendung",
+      "DIN EN 12464-1 / DIN 5035-7",
+      "Farbe",
+      "Leistungsbereitschaft",
+      "Licht",
+      "Lichtfarbe und Farbwiedergabe",
+      "Lichtrichtung und Schattenbildung",
+      "Unfallrisiko",
+      "Wellenlänge",
+      "Wohlbefinden"
+    ]
+  }
+}
