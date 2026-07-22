@@ -8,7 +8,7 @@ Dabei werden keine Textauszuege als Kontext an das Sprachmodell uebergeben. Das 
 
 ## Pipeline
 
-1. Ein PDF-Dokument inklusive Text, Tabellen und Bildern laden
+1. Ein PDF-Dokument laden und den direkt auslesbaren Text extrahieren
 2. Lange PDF-Inhalte nur intern in Textabschnitte fuer die Graph-Extraktion aufteilen
 3. Aus den Textabschnitten Entitaeten und Beziehungen extrahieren
 4. Entitaeten, Beziehungen und Quellenzuordnungen lokal als Knowledge Graph speichern
@@ -29,7 +29,11 @@ Es werden bewusst keine externen Graphdatenbanken wie Neo4j oder Memgraph verwen
 ```text
 graph-rag/
 ├── data/
-│   └── elektrotechnik_3.pdf
+│   ├── elektrotechnik_3.pdf
+│   ├── elektrotechnik_grundlagen.pdf
+│   └── uploaded_document.pdf
+├── graph_db_elektrotechnik_3/
+│   └── knowledge_graph.json
 ├── src/
 │   ├── document_loader.py
 │   ├── text_segmentation.py
@@ -71,10 +75,10 @@ OPENAI_VISION_MODEL=gpt-4.1-mini
 python src/main.py
 ```
 
-Das System:
+Das CLI-System:
 
 - laedt das PDF-Dokument,
-- beschreibt sichtbare Tabellen, Bilder und Diagramme als Text,
+- nutzt den direkt auslesbaren PDF-Text,
 - extrahiert Entitaeten und Beziehungen,
 - speichert den Knowledge Graph lokal,
 - ruft passende Graph-Beziehungen zur Frage ab,
@@ -89,17 +93,30 @@ streamlit run src/ui.py
 
 Wenn `graph_db_elektrotechnik_3` bereits vorhanden ist, wird die Wissensbasis direkt geladen. Falls sie noch nicht vorhanden ist, baut die UI sie beim ersten Start automatisch auf.
 
+Die Web-UI nutzt standardmaessig `data/elektrotechnik_3.pdf`. Beim Aufbau der Wissensbasis liest sie den PDF-Text und beschreibt gezielt visuelle Inhalte auf Seiten, die relevante Stichwoerter enthalten, zum Beispiel `Sicherheitsregeln`.
+
 Danach kannst du:
 
 - direkt Fragen stellen,
 - Antworten generieren,
-- den verwendeten Graph-Kontext anzeigen.
+- den verwendeten Graph-Kontext anzeigen,
+- den gesamten Knowledge Graph und den fuer die Antwort genutzten Teilgraphen visualisieren.
+
+## Lokale Graph-Datenbank
+
+Der Ordner `graph_db_elektrotechnik_3` enthaelt den bereits erzeugten Knowledge Graph als JSON-Datei. Dadurch muss die Wissensbasis nicht bei jedem Start neu aus dem PDF aufgebaut werden.
+
+Die Datei `knowledge_graph.json` speichert:
+
+- Entitaeten mit Name, Typ, Beschreibung und Segmentzuordnung,
+- gerichtete Beziehungen zwischen Entitaeten,
+- die Zuordnung zwischen Textsegmenten und gefundenen Entitaeten.
 
 ## Beschreibung der Module
 
 ### `document_loader.py`
 
-Laedt eine PDF-Datei und gibt Text plus beschriebene Tabellen-, Bild- und Diagramminhalte als String zurueck.
+Laedt PDF-Inhalte. Es gibt Funktionen fuer direkt auslesbaren PDF-Text, fuer vollstaendige visuelle Seitenanalyse und fuer gezielte visuelle Analyse einzelner relevanter Seiten.
 
 ### `text_segmentation.py`
 
@@ -111,7 +128,7 @@ Extrahiert Entitaeten und Beziehungen und speichert sie als lokalen Knowledge Gr
 
 ### `retrieval.py`
 
-Ruft zur Nutzerfrage passende Entitaeten und Beziehungen aus dem Knowledge Graph ab.
+Ruft zur Nutzerfrage passende Entitaeten und Beziehungen aus dem Knowledge Graph ab. Das Retrieval basiert auf einfachen Begriffstreffern in Entitaetsnamen, Beschreibungen und Beziehungen.
 
 ### `generation.py`
 
@@ -123,4 +140,4 @@ Fuehrt die gesamte Graph-RAG-Pipeline in der vorgesehenen Reihenfolge aus.
 
 ### `ui.py`
 
-Stellt eine einfache Streamlit-Oberflaeche bereit, damit das Graph-RAG-System im Browser genutzt werden kann.
+Stellt eine Streamlit-Oberflaeche bereit, damit das Graph-RAG-System im Browser genutzt werden kann. Die UI zeigt ausserdem den Knowledge Graph, die Entitaeten, die Beziehungen und den fuer eine Antwort verwendeten Teilgraphen an.
