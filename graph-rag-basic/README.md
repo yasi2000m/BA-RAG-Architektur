@@ -30,7 +30,7 @@ Damit folgt das Projekt der normalen Graph-RAG-Definition fuer eine Bachelorarbe
 ```text
 graph-rag-basic/
   data/
-    elektrotechnik_3.pdf
+    Elektrotechnik 3.pdf
   graph_db/
     knowledge_graph.json
   src/
@@ -77,4 +77,3 @@ streamlit run src/ui.py
 ## Abgrenzung zum Standard-RAG
 
 Dieses Graph-RAG-Projekt verwendet keine lokale Vektordatenbank fuer die Auswahl der relevantesten Chunks. Die Antwort basiert auf dem Teilgraphen, der durch passende Entitaeten und deren Beziehungen gefunden wird. Dadurch ist der Retrieval-Prozess einfacher erklaerbar, weil sichtbar bleibt, welche Entitaeten und Kanten zur Antwort gefuehrt haben.
-

@@ -43,13 +43,13 @@ def describe_page_image(client: OpenAI, model: str, image_bytes: bytes) -> str:
     return response.choices[0].message.content or ""
 
 
-def load_pdf_text(pdf_path: str) -> str:
+def load_pdf_text(pdf_path: str, max_pages: int | None = None) -> str:
     """Laedt ein PDF und gibt den direkt auslesbaren Text zurueck."""
     document = fitz.open(pdf_path)
 
     pages = [
         f"Seite {page_number}\n\n{page.get_text('text').strip()}"
-        for page_number, page in enumerate(document, start=1)
+        for page_number, page in _iter_pages(document, max_pages)
     ]
 
     return "\n\n".join(pages).strip()
@@ -58,6 +58,7 @@ def load_pdf_text(pdf_path: str) -> str:
 def load_pdf_text_with_targeted_visuals(
     pdf_path: str,
     visual_keywords: list[str] | None = None,
+    max_pages: int | None = None,
 ) -> str:
     """
     Laedt den PDF-Text und analysiert visuell nur Seiten,
@@ -73,7 +74,7 @@ def load_pdf_text_with_targeted_visuals(
     document = fitz.open(pdf_path)
     pages: list[str] = []
 
-    for page_number, page in enumerate(document, start=1):
+    for page_number, page in _iter_pages(document, max_pages):
         page_text = page.get_text("text").strip()
         visual_text = ""
 
@@ -105,7 +106,7 @@ def load_pdf_text_with_targeted_visuals(
 
     return "\n\n".join(pages).strip()
 
-def load_pdf_with_visuals(pdf_path: str) -> str:
+def load_pdf_with_visuals(pdf_path: str, max_pages: int | None = None) -> str:
     """Laedt ein PDF und gibt Text plus beschriebene Bild- und Tabelleninhalte zurueck."""
 
     load_dotenv()
@@ -115,7 +116,7 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
     document = fitz.open(pdf_path)
     pages: list[str] = []
 
-    for page_number, page in enumerate(document, start=1):
+    for page_number, page in _iter_pages(document, max_pages):
         page_text = page.get_text("text").strip()
 
         page_image = page.get_pixmap(
@@ -138,14 +139,21 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
     return "\n\n".join(pages).strip()
 
 
+def _iter_pages(document: fitz.Document, max_pages: int | None = None):
+    """Iteriert ueber PDF-Seiten und begrenzt optional die Seitenanzahl."""
+    page_limit = len(document) if max_pages is None else min(max_pages, len(document))
+    for page_index in range(page_limit):
+        yield page_index + 1, document[page_index]
+
+
 # ==========================================================
 # Variante 1:
 # Nur direkt auslesbarer PDF-Text
 # ==========================================================
 
-# def load_pdf(pdf_path: str) -> str:
+# def load_pdf(pdf_path: str, max_pages: int | None = None) -> str:
 #     """Standard-Loader: nur direkt auslesbarer PDF-Text."""
-#     return load_pdf_text(pdf_path)
+#     return load_pdf_text(pdf_path, max_pages=max_pages)
 
 
 # ==========================================================
@@ -153,7 +161,7 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
 # PDF-Text + Vision nur fuer Seiten mit Schluesselwoertern
 # ==========================================================
 
-# def load_pdf(pdf_path: str) -> str:
+# def load_pdf(pdf_path: str, max_pages: int | None = None) -> str:
 #     """Standard-Loader: Text sowie Vision nur auf relevanten Seiten."""
 #     return load_pdf_text_with_targeted_visuals(
 #         pdf_path,
@@ -164,6 +172,7 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
 #             "figure",
 #             "chart",
 #         ],
+#         max_pages=max_pages,
 #     )
 
 
@@ -172,7 +181,6 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
 # Vollstaendige visuelle Analyse aller Seiten
 # ==========================================================
 
-def load_pdf(pdf_path: str) -> str:
+def load_pdf(pdf_path: str, max_pages: int | None = None) -> str:
     """Standard-Loader: Text sowie Bild-, Tabellen- und Diagramminformationen aller Seiten."""
-    return load_pdf_with_visuals(pdf_path)
-
+    return load_pdf_with_visuals(pdf_path, max_pages=max_pages)

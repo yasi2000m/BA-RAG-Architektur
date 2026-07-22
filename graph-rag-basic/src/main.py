@@ -5,7 +5,7 @@ from graph_store import KnowledgeGraphExtractor, KnowledgeGraphStore
 from retrieval import retrieve_graph_context
 
 
-DEFAULT_PDF_PATH = "data/elektrotechnik_3.pdf"
+DEFAULT_PDF_PATH = "data/Elektrotechnik 3.pdf"
 MAX_PAGES = 20
 GRAPH_DB_PATH = "graph_db_elektrotechnik_3_first_20_full_visuals"
 
