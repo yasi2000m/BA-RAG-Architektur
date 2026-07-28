@@ -1,5 +1,6 @@
 import base64
 import os
+import time
 
 import fitz
 from dotenv import load_dotenv
@@ -105,6 +106,7 @@ def load_pdf_text_with_targeted_visuals(
 
     return "\n\n".join(pages).strip()
 
+
 def load_pdf_with_visuals(pdf_path: str) -> str:
     """Laedt ein PDF und gibt Text plus beschriebene Bild- und Tabelleninhalte zurueck."""
 
@@ -139,56 +141,24 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
 
 
 # ==========================================================
-# Auswahlfunktion fuer das Evaluationsmodul
-# ==========================================================
-
-def load_pdf_by_type(
-    pdf_path: str,
-    loader_type: str,
-) -> str:
-    """
-    Waehlt den gewuenschten Dokumentloader fuer die Evaluation aus.
-
-    Moegliche Werte fuer loader_type:
-    - "text"
-    - "targeted_visual"
-    - "full_visual"
-
-    main.py verwendet weiterhin unveraendert die Funktion load_pdf().
-    """
-
-    if loader_type == "text":
-        return load_pdf_text(pdf_path)
-
-    if loader_type == "targeted_visual":
-        return load_pdf_text_with_targeted_visuals(
-            pdf_path,
-            visual_keywords=[
-                "diagramm",
-                "abbildung",
-                "tabelle",
-                "figure",
-                "chart",
-            ],
-        )
-
-    if loader_type == "full_visual":
-        return load_pdf_with_visuals(pdf_path)
-
-    raise ValueError(
-        f"Unbekannter Loader: {loader_type}. "
-        "Erlaubt sind: text, targeted_visual, full_visual."
-    )
-
-
-# ==========================================================
 # Variante 1:
 # Nur direkt auslesbarer PDF-Text
 # ==========================================================
 
 # def load_pdf(pdf_path: str) -> str:
-#     """Standard-Loader: nur direkt auslesbarer PDF-Text."""
-#     return load_pdf_text(pdf_path)
+#     start_time = time.perf_counter()
+
+#     text = load_pdf_text(pdf_path)
+
+#     duration = time.perf_counter() - start_time
+
+#     print(f"Laufzeit: {duration:.2f} Sekunden")
+#     print(f"Textgroesse: {len(text.encode('utf-8')) / 1024:.2f} KB")
+
+#     with open("standard-rag/data/geladener_text.txt", "w", encoding="utf-8") as file:
+#         file.write(text)
+
+#     return text
 
 
 # ==========================================================
@@ -197,25 +167,56 @@ def load_pdf_by_type(
 # ==========================================================
 
 # def load_pdf(pdf_path: str) -> str:
-#     """Standard-Loader: Text sowie Vision nur auf relevanten Seiten."""
-#     return load_pdf_text_with_targeted_visuals(
+#     start_time = time.perf_counter()
+
+#     text = load_pdf_text_with_targeted_visuals(
 #         pdf_path,
 #         visual_keywords=[
-#             "diagramm",
 #             "abbildung",
+#             "diagramm",
+#             "schaltbild",
+#             "schaltung",
+#             "ersatzschaltbild",
+#             "kennlinie",
 #             "tabelle",
-#             "figure",
-#             "chart",
+#             "formel",
+#             "vektordiagramm",
+#             "phasendiagramm",
+#             "blockschaltbild",
+#             "messschaltung",
+#             "stromlaufplan",
+#             "kurve",
+#             "graph",
 #         ],
 #     )
 
+#     duration = time.perf_counter() - start_time
+
+#     print(f"Laufzeit: {duration:.2f} Sekunden")
+#     print(f"Textgroesse: {len(text.encode('utf-8')) / 1024:.2f} KB")
+
+#     return text
+
 
 # ==========================================================
-# Variante 3 (Standard):
+# Variante 3:
 # Vollstaendige visuelle Analyse aller Seiten
 # ==========================================================
 
 def load_pdf(pdf_path: str) -> str:
-    """Standard-Loader: Text sowie Bild-, Tabellen- und Diagramminformationen aller Seiten."""
-    return load_pdf_with_visuals(pdf_path)
+    start_time = time.perf_counter()
 
+    text = load_pdf_with_visuals(pdf_path)
+
+    duration = time.perf_counter() - start_time
+
+    print(f"Laufzeit: {duration:.2f} Sekunden")
+    print(f"Textgroesse: {len(text.encode('utf-8')) / 1024:.2f} KB")
+
+    return text
+
+
+
+if __name__ == "__main__":
+    pdf_path = "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf"
+    load_pdf(pdf_path)

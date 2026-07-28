@@ -4,7 +4,7 @@ from pathlib import Path
 # PDF
 # ============================
 
-PDF_PATH = "data/Elektrotechnik 3.pdf"
+PDF_PATH = "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf"
 
 # ============================
 # Aktuelle Standardparameter

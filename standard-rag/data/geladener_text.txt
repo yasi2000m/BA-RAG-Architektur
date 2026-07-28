@@ -1,0 +1,881 @@
+Seite 1
+
+1 Gefahren
+Gefahr
+1.1 Gefahren im Umgang mit el. Strom
+
+Seite 2
+
+1.1 Gefahren im Umgang mit el. Strom
+1.1 Gefahren im Umgang mit el. Strom
+Wichtig
+!
+Leiterschluss:
+Kurzschluss:
+-
+ist
+eine
+Fehlerhafte
+Verbindung zw.
+Leitern,
+wenn
+im
+Fehlerstrankreis
+ein
+Mens
+-
+ist,
+wenn
+eine
+nahezu
+widerstandslose
+Nutzwiderstand
+liegt
+.
+Hier
+wird
+anders
+als
+beim
+Kurzschluss, der
+Fehlerstrom
+derch
+versch
+Verbindung
+der
+beide
+Pole
+einer
+den
+Nutzwiderstand
+begrenzt
+.
+Spannungsquelle,
+ods
+allg.
+Zweier
+Schaltpunkte
+mit normalerweise
+Körperschluss
+:
+verschiedenen
+Potential,
+durch
+die
+- ist
+eine
+leitende
+Verbindung
+zu
+dem
+↑wenn
+man
+Spannung
+zw.
+diesen
+Teilen
+auf
+da
+reinfasst
+Gehäuse
+(Körper)
+und
+aktiven
+Teilen
+.
+einen
+Wert
+nate
+Null
+fällt
+.
+-
+entsteht
+durch
+Isolationsfehler, Kabelbrücke
+KS
+-
+Erdschluss
+:
+-
+Direkte
+Verbindung
+ohne
+verbraucher
+-
+eine
+unerwünschte
+Reitende
+Verbindung
+-
+Wenn
+sich
+4 ,
+alle
+Spannungsführender
+Teile
+mit Erde.
+unabhängig
+voneinander
+berühren
+-
+Phase
+zur Erde
+-
+Leiterschluss:
+-
+Schalter
+gedrückt,
+lässt
+sich
+nicht
+mehr
+öffnen
+-
+wie
+eingeschaltet
+und
+nemme
+ausschalte
+D
+W
+-
+Gleichstran
+ist
+gut
+für
+übertragung
+Al
+=
+Wechselstrom
+DC
+=
+Gleichstram
+·Gleichstram
+für
+zutlause
+nichtig
+
+Seite 3
+
+1.1 Gefahren im Umgang mit el. Strom
+5 Sicherheitsregeln
+1.1 Gefahren im Umgang mit el. Strom
+sehr
+sehr
+WICHTIG
+Horst der
+Elektriker
+
+Seite 4
+
+2.1.1 Sinnbilder und Messwerke
+2.1.2 Genauigkeit und Messfehler
+p
+O
+
+Seite 5
+
+Messfehler
+Persönliche Fehler
+Einflussfehler
+Systematische Fehler
+Anzeigefehler
+2.1.2 Genauigkeit und Messfehler
+2.1.2 Genauigkeit und Messfehler
+3
+Wichtig
+↑
+G
+
+Seite 6
+
+Messfehler von Digitalmessgeräten
+F
+zulässiger, absoluter Fehler
+M
+Messwert, angezeigter Wert
+k
+Genauigkeitsklasse
+z
+Anzeigenunsicherheit (Digit)
+l
+Auflösung der Digitalanzeige
+2.1.2 Genauigkeit und Messfehler
+Übung 2
+Ein analoges Messgerät zeigt folgenden Wert:
+Berechnen Sie für dieses Messgerät die Skalenkonstante, den absoluten
+Fehler F, den relativen Fehler f, die Obergrenze wo und Untergrenze wu.
+Übung 2
+Siehe in Fachkunde Elektrotechnik
+könnte
+nach
+Messwert
+Gefraftet
+werden
+=
+K
+5)
+
+Seite 7
+
+3
+.
+1.3 Elektrizitätswirtschaft
+3.
+1 .
+3 .1
+Besonderheiten
+der
+el. Energieversorgung
+Technisch
+:
+Praktisch
+keine
+Speichermöglichkeit
+Verbrauch
+Erzeugung
+es. Energie
+erfordert
+el. Evergie
+Gleichzeitigkeit
+Verpflichtungen
+:
+Anschlussverpflichtung
+und
+sichere
+Stromversorgung
+Wirtschaftlichkeit
+Umweltschutz
+Wettbewerb
+Trennung
+von
+Erzeugung-Transport-Vertrieb
+Einspeisevorschriften
+Wirtschaftliche
+Besonderheiten:
+Hohe
+Investitionskosten
+Lange
+Lebensdauer
+(40 Jahre)
+Lange
+Planungszeiträume
+3.
+1 .
+3.2
+Stromverbrauch
+Tagesbelastungskurve
+PA------------------------------Pengpass
+1↓Preserve
+Pengpass
+= Prax Preserve
+&
+I
+lassignals,-
+1, 1pm
+Prax
+Stra
+Spitzen
+lastX
+-
+Pmittel
+Pump
+-------------
+=
+r-
+Pmax
+......
+-
+-----
+-
+-
+~
+614/1/21 1 11111
+↑
+:
+Grundlast
+:
+0,9Pm
+Reservetakar r =
+1,
+2
+I
+L
+S
+I
+1
+1
+1
+>
+I ...
+iz
+is.
+24
+0
+- 5
+Nächtliche
+Schwachlastzeit
+12
+Mittagsspitze
+5-8
+Arbeitsbeginn
+12 -
+17
+Zurückgehende
+Arbeitsintensität
+8-12
+Arbeitszeit
+~
+19
+Feierabendspitze
+(Kochen, TV)
+
+Seite 8
+
+Wintertag
+:
+Pm
+= 70GW
+Schwankungsbreite I
+10%
+Sommertag
+:
+ca .
+60
+%
+Grundlastkraftwerke
+:
+Hohe
+Investitionskosten,
+niedrige Brennstoffkosten,
+Schlechte
+Regelbarkeit
+möglichst
+dauernd
+volle
+Leistung
+Lautwasser-Ku
+Braunkohle-kW
+GuD-/Kombi-kw
+Steinkohle-Kw
+-
+Kernkraftwerk
+Fahrplanlast
+:
+Langsam
+regelbare
+Kur
+nach
+Lastprognose
+gefahren
+Steinkohle
+-
+KW
+Gas-K
+. Öl-kW
+GrD-/Kombi-kw
+-
+Lastprognose
+:
+> Vergleichbarer
+Tag
+des
+Vorjahrs
+Einspeiseprognose
+:
+-
+besondere
+Ereignisse
+Vorjahr
+(wind,
+Sonne)
++Trend
++-
+Witterung
+↓
+besondere
+Ereignisse
++1-aktuelle
+Last
+
+Seite 9
+
+3.1 Wechselstrom
+P = S * cos φ
+[W]
+S = U * I
+[VA]
+Q = S * sin φ
+[var]
+Leistungsfaktoren: 
+3.1 Wechselstrom
+Wechselstrom
+hat
+die Bahn
+Drehstram
+haben
+wir
+was
+hat
+Nachteile
+WS:
+Wechselstram
+für
+- Blindanteile
+Vorteile
+gegenüber
+trom
+- Handy
+wird
+mit
+Gleichs
+Gleichstram
+geladen
+-
+Bei
+LED ist
+Gleichstrom
+besser
+↓Erst
+- 3
+Leiter
+System
+einer
+oder
+Lein
+Rückleiter
+-Drehstram
+-Gleichstram
+Warren
+1.
+Netze
+-
+nicht
+transformieren,
+Spannung
+nicht
+So hoch
+Wichtig
+I
+Wirkanteil
+Blindanteil
+-
+
+Seite 10
+
+3.3 Drehstromsystem
+Drehstromsystem
+3.3 Drehstromsystem
+Gleichstram
+-Dauermagnet
+-
+Dauerhaft
+nord &
+süd
+Pol
+anziehung
+-Roter
+-
+Statar
+-
+Luftspalt
+An
+50Hz
+netz:
+Glühbirne
+dimmert
+mit
+100Hz
+Transformator
+brummt
+mit
+100Hz
+Eisentern
+geschichtet,
+ist
+gegen
+Wirbelströme,
+Wichtiges Bild
+oder
+gegeneinander
+isolieren
+mit
+Lade
+
+Seite 11
+
+3.3
+Drehstramsystem
+Vorteile
+des
+Drehstroms
+im
+Vergleich
+Zum
+einphasigen
+Wechselstrom
+.
+1
+-
+Leistungsverluste
+und
+Leistungskosten
+o >
+--
+[
+E
+0
+:
+3
+mal
+- .................
+nicht
+unbedingt
+nötig ,
+3 Phasen
+gleichen
+sich
+aus
+-
+Rückleiter
+weglassen
+oder
+nur
+einer
+nötig
+2
+.. Einfache
+Erzeugung
+von
+Drehfeldern
+3
+.
+Transformierbarkeit
+4.
+Gleichmäßige
+Leistungserzeugung
+pe(t) +pz(t)
++
+Ps(t)
+=
+P
+=
+Const.
+5 .
+Verfügbarkeit
+von
+2
+Spannungen
+G
+.
+Einfache
+Erzeugung
+in der
+Synchronmaschine
+Ständernicklung z
+↑
+Läuter,
+Rotor, Polrad
+S
+Ständer
+E
+&
+-
+-un(t)
+- vz(t)
+W
+*-
+Ständerwicklung 1
+( a
+· 1
+V
+&-
+* ~
+V
+IT
+·
+I
+&
+· sooogoo"
+lo ·
+E
+1281880 · 4oo
+30j0 360
+-
+I
+--
+&
+Ständerwicklung 3
+-
+(Ev.
+nochmal
+exakt
+Konstruieren)
+Erregerstrom Ie
+(Gleichstrom)
+erzeugt
+ein
+magnetisches
+Feld,
+dass
+sich
+über
+den
+Ständer
+schließt
+.
+Purch
+Drehung
+des
+Erregerfeldes
+wird
+in den
+Wicklungen
+41,
+12,
+3
+jeweils
+eine
+Spannung
+induziert,
+die
+um
+120°
+gegeneinander
+phasenverschoben
+ist/sind
+.
+
+Seite 12
+
+3.3 Drehstromsystem
+3.3 Drehstromsystem
+Spannung
+kann
+mal
+nach
+unten,
+wenn
+Z. B
+.
+Herd angeschaltet
+wird
+flackert
+Licht
+.
+Bei
+47,54z
+müssen
+Netze
+umgestellt
+werden
+.
+untere
+Grenze,
+da
+wird es
+Kritisch
+.
+↑
+O
+Mon
+muss
+wissen
+-
+Phase
+Phase
+400
+-
+Phase
+Neutral
+wieviel
+Span
+e
+-
+230
+
+Seite 13
+
+3.3 Drehstromsystem
+3.3.1 Drehstromsystem Kennzeichnung
+Kennzeichnung
+wichtigp
+
+Seite 14
+
+TN-C
+TN-S
+3.3.1 Drehstromsystem Kennzeichnung
+3.3.1 Drehstromsystem Kennzeichnung
+Kombinierter
+PEN
+Separiertes
+PEN
+TNS
+TNC
+-
+kein
+RCD
+N
+und
+PE
+separiert,
+kurz
+vor
+-
+nur
+sicherung
+-
+Zähler
+wird
+- Hauptretz
+TNC
+-
+Im Harsnetz
+↑
+wichtig
+0
+unbedingt
+lernen
+-
+Komplett
+wieder-
+geben
+können
+
+Seite 15
+
+3.3.1 Drehstromsystem Kennzeichnung
+TN-C-S
+TT
+3.3.1 Drehstromsystem Kennzeichnung
+
+Seite 16
+
+4.1 Leitungen und Kabeln
+Einflussgrößen auf die Strombelastbarkeit von Kabeln 
+und Leitungen
+Leiterquerschnitt
+Anzahl der belasteten Adern
+Leiterisolierung
+Leitungs- und Kabelaufbau
+Verlegeart
+Umgebungstemperatur
+Häufung von Kabeln oder Leitungen
+4.1.1 Leitungsberechnung
+- Bemessungsspannungen
+können
+-
+01
+nicht
+gut an
+230
+Volt
+-
+Leiterquerschnitt
+00
+O
+↓
+O
+Harmanisiert
+805
+Wichtig
+p
+8
+Paar
+Punkte
+aufzählen
+können
+
+Seite 17
+
+Im TN-System muss bei einem Körperschluss die vorgeschaltete 
+Überstrom-Schutzeinrichtung, z.B. ein Leitungsschutzschalter, 
+innerhalb der nach DIN VDE 0100, Teil 410 geforderten 
+Abschaltzeit auslösen.
+5.3 Prüfen der Schutzmaßnahmen
+Die Messung der Schleifenimpedanz muss mit der 
+Bemessungsfrequenz, z. B. 50 Hz, einmal pro Stromkreis an der 
+messtechnisch ungünstigsten Stelle durchgeführt werden.
+Die Schleifenimpedanz ist die Summe aller Widerstände des 
+Verteilungsnetzes und der Leitungen im Endstromkreis. Sie beträgt 
+in der Praxis ca. 1 Ω.
+5.3 Prüfen der Schutzmaßnahmen
+Wichtig
+Wichtig
+12
+merken
+
+Seite 18
+
+Wirkungen des Blitzstromes
+thermisch
+dynamisch
+elektromagnetisch
+Blitzschutzsysteme (LPS) haben die Aufgabe bauliche 
+Anlagen vor den Folgen von Blitzeinschlägen zu 
+schützen.
+Blitzschutzsysteme bestehen aus dem äußeren und dem 
+inneren Blitzschutz.
+5.4 Blitzschutz
+Äußerer Blitzschutz
+Auffangvorrichtungen
+Ableitungen
+Erdungsanlage
+Innerer Blitzschutz
+Blitzschutz-Potenzialausgleich
+Überspannungs-Schutzgeräte
+Einhalten von Trennungsabständen
+5.4 Blitzschutz
+Wichtig
+Wichtig
+
+Seite 19
+
+Meldeeinrichtungen zur Raumüberwachung
+Infrarot-Bewegungsmelder
+Ultraschall-Bewegungsmelder
+Fadenzugmelder
+Erschütterungsmelder
+Körperschallmelder
+8.1.1 Einbruchmeldeanlagen
+8.1.1 Einbruchmeldeanlagen
+Wichtig
+
+Seite 20
+
+Brandmeldeanlagen 
+bestehen aus:
+der Brandmeldezentrale
+den Brandmeldern
+den Alarmgebern
+Eine solche Anlage muss gegen Spannungsunterbrechung
+abgesichert sein (z.B. Akku).
+8.1.2 Brandmeldeanlagen
+8.1.2 Brandmeldeanlagen
+Wichtig
+
+Seite 21
+
+8.3 Antennen- und Verteilanlagen
+8.3 Antennen- und Verteilanlagen
+Interessantes
+Bild
+wiederstände
+alle
+Gleich
+
+Seite 22
+
+Berechnungszusammenhänge 
+siehe Fachkunde Elektrotechnik
+9.2 Größen der Lichttechnik
+9.2 Größen der Lichttechnik
+Wichtig
+Wann
+hote
+Zahl,
+Wann
+dukler
+(Farblichtkommern)

@@ -31,4 +31,31 @@ def chunk_text(
 
         start += chunk_size - overlap
 
+    print(f"Anzahl Chunks: {len(chunks)}")
+    print(f"Speicherbedarf: {sum(len(chunk.encode('utf-8')) for chunk in chunks) / 1024:.2f} KB")
+
     return chunks
+
+
+
+if __name__ == "__main__":
+    from embeddings import EmbeddingModel
+    from vector_store import LocalVectorStore
+
+    with open("standard-rag/data/geladener_text.txt", "r", encoding="utf-8") as file:
+        text = file.read()
+
+    chunks = chunk_text(
+        text,
+        chunk_size=100,
+        overlap=50,
+    )
+    
+    embedding_model = EmbeddingModel()
+    chunk_embeddings = embedding_model.embed_texts(chunks)
+
+    vector_store = LocalVectorStore("vector_db_elektrotechnik_3")
+    vector_store.add(chunks, chunk_embeddings)
+    vector_store.save()
+
+    print("Vektordatenbank wurde gespeichert.")
