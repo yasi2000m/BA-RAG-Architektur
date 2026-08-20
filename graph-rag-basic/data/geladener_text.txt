@@ -1,0 +1,2261 @@
+Seite 1
+
+Text aus PDF:
+1 Gefahren
+Gefahr
+1.1 Gefahren im Umgang mit el. Strom
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Hauptabschnitte:
+
+1. Überschrift:  
+   "1 Gefahren"  
+   Darunter steht in großer roter Schrift das Wort "Gefahr".
+
+2. Abschnitt 1.1 mit dem Titel:  
+   "1.1 Gefahren im Umgang mit el. Strom"
+
+In diesem Abschnitt ist eine schematische Darstellung eines elektrischen Stromkreises mit einem Menschen enthalten. Die Darstellung zeigt folgende Elemente:
+
+- Ein Generator-Symbol mit der Bezeichnung "G" und einer Spannung "U".
+- Ein Körperwiderstand "R_K" ist grün markiert und bezeichnet.
+- Drei Widerstände sind im Körper des Menschen eingezeichnet und beschriftet:  
+  - R_ü1 (Leiter-Körper-Widerstand)  
+  - R_Ki (Körperinnenwiderstand)  
+  - R_ü2 (Körper-Leiter-Widerstand)
+- Ein Strom I_K (Körperstrom) fließt durch den Körper.
+- Die Berührungsspannung ist mit U_B bezeichnet.
+
+Neben der Grafik sind folgende Definitionen und Formeln aufgeführt:
+
+Definitionen:  
+1. R_ü1 Leiter-Körper-Widerstand  
+2. R_Ki Körperinnenwiderstand  
+3. R_ü2 Körper-Leiter-Widerstand  
+4. U_B Berührungsspannung  
+5. I_K Körperstrom
+
+Formeln:  
+1. R_K = R_ü1 + R_Ki + R_ü2  
+2. U_B* = R_K · I_K
+
+Hinweis:  
+"* statt U_B auch U_T"
+
+Unten rechts ist ein Logo mit der Aufschrift "EUROPA LEHRMITTEL".
+
+Zusammenhang:  
+Die Seite beschreibt die Gefahren beim Umgang mit elektrischem Strom, insbesondere den elektrischen Widerstand des menschlichen Körpers, der sich aus mehreren Teilwiderständen zusammensetzt, und die daraus resultierende Berührungsspannung und der Körperstrom.
+
+Seite 2
+
+Text aus PDF:
+1.1 Gefahren im Umgang mit el. Strom
+1.1 Gefahren im Umgang mit el. Strom
+Wichtig
+!
+Leiterschluss:
+Kurzschluss:
+-
+ist
+eine
+Fehlerhafte
+Verbindung zw.
+Leitern,
+wenn
+im
+Fehlerstrankreis
+ein
+Mens
+-
+ist,
+wenn
+eine
+nahezu
+widerstandslose
+Nutzwiderstand
+liegt
+.
+Hier
+wird
+anders
+als
+beim
+Kurzschluss, der
+Fehlerstrom
+derch
+versch
+Verbindung
+der
+beide
+Pole
+einer
+den
+Nutzwiderstand
+begrenzt
+.
+Spannungsquelle,
+ods
+allg.
+Zweier
+Schaltpunkte
+mit normalerweise
+Körperschluss
+:
+verschiedenen
+Potential,
+durch
+die
+- ist
+eine
+leitende
+Verbindung
+zu
+dem
+↑wenn
+man
+Spannung
+zw.
+diesen
+Teilen
+auf
+da
+reinfasst
+Gehäuse
+(Körper)
+und
+aktiven
+Teilen
+.
+einen
+Wert
+nate
+Null
+fällt
+.
+-
+entsteht
+durch
+Isolationsfehler, Kabelbrücke
+KS
+-
+Erdschluss
+:
+-
+Direkte
+Verbindung
+ohne
+verbraucher
+-
+eine
+unerwünschte
+Reitende
+Verbindung
+-
+Wenn
+sich
+4 ,
+alle
+Spannungsführender
+Teile
+mit Erde.
+unabhängig
+voneinander
+berühren
+-
+Phase
+zur Erde
+-
+Leiterschluss:
+-
+Schalter
+gedrückt,
+lässt
+sich
+nicht
+mehr
+öffnen
+-
+wie
+eingeschaltet
+und
+nemme
+ausschalte
+D
+W
+-
+Gleichstran
+ist
+gut
+für
+übertragung
+Al
+=
+Wechselstrom
+DC
+=
+Gleichstram
+·Gleichstram
+für
+zutlause
+nichtig
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite behandelt das Thema "1.1 Gefahren im Umgang mit elektrischem Strom" und enthält handschriftliche Notizen, technische Zeichnungen, eine Tabelle sowie Erklärungen zu verschiedenen Arten von elektrischen Fehlerströmen.
+
+---
+
+**Obere Hälfte der Seite:**
+
+**Überschrift:**  
+1.1 Gefahren im Umgang mit el. Strom (mit handschriftlicher Notiz "Wichtig!")
+
+**Handschriftliche Erklärung "Kurzschluss":**  
+- Ist, wenn eine nahezu widerstandslose Verbindung der beide Pole einer Spannungsquelle, oder allg. zweier Schaltpunkte mit normalerweise verschiedenen Potential, durch die Spannung zw. diesen Teilen auf einen Wert nahe Null fällt.
+
+**Handschriftliche Erklärung "ks":**  
+1. Direkte Verbindung ohne Verbraucher  
+2. Wenn sich L1, L2, L3 alle unabhängig voneinander berühren
+
+**Technische Zeichnung (oben rechts):**  
+- Dreiphasenwechselstromnetz 3~ 50Hz 400 V mit den Leitungen L1, L2, L3  
+- Darstellung eines Motors mit Sternschaltung  
+- Verschiedene Fehlerarten sind eingezeichnet mit Blitzen und Beschriftungen:  
+  1. Kurzschluss (zwischen zwei Phasen)  
+  2. Leiterschluss (zwischen Phase und Leiter)  
+  3. Körperschluss (Verbindung zwischen aktiven Teilen und Gehäuse)  
+  4. Erdschluss (Verbindung zwischen spannungsführenden Teilen und Erde)
+
+**Handschriftliche Definitionen rechts:**
+
+- **Leiterschluss:**  
+  - Ist eine fehlerhafte Verbindung zwischen Leitern, wenn im Fehlerstromkreis ein Messwiderstand liegt.  
+  - Hier wird anders als beim Kurzschluss der Fehlerstrom durch den Messwiderstand begrenzt.
+
+- **Körperschluss:**  
+  - Ist eine leitende Verbindung zwischen dem Gehäuse (Körper) und aktiven Teilen.  
+  - Entsteht durch Isolationsfehler, Kabelbrüche.
+
+- **Erdschluss:**  
+  - Eine unerwünschte leitende Verbindung spannungsführender Teile mit Erde.  
+  - Phase zur Erde.
+
+**Handschriftliche Notizen unten rechts:**  
+- Leiterschluss:  
+  - Schalter gedrückt, lässt sich nicht mehr öffnen  
+  - Wie eingeschaltet und nehme ausschalten
+
+---
+
+**Untere Hälfte der Seite:**
+
+**Überschrift:**  
+1.1 Gefahren im Umgang mit el. Strom
+
+**Technische Zeichnung (links):**  
+- Darstellung einer Person, die an einem Wasserhahn steht und mit einer Maschine arbeitet, an der ein Fehlerstrom auftritt (Bruch des PE-Leiters).  
+- Beschriftungen:  
+  - U_B Berührungsspannung  
+  - U_F Fehler­spannung  
+  - R_A Anlagen­erder  
+  - R_B Betriebs­erder  
+- Stromnetz: 3/N~ 50Hz 400/230 V mit den Leitungen L1, N, PE
+
+**Tabelle rechts (Titel: "Tabelle: Zulässige Berührungsspannungen"):**
+
+1. Für Menschen  
+   - AC 50 V  
+   - DC 120 V
+
+2. Kinderspielzeuge, Kesselleuchten  
+   - AC 25 V  
+   - DC 60 V
+
+**Handschriftliche Notizen unten rechts:**  
+- Gleichstrom ist gut für Übertragung  
+- AC = Wechselstrom  
+- DC = Gleichstrom  
+- Gleichstrom für zuhause wichtig
+
+---
+
+**Zusammenfassung der technischen Zusammenhänge:**
+
+- Ein Kurzschluss ist eine nahezu widerstandslose Verbindung zwischen zwei Punkten mit unterschiedlichem Potential, wodurch die Spannung auf nahezu Null fällt.  
+- Ein Leiterschluss ist eine fehlerhafte Verbindung zwischen Leitern, bei der der Fehlerstrom durch einen Messwiderstand begrenzt wird.  
+- Ein Körperschluss entsteht durch eine leitende Verbindung zwischen dem Gehäuse und aktiven Teilen, meist durch Isolationsfehler oder Kabelbrüche.  
+- Ein Erdschluss ist eine unerwünschte leitende Verbindung zwischen spannungsführenden Teilen und Erde.  
+- Die zulässigen Berührungsspannungen sind für Menschen 50 V AC und 120 V DC, für Kinderspielzeuge und Kesselleuchten 25 V AC und 60 V DC.  
+- Gleichstrom wird als gut für die Übertragung bezeichnet und ist für den Hausgebrauch wichtig.
+
+---
+
+**Formelzeichen und Größen:**
+
+- U_B = Berührungsspannung  
+- U_F = Fehler­spannung  
+- R_A = Anlagen­erder  
+- R_B = Betriebs­erder
+
+---
+
+Das sind alle sichtbaren Informationen, Tabelleninhalte, Beschriftungen, Formeln, Formelzeichen, Rechenwege, Zahlenwerte und technischen Zusammenhänge auf der Seite.
+
+Seite 3
+
+Text aus PDF:
+1.1 Gefahren im Umgang mit el. Strom
+5 Sicherheitsregeln
+1.1 Gefahren im Umgang mit el. Strom
+sehr
+sehr
+WICHTIG
+Horst der
+Elektriker
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Seite 1:
+
+Titel: 1.1 Gefahren im Umgang mit el. Strom
+
+Diagramm/Bildbeschreibung:
+- Das Bild zeigt eine elektrische Leitung mit einem Fehlerpunkt (Fehlerstelle), an dem ein Spannungstrichter entsteht.
+- Unter der Erde ist das Erdoberflächenpotential dargestellt.
+- Zwei Personen stehen auf dem Boden, mit Abständen von 10 m und 20 m vom Fehlerpunkt.
+- Es sind zwei Spannungen eingezeichnet:
+  - U_S (Schrittspannung), dargestellt als Differenz der Spannung zwischen den Füßen der Personen.
+  - U_E (Erderspannung), dargestellt als Spannung vom Fehlerpunkt zur Erde.
+- Beschriftungen im Bild:
+  - Spannungstrichter
+  - Fehlerstelle (in pink)
+  - Erdoberflächenpotential
+  - Abstand (mit Pfeilen zwischen den Personen)
+  - U_S Schrittspannung
+  - U_E Erderspannung
+- Das Bild stammt von "EUROPA LEHRMITTEL" (Logo unten rechts).
+
+Seite 2:
+
+Titel: 1.1 Gefahren im Umgang mit el. Strom
+
+Überschrift: 5 Sicherheitsregeln
+
+Tabelle mit dem Titel: "Die fünf Sicherheitsregeln für Arbeiten im spannungsfreien Zustand (nach DIN VDE 0105)"
+
+1. Freischalten
+   - Freischalten aller Teile der Anlage, an denen gearbeitet werden soll (Bild 2).
+   - LS-Schalter abschalten, Schmelzsicherungen entfernen.
+
+2. Gegen Wiedereinschalten sichern
+   - Betätigungsmechanismus von Schaltgeräten, z.B. LS-Schalter, durch Schloss sichern, Sicherungseinsätze mitnehmen, Verbotsschilder anbringen (Bild 3).
+
+3. Spannungsfreiheit feststellen
+   - Spannungsfreiheit durch Fachkraft feststellen.
+   - Anlage mit zweipoligem Spannungsprüfer prüfen (Bild 4).
+
+4. Erden und kurzschließen
+   - Zuerst immer erden, dann mit den kurzschließenden aktiven Teilen verbinden (muss von der Arbeitsstelle aus sichtbar sein).
+   - Regel 4 entfällt bei Anlagen unter 1000 V, z.B. in Kabelanlagen, ausgenommen Freileitungen.
+
+5. Benachbarte unter Spannung stehende Teile abdecken oder abschranken
+   - Bei Anlagen unter 1 kV genügen zum Abdecken isolierende Tücher, Schläuche, Formstücke; über 1 kV sind zusätzlich Absperrtafeln, Seile, Warntafeln erforderlich.
+   - Körperschutz, z.B. Schutzhelm mit Gesichtsschutz, eng anliegende Kleidung und Handschuhe tragen.
+
+Handschriftliche Notizen:
+- Rechts oben: "sehr sehr WICHTIG!"
+- Unten: "Horst der Elektriker"
+
+Das Logo "EUROPA LEHRMITTEL" ist auch auf dieser Seite unten rechts zu sehen.
+
+Seite 4
+
+Text aus PDF:
+2.1.1 Sinnbilder und Messwerke
+2.1.2 Genauigkeit und Messfehler
+p
+O
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit den Überschriften:
+
+**2.1.1 Sinnbilder und Messwerke**
+
+- Es ist ein Symbol abgebildet, das aus einem Rechteck mit zwei parallelen Linien darüber besteht.
+- Eine technische Zeichnung eines Messwerks ist dargestellt mit folgenden Beschriftungen:
+  1. "lineare Skala" – zeigt auf eine halbkreisförmige Skala mit Strichen.
+  2. "Stromspule (Strompfad)" – bezeichnet eine Spule aus Kupferdraht, die Teil des Messwerks ist.
+  3. "Wirbelstromdämpfung" – zeigt auf eine Komponente, die der Dämpfung dient.
+  4. "Spannungsspule (Spannungspfad)" – bezeichnet eine weitere Spule, die für den Spannungspfad zuständig ist.
+- Das Bild zeigt die mechanische und elektrische Struktur eines analogen Messinstruments mit Zeiger und Spulen.
+- Unten rechts ist ein Logo mit der Aufschrift "EUROPA LEHRMITTEL".
+
+**2.1.2 Genauigkeit und Messfehler**
+
+- Überschrift: "Tabelle: Genauigkeitsklassen elektrischer Messgeräte"
+- Die Tabelle ist in zwei Hauptbereiche unterteilt: "Feinmessgeräte" und "Betriebsmessgeräte".
+- Für Feinmessgeräte:
+  1. Genauigkeitsklasse k: 0,1 | 0,2 | 0,5
+  2. Anzeige-Fehler in % vom Messbereichsendwert: ± 0,1 % | ± 0,2 % | ± 0,5 %
+- Für Betriebsmessgeräte:
+  1. Genauigkeitsklasse k: 1 | 1,5 | 2,5 | 5
+  2. Anzeige-Fehler in % vom Messbereichsendwert: ± 1 % | ± 1,5 % | ± 2,5 % | ± 5 %
+- Unten rechts ist erneut das Logo "EUROPA LEHRMITTEL" zu sehen.
+- Rechts neben der Tabelle ist eine rote Markierung in Form eines Ausrufezeichens.
+
+Es sind keine weiteren Formeln, Rechenwege oder technische Zusammenhänge auf der Seite sichtbar.
+
+Seite 5
+
+Text aus PDF:
+Messfehler
+Persönliche Fehler
+Einflussfehler
+Systematische Fehler
+Anzeigefehler
+2.1.2 Genauigkeit und Messfehler
+2.1.2 Genauigkeit und Messfehler
+3
+Wichtig
+↑
+G
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit der Überschrift "2.1.2 Genauigkeit und Messfehler".
+
+Erster Abschnitt:
+
+Überschrift: 2.1.2 Genauigkeit und Messfehler
+
+Unterüberschrift: Messfehler
+
+Aufzählung der Messfehlerarten:
+1. Persönliche Fehler
+2. Einflussfehler
+3. Systematische Fehler
+4. Anzeige Fehler
+
+Daneben ist eine rote handschriftliche Markierung mit einer geschwungenen Klammer und dem Wort "wichtig" sowie ein rotes Ausrufezeichen.
+
+Es folgt eine Tabelle mit drei Zeilen, die Formeln und deren Erläuterungen enthält:
+
+1. Zeile:
+Formel: F = (k * E) / 100
+Erklärungen:
+- F: absoluter Fehler
+- k: Genauigkeitsklasse
+- E: Messbereichsendwert
+
+2. Zeile:
+Formel: f = (F * 100%) / M
+Erklärungen:
+- f: relativer Fehler
+- F: absoluter Fehler
+- M: Messwert
+
+3. Zeile:
+Formeln:
+- w_u = M - F
+- w_o = M + F
+Erklärungen:
+- w_u: zulässige Untergrenze des wahren Wertes
+- w_o: zulässige Obergrenze des wahren Wertes
+
+Am rechten unteren Rand der Tabelle ist ein kleines Logo mit der Aufschrift "EUROPA LEHRMITTEL".
+
+Zweiter Abschnitt:
+
+Überschrift: 2.1.2 Genauigkeit und Messfehler
+
+Darunter befindet sich ein Blockschaltbild mit folgenden Elementen von links nach rechts:
+
+1. Bereichsumschalter (Symbol: ein Rechteck mit einem diagonalen Pfeil und einem Schalter)
+2. Eingangsverstärker (Symbol: ein Dreieck, typisches Verstärkersymbol)
+3. AD-Umsetzer (Symbol: ein Rechteck mit den Zeichen "∩/#")
+4. Speicher (Symbol: ein Rechteck mit einem schwarzen Quadrat oben links)
+
+Vom Speicher gehen zwei Ausgänge ab:
+
+- Ein Ausgang führt zum Drucker (Beschriftung "Drucker")
+- Ein Ausgang führt zur Anzeige (Beschriftung "Anzeige")
+
+Die Anzeige ist ein Rechteck mit den Ziffern "1 8 7 5" in einzelnen blauen Kästchen, gefolgt von einem "V" (Volt).
+
+Am unteren rechten Rand ist erneut das Logo "EUROPA LEHRMITTEL".
+
+Zusammenhang:
+
+Der Abschnitt behandelt die Genauigkeit und Messfehler bei Messgeräten. Es werden verschiedene Fehlerarten genannt, wichtige Formeln zur Berechnung des absoluten und relativen Fehlers sowie der zulässigen Wertebereiche dargestellt. Das Blockschaltbild zeigt den Aufbau eines Messsystems mit Bereichsumschalter, Verstärker, Analog-Digital-Umsetzer, Speicher, Anzeige und Drucker. Die Anzeige zeigt einen Messwert von 1875 V an.
+
+Seite 6
+
+Text aus PDF:
+Messfehler von Digitalmessgeräten
+F
+zulässiger, absoluter Fehler
+M
+Messwert, angezeigter Wert
+k
+Genauigkeitsklasse
+z
+Anzeigenunsicherheit (Digit)
+l
+Auflösung der Digitalanzeige
+2.1.2 Genauigkeit und Messfehler
+Übung 2
+Ein analoges Messgerät zeigt folgenden Wert:
+Berechnen Sie für dieses Messgerät die Skalenkonstante, den absoluten
+Fehler F, den relativen Fehler f, die Obergrenze wo und Untergrenze wu.
+Übung 2
+Siehe in Fachkunde Elektrotechnik
+könnte
+nach
+Messwert
+Gefraftet
+werden
+=
+K
+5)
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Hier sind die sichtbaren Informationen aus der PDF-Seite:
+
+---
+
+**2.1.2 Genauigkeit und Messfehler**
+
+**Messfehler von Digitalmessgeräten**
+
+Formel:  
+F = (k * M) / 100 + z * l
+
+Legende:  
+1. F: zulässiger, absoluter Fehler  
+2. M: Messwert, angezeigter Wert  
+3. k: Genauigkeitsklasse  
+4. z: Anzeigenunsicherheit (Digit)  
+5. l: Auflösung der Digitalanzeige
+
+---
+
+**Tabelle: Crestfaktor* und Signalform (Beispiele)**
+
+- Erste Zeile (Überschriften):  
+  - Signalform  
+  - (drei Signalform-Bilder: Sinus, Rechteck mit t_i = t_p, Sinus mit zusätzlicher Halbwelle)  
+- Zweite Zeile:  
+  - Crestfaktor  
+  - F_c = √2  
+  - F_c = √2  
+  - F_c > √2  
+
+Fußnote: * Weitere Crestfaktoren: Seite 127
+
+---
+
+Formel rechts neben der Tabelle:  
+F_c = û / U
+
+---
+
+**Übung 2**
+
+Text:  
+Ein analoges Messgerät zeigt folgenden Wert:
+
+(Bild eines analogen Messgeräts mit Skala von 0 bis 100, Nadel zeigt auf ca. 50)  
+- Beschriftungen am Bild:  
+  - "Anzeige in Skalenteilen" (oben links)  
+  - "Skalenendwert" (oben rechts)  
+  - "Genauigkeitsklasse = k" (unten links, gelb markiert)  
+  - "Messbereich = 10V" (unten rechts, blau markiert)  
+  - Symbol für Wechselspannung mit 1,5 (unten links)
+
+Handschriftliche Notiz rechts neben dem Bild:  
+"könnte nach Messwert gefragt werden 5V"
+
+---
+
+Aufgabenstellung:  
+Berechnen Sie für dieses Messgerät die Skalenkonstante, den absoluten Fehler F, den relativen Fehler f, die Obergrenze w_o und Untergrenze w_u.
+
+Hinweis: Siehe in Fachkunde Elektrotechnik
+
+---
+
+Das sind alle sichtbaren Inhalte, inklusive Formeln, Tabellen, Beschriftungen, Zahlenwerte und technische Zusammenhänge.
+
+Seite 7
+
+Text aus PDF:
+3
+.
+1.3 Elektrizitätswirtschaft
+3.
+1 .
+3 .1
+Besonderheiten
+der
+el. Energieversorgung
+Technisch
+:
+Praktisch
+keine
+Speichermöglichkeit
+Verbrauch
+Erzeugung
+es. Energie
+erfordert
+el. Evergie
+Gleichzeitigkeit
+Verpflichtungen
+:
+Anschlussverpflichtung
+und
+sichere
+Stromversorgung
+Wirtschaftlichkeit
+Umweltschutz
+Wettbewerb
+Trennung
+von
+Erzeugung-Transport-Vertrieb
+Einspeisevorschriften
+Wirtschaftliche
+Besonderheiten:
+Hohe
+Investitionskosten
+Lange
+Lebensdauer
+(40 Jahre)
+Lange
+Planungszeiträume
+3.
+1 .
+3.2
+Stromverbrauch
+Tagesbelastungskurve
+PA------------------------------Pengpass
+1↓Preserve
+Pengpass
+= Prax Preserve
+&
+I
+lassignals,-
+1, 1pm
+Prax
+Stra
+Spitzen
+lastX
+-
+Pmittel
+Pump
+-------------
+=
+r-
+Pmax
+......
+-
+-----
+-
+-
+~
+614/1/21 1 11111
+↑
+:
+Grundlast
+:
+0,9Pm
+Reservetakar r =
+1,
+2
+I
+L
+S
+I
+1
+1
+1
+>
+I ...
+iz
+is.
+24
+0
+- 5
+Nächtliche
+Schwachlastzeit
+12
+Mittagsspitze
+5-8
+Arbeitsbeginn
+12 -
+17
+Zurückgehende
+Arbeitsintensität
+8-12
+Arbeitszeit
+~
+19
+Feierabendspitze
+(Kochen, TV)
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Hier sind die sichtbaren Informationen aus der PDF-Seite vollständig und in der Reihenfolge ihres Erscheinens:
+
+---
+
+**3.1.3 Elektrizitätswirtschaft**
+
+**3.1.3.1 Besonderheiten der el. Energieversorgung**
+
+Technisch: Praktisch keine Speichermöglichkeit
+
+Es sind zwei Kästen gezeichnet:
+
+1. Kasten links: "Verbrauch el. Energie"
+2. Kasten rechts: "Erzeugung el. Energie"
+
+Zwischen den Kästen steht: "erfordert Gleichzeitigkeit"
+
+Verpflichtungen:
+
+1. Anschlussverpflichtung und sichere Stromversorgung
+2. Wirtschaftlichkeit
+3. Umweltschutz
+4. Wettbewerb
+5. Trennung von Erzeugung - Transport - Vertrieb
+6. Einspeisevorschriften
+
+Wirtschaftliche Besonderheiten:
+
+1. Hohe Investitionskosten
+2. Lange Lebensdauer (> 40 Jahre)
+3. Lange Planungszeiträume
+
+---
+
+**3.1.3.2 Stromverbrauch**
+
+Tagesbelastungskurve (Diagramm):
+
+- Die x-Achse ist von 0 bis 24 Stunden beschriftet, mit Markierungen bei 1, 6, 12, 18, 24.
+- Die y-Achse ist mit "P" beschriftet.
+- Es gibt eine durchgezogene Kurve, die den Stromverbrauch über den Tag darstellt.
+- Die Kurve ist in verschiedene Lastarten unterteilt:
+
+  - "Pumpstrom" (unterer Bereich, schraffiert)
+  - "Grundlast" (unterer Bereich, durchgezogene Linie)
+  - "Spitzenlast" (oberer Bereich, schraffiert)
+  - "Reserve" (kleiner Bereich oberhalb der Spitzenlast, mit Pfeil markiert)
+
+- Es gibt eine gestrichelte Linie oberhalb der Kurve, die als "Preserve" bezeichnet ist.
+- "Pmax" ist als Maximalwert auf der y-Achse markiert.
+- "Pmittel" ist als Mittelwert auf der y-Achse markiert.
+- Rechts neben dem Diagramm steht:
+
+  - "Pengpass"
+  - Formel: Pengpass = Pmax + Preserve
+  - = r * Pmax
+  - r = Reservefaktor r ≈ 1,2
+
+Zeitliche Einteilung und Beschriftungen unterhalb der x-Achse:
+
+1. 0 - 5: "wöchentliche Schwachlastzeit"
+2. 5 - 8: "Arbeitsbeginn"
+3. 8 - 12: "Arbeitszeit"
+4. 12: "Mittagsspitze"
+5. 12 - 17: "zurückgehende Arbeitsintensität"
+6. ca. 19: "Feierabendspitze (Kochen, TV)"
+
+---
+
+Das sind alle sichtbaren Inhalte, inklusive der Beschriftungen, Diagramme, Formeln und nummerierten Listen.
+
+Seite 8
+
+Text aus PDF:
+Wintertag
+:
+Pm
+= 70GW
+Schwankungsbreite I
+10%
+Sommertag
+:
+ca .
+60
+%
+Grundlastkraftwerke
+:
+Hohe
+Investitionskosten,
+niedrige Brennstoffkosten,
+Schlechte
+Regelbarkeit
+möglichst
+dauernd
+volle
+Leistung
+Lautwasser-Ku
+Braunkohle-kW
+GuD-/Kombi-kw
+Steinkohle-Kw
+-
+Kernkraftwerk
+Fahrplanlast
+:
+Langsam
+regelbare
+Kur
+nach
+Lastprognose
+gefahren
+Steinkohle
+-
+KW
+Gas-K
+. Öl-kW
+GrD-/Kombi-kw
+-
+Lastprognose
+:
+> Vergleichbarer
+Tag
+des
+Vorjahrs
+Einspeiseprognose
+:
+-
+besondere
+Ereignisse
+Vorjahr
+(wind,
+Sonne)
++Trend
++-
+Witterung
+↓
+besondere
+Ereignisse
++1-aktuelle
+Last
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die sichtbaren Informationen auf der PDF-Seite sind handschriftlich und enthalten technische Zusammenhänge zur Energieerzeugung und Lastprognose. Es gibt zwei Tabellen, Beschriftungen und einige Stichpunkte. Die Inhalte im Detail:
+
+1. Überschrift: "Wintertag: Pm ≈ 70 GW"
+2. "Schwankungsbreite ± 10 %"
+3. "Sommertag: ca. 60 %"
+
+4. Abschnitt "Grundlastkraftwerk:" mit folgenden Stichpunkten:
+   - "Hohe Investitionskosten, niedrige Brennstoffkosten,"
+   - "schlechte Regelbarkeit"
+   - "möglichst dauernd volle Leistung"
+
+5. Tabelle mit vier Einträgen, beschriftet mit "GuD-/Kombi-KW":
+   1. "Laufwasser - KW"
+   2. "Braunkohle - KW"
+   3. "Steinkohle - KW"
+   4. "Kernkraftwerk"
+
+6. Abschnitt "Fahrplanlast: langsam regelbare KW nach Lastprognose gefahren"
+
+7. Tabelle mit zwei Einträgen, beschriftet mit "GuD-/Kombi-KW":
+   1. "Steinkohle - KW"
+   2. "Gas- u. Öl - KW"
+
+8. Abschnitt "Lastprognose:" mit folgendem Eintrag:
+   - "-> vergleichbarer Tag des Vorjahrs"
+
+9. Abschnitt "Einspeiseprognose:" mit folgendem Eintrag:
+   - "-> besondere Ereignisse Vorjahr"
+
+10. Weitere Stichpunkte zu (Wind, Sonne):
+    - "+ Trend"
+    - "+/- Witterung"
+    - "+ besondere Ereignisse"
+    - "+/- aktuelle Last"
+
+Es sind keine Formeln oder Rechenwege sichtbar. Die Tabellen sind jeweils in Kästen dargestellt und beziehen sich auf verschiedene Kraftwerkstypen (KW = Kraftwerk) und deren Einsatz im Lastmanagement. Die Begriffe "GuD-/Kombi-KW" beziehen sich auf Gas- und Dampfkraftwerke bzw. Kombikraftwerke.
+
+Seite 9
+
+Text aus PDF:
+3.1 Wechselstrom
+P = S * cos φ
+[W]
+S = U * I
+[VA]
+Q = S * sin φ
+[var]
+Leistungsfaktoren: 
+3.1 Wechselstrom
+Wechselstrom
+hat
+die Bahn
+Drehstram
+haben
+wir
+was
+hat
+Nachteile
+WS:
+Wechselstram
+für
+- Blindanteile
+Vorteile
+gegenüber
+trom
+- Handy
+wird
+mit
+Gleichs
+Gleichstram
+geladen
+-
+Bei
+LED ist
+Gleichstrom
+besser
+↓Erst
+- 3
+Leiter
+System
+einer
+oder
+Lein
+Rückleiter
+-Drehstram
+-Gleichstram
+Warren
+1.
+Netze
+-
+nicht
+transformieren,
+Spannung
+nicht
+So hoch
+Wichtig
+I
+Wirkanteil
+Blindanteil
+-
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit dem Titel "3.1 Wechselstrom" und behandelt das Thema Wechselstrom mit Diagrammen, Formeln, Schaltbildern und handschriftlichen Notizen.
+
+---
+
+**Oberer Abschnitt:**
+
+- Titel: 3.1 Wechselstrom
+
+- Diagramm:
+  - Ein Diagramm zeigt drei Kurven über einem Winkelbereich von 0° bis 360° (α).
+  - Die Kurven sind farblich unterschieden:
+    - grün: p (Leistung)
+    - blau: u (Spannung)
+    - rot: i (Strom)
+  - Die grüne Fläche unter der Leistungskurve ist beschriftet mit "entspricht Wirkarbeit".
+  - Die Leistungskurve zeigt positive und negative Bereiche, die mit Pfeilen hervorgehoben sind.
+  - Die Achsen sind mit u, i, p beschriftet.
+  - Die x-Achse ist in 0°, 90°, 180°, 270°, 360° unterteilt.
+
+- Handschriftliche Notizen (rot):
+  - Links:
+    1. "Nachteile WS:"
+    2. "- Blindanteile"
+    3. "- Handy wird mit Gleichstrom geladen"
+    4. "- Bei LED ist Gleichstrom besser"
+    5. "- Drehstrom"
+  - Rechts oben:
+    1. "Wechselstrom hat die Bahn"
+    2. "Drehstrom haben wir"
+  - Rechts mittig:
+    1. "was hat Wechselstrom für Vorteile gegenüber Gleichstrom."
+    2. "- Transformierbarkeit"
+    3. "- einfache Erzeugung"
+    4. "- Spannungsebenen wechsel"
+    5. "- 3 Leiter System eines oder kein Rückleiter"
+  - Rechts unten:
+    1. "- Gleichstrom waren 1. Weltz"
+    2. "- nicht transformieren, Spannung nicht so hoch"
+
+---
+
+**Unterer Abschnitt:**
+
+- Titel: 3.1 Wechselstrom
+
+- Diagramm:
+  - Ein weiteres Diagramm mit den Kurven p (grün), u (blau), i (rot) über der Zeitachse t.
+  - Winkel φ = 60° ist markiert.
+  - Die grüne Fläche ist in zwei Bereiche unterteilt:
+    - "entspricht Blindarbeit" (grau)
+    - "entspricht Wirkarbeit" (grün)
+  - Die Kurven sind ähnlich wie im oberen Diagramm, aber mit Phasenverschiebung.
+
+- Schaltbild (a) "Schaltung":
+  - Generator G mit Wechselspannungssymbol.
+  - Widerstand R und Induktivität XL in Reihe.
+  - Strom I fließt durch die Schaltung.
+  - Spannungen Uw und UBL sind an R bzw. XL markiert.
+
+- Leistungsdreieck (b):
+  - Dreieck mit Seiten S (Hypotenuse), P (Grundseite), QL (Höhe).
+  - Winkel φ zwischen P und S.
+
+- Formeln:
+  1. P = S * cos φ [W]
+  2. S = U * I [VA]
+  3. Q = S * sin φ [var]
+
+- Leistungsfaktoren:
+  - cos φ = P / S
+  - sin φ = Q / S
+
+- Handschriftliche Notizen (rot):
+  - Rechts unten neben Leistungsfaktoren:
+    1. "Wichtig"
+    2. Unter cos φ = P / S: "Wiranteil"
+    3. Unter sin φ = Q / S: "Blindanteil"
+
+---
+
+**Technische Zusammenhänge:**
+
+- Wechselstrom hat Blindanteile, die keine Wirkarbeit leisten.
+- Vorteile von Wechselstrom gegenüber Gleichstrom sind Transformierbarkeit, einfache Erzeugung und wechselnde Spannungsebenen.
+- Drehstrom wird erwähnt als 3-Leiter-System mit oder ohne Rückleiter.
+- Gleichstrom wurde in der 1. Welt verwendet, kann nicht transformiert werden und hat niedrigere Spannungen.
+- Das Leistungsdreieck zeigt die Beziehung zwischen Scheinleistung (S), Wirkleistung (P) und Blindleistung (Q).
+- Leistungsfaktoren cos φ und sin φ geben den Anteil der Wirkleistung bzw. Blindleistung an der Scheinleistung an.
+
+---
+
+Das sind alle sichtbaren Informationen, inklusive aller handschriftlichen Notizen, Diagrammbeschriftungen, Formeln und technischen Erklärungen.
+
+Seite 10
+
+Text aus PDF:
+3.3 Drehstromsystem
+Drehstromsystem
+3.3 Drehstromsystem
+Gleichstram
+-Dauermagnet
+-
+Dauerhaft
+nord &
+süd
+Pol
+anziehung
+-Roter
+-
+Statar
+-
+Luftspalt
+An
+50Hz
+netz:
+Glühbirne
+dimmert
+mit
+100Hz
+Transformator
+brummt
+mit
+100Hz
+Eisentern
+geschichtet,
+ist
+gegen
+Wirbelströme,
+Wichtiges Bild
+oder
+gegeneinander
+isolieren
+mit
+Lade
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit der Überschrift "3.3 Drehstromsystem".
+
+---
+
+**Erster Abschnitt:**
+
+Titel: Drehstromsystem
+
+**Bildbeschreibung:**
+
+- Ein schematisches Bild eines Drehstromsystems mit einem Ständer (äußerer Ring) und einem Polrad (innerer Teil mit Nord- und Südpol).
+- Drei Wicklungen sind sichtbar, jeweils mit Bezeichnungen:
+  - U1, U2 (blau)
+  - V1, V2 (schwarz)
+  - W1, W2 (rot)
+- Die Wicklungen sind im Winkel von 120° zueinander angeordnet.
+- Die Bauteile sind beschriftet:
+  - Ständer (äußerer Ring)
+  - Polrad (innerer Magnet mit N und S)
+- Handgeschriebene Notizen in Rot links:
+  1. Rotor
+  2. Stator
+  3. Luftspalt
+- Handgeschriebene Notizen rechts:
+  - Gleichstrom
+    - Dauermagnet
+    - Dauermagnet nach Südpol Ausrichtung
+  - An 50 Hz Netz:
+    - Glühbirne dimmt mit 100 Hz
+    - Transformator brummt mit 100 Hz
+  - Eisenkern geschichtet, ist gegen Wirbelströme oder gegeneinander isoliert mit Lack
+  - "Wichtiges Bild" (rot geschrieben)
+
+---
+
+**Zweiter Abschnitt:**
+
+Titel: 3.3 Drehstromsystem
+
+**Diagramm mit vier Teilen, farblich unterteilt:**
+
+1. **Erzeuger (gelb hinterlegt):**
+   - Dreiphasenwicklung mit den Leitungen L1, L2, L3 und Neutralleiter N.
+   - Ströme I1, I2, I3 fließen aus den Wicklungen.
+   - Spannungen U1N, U2N, U3N sind eingezeichnet.
+   - Kleines Zeigerbild (a) mit den Spannungen U1N, U2N, U3N im 120°-Winkel.
+
+2. **Leitung (blau hinterlegt):**
+   - Leitungen L1, L2, L3, N mit Strompfeilen I1, I2, I3, IN.
+   - Drei Spannungsmessgeräte (V) für U1N, U2N, U3N.
+   - Liniendiagramm (b) mit den Spannungen U1N, U2N, U3N als sinusförmige Kurven, jeweils um 120° phasenverschoben.
+   - Winkelangaben 120°, 240°, 360°.
+
+3. **Verbraucher (grün hinterlegt), Sternschaltung (Y) (c):**
+   - Drei Verbraucher sind an die Leitungen L1, L2, L3 und Neutralleiter N angeschlossen.
+   - Ströme I1, I2, I3 fließen in die Verbraucher.
+   - Spannungen U1N, U2N, U3N sind eingezeichnet.
+   - Kleines Zeigerbild mit den Spannungen U1N, U2N, U3N im 120°-Winkel.
+
+4. **Verbraucher (grün hinterlegt), Dreieckschaltung (Δ) (d):**
+   - Drei Verbraucher sind in Dreieckschaltung verbunden.
+   - Ströme I12, I23, I31 fließen in den Verbrauchern.
+   - Spannungen U12, U23, U31 sind eingezeichnet.
+   - Kleines Dreieck mit den Spannungen U12, U23, U31.
+
+---
+
+**Technische Zusammenhänge:**
+
+- Das Drehstromsystem besteht aus drei Phasen, die um 120° phasenverschoben sind.
+- Die Sternschaltung (Y) hat einen Neutralleiter, die Dreieckschaltung (Δ) nicht.
+- Die Spannungen und Ströme sind in den jeweiligen Schaltungen unterschiedlich verteilt.
+- Das Zeigerbild und Liniendiagramm zeigen die Phasenverschiebung der Spannungen.
+- Hinweise auf die Wirkung von Frequenzen (50 Hz Netz, 100 Hz Effekte bei Glühbirne und Transformator).
+- Eisenkern ist geschichtet und isoliert, um Wirbelströme zu vermeiden.
+
+---
+
+Das sind alle sichtbaren Informationen, Beschriftungen, Diagramme, Zahlenwerte und technischen Zusammenhänge auf der Seite.
+
+Seite 11
+
+Text aus PDF:
+3.3
+Drehstramsystem
+Vorteile
+des
+Drehstroms
+im
+Vergleich
+Zum
+einphasigen
+Wechselstrom
+.
+1
+-
+Leistungsverluste
+und
+Leistungskosten
+o >
+--
+[
+E
+0
+:
+3
+mal
+- .................
+nicht
+unbedingt
+nötig ,
+3 Phasen
+gleichen
+sich
+aus
+-
+Rückleiter
+weglassen
+oder
+nur
+einer
+nötig
+2
+.. Einfache
+Erzeugung
+von
+Drehfeldern
+3
+.
+Transformierbarkeit
+4.
+Gleichmäßige
+Leistungserzeugung
+pe(t) +pz(t)
++
+Ps(t)
+=
+P
+=
+Const.
+5 .
+Verfügbarkeit
+von
+2
+Spannungen
+G
+.
+Einfache
+Erzeugung
+in der
+Synchronmaschine
+Ständernicklung z
+↑
+Läuter,
+Rotor, Polrad
+S
+Ständer
+E
+&
+-
+-un(t)
+- vz(t)
+W
+*-
+Ständerwicklung 1
+( a
+· 1
+V
+&-
+* ~
+V
+IT
+·
+I
+&
+· sooogoo"
+lo ·
+E
+1281880 · 4oo
+30j0 360
+-
+I
+--
+&
+Ständerwicklung 3
+-
+(Ev.
+nochmal
+exakt
+Konstruieren)
+Erregerstrom Ie
+(Gleichstrom)
+erzeugt
+ein
+magnetisches
+Feld,
+dass
+sich
+über
+den
+Ständer
+schließt
+.
+Purch
+Drehung
+des
+Erregerfeldes
+wird
+in den
+Wicklungen
+41,
+12,
+3
+jeweils
+eine
+Spannung
+induziert,
+die
+um
+120°
+gegeneinander
+phasenverschoben
+ist/sind
+.
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Hier sind die sichtbaren Informationen aus der PDF-Seite, geordnet nach Abschnitten, Tabellen, Bildern, Formeln und Text:
+
+---
+
+**Abschnitt 3.3 Drehstromsystem**
+
+**Überschrift:**  
+3.3 Drehstromsystem
+
+**Einleitung:**  
+Vorteile des Drehstroms im Vergleich zum einphasigen Wechselstrom.
+
+---
+
+**1. Leistungverluste und Leistungskosten**
+
+- Links: Skizze mit drei parallelen Leitungen, jede mit einem Widerstand, verbunden an zwei Punkten. Darunter steht: "nicht unbedingt nötig".
+- Text: "3 Phasen gleichen sich aus"
+- Pfeil mit Text: "Rückleiter weglassen oder nur einer nötig"
+- Rechts: Skizze mit einer Leitung und einem Widerstand, darunter "3 mal"
+
+---
+
+**2. Einfache Erzeugung von Drehfeldern**
+
+---
+
+**3. Transformierbarkeit**
+
+---
+
+**4. Gleichmäßige Leistungserzeugung**  
+Formel: p₁(t) + p₂(t) + p₃(t) = P = const.
+
+---
+
+**5. Verfügbarkeit von 2 Spannungen**
+
+---
+
+**6. Einfache Erzeugung in der Synchronmaschine**
+
+- Bild einer Synchronmaschine (Querschnitt):  
+  - Beschriftungen:  
+    - "Ständer" (äußerer Teil)  
+    - "Läufer, Rotor, Polrad" (innerer rotierender Teil)  
+    - "Ständerspule 1" (rechts)  
+    - "Ständerspule 2" (oben links)  
+    - "Ständerspule 3" (unten links)  
+  - Pfeile zeigen den magnetischen Fluss, der sich über die Ständerspulen schließt.
+
+---
+
+**Diagramm rechts unten:**
+
+- Koordinatensystem mit Winkel in Grad auf der x-Achse (0°, 30°, 60°, 90°, 120°, 150°, 180°, 210°, 240°, 270°, 300°, 330°, 360°)  
+- y-Achse mit Werten: û, û/2, 0, -û/2, -û  
+- Drei sinusförmige Kurven:  
+  - u₁(t) in schwarz  
+  - u₂(t) in grün  
+  - u₃(t) in blau  
+- Die Kurven sind um 120° phasenverschoben zueinander.  
+- Hinweis in rot: "(Evtl. nochmal exakt konstruieren)"
+
+---
+
+**Text unten:**
+
+- "Erregerstrom Ie (Gleichstrom) erzeugt ein magnetisches Feld, dass sich über den Ständer schließt."
+- "Durch Drehung des Erregerfeldes wird in den Wicklungen L1, L2, L3 jeweils eine Spannung induziert, die um 120° gegeneinander phasenverschoben ist/sind."
+
+---
+
+Das sind alle sichtbaren Inhalte, inklusive der Skizzen, Formeln, Beschriftungen und erklärenden Texte.
+
+Seite 12
+
+Text aus PDF:
+3.3 Drehstromsystem
+3.3 Drehstromsystem
+Spannung
+kann
+mal
+nach
+unten,
+wenn
+Z. B
+.
+Herd angeschaltet
+wird
+flackert
+Licht
+.
+Bei
+47,54z
+müssen
+Netze
+umgestellt
+werden
+.
+untere
+Grenze,
+da
+wird es
+Kritisch
+.
+↑
+O
+Mon
+muss
+wissen
+-
+Phase
+Phase
+400
+-
+Phase
+Neutral
+wieviel
+Span
+e
+-
+230
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Seite 1:
+
+Überschrift: 3.3 Drehstromsystem
+
+1. Formel in blau hinterlegt:
+   U_31 = U_3N - U_1N (geometrische Differenz)
+
+2. Linkes Bild: Vektor-Dreieck mit folgenden Beschriftungen:
+   - U_31 (langer blauer Pfeil von links unten nach oben)
+   - U_1N (Pfeil von oben nach unten)
+   - U_2N (Pfeil von rechts oben nach links unten)
+   - U_3N (Pfeil von links unten nach rechts oben)
+   - U_12 (Pfeil von rechts oben nach rechts unten)
+   - U_23 (Pfeil von links unten nach rechts unten)
+   - Winkel 30° zweimal eingezeichnet
+   - U_31/2 an zwei Stellen am linken Schenkel des Dreiecks
+
+3. Rechts daneben: Diagramm mit Sinuskurven, x-Achse in Grad von 0° bis 360°, y-Achse mit Werten von -√3 bis √3 und -1 bis 1, mit Beschriftungen:
+   - grüne Kurve: U_31 = U_3N - U_1N
+   - blaue Kurve: U_1N
+   - rote Kurve: U_3N
+   - x-Achse mit Beschriftung α
+
+4. Formel unter dem Vektor-Dreieck:
+   U_31 / 2 = U_1N * cos 30° = U_1N * (√3 / 2) → U_31 = U_1N * √3
+
+Seite 2:
+
+Überschrift: 3.3 Drehstromsystem
+
+1. Schaltbild eines Drehstromsystems mit 4 Leitungen L1, L2, L3, N, Beschriftung: 3/N ~ 50 Hz 400/230 V
+
+2. Sechs Spannungsmessgeräte (V) sind im Schaltbild eingezeichnet, jeweils zwischen verschiedenen Leitungen.
+
+3. Zwei hervorgehobene Textfelder:
+   - "Spannung je 400 V" (hinterlegt in hellblau, "400 V" gelb markiert)
+   - "Spannung je 230 V" (hinterlegt in hellblau, "230 V" gelb markiert)
+
+4. Handgeschriebene rote Notizen:
+   - "Spannung kann mal nach unten, wenn z.B. Herd angeschaltet wird flackert Licht."
+   - "Bei 47,5 Hz müssen Netze umgestellt werden, untere Grenze, da wird es kritisch."
+   - "- Phase Phase 400"
+   - "- Phase Neutral 230"
+   - "Man muss wissen wie viel Spannung anliegt"
+
+5. Ein rotes Ausrufezeichen und ein roter Kreis sind ebenfalls handschriftlich eingezeichnet.
+
+Zusammenhang:
+- Es wird das Drehstromsystem mit den Spannungen zwischen den Phasen (400 V) und zwischen Phase und Neutralleiter (230 V) erklärt.
+- Die Formel zeigt den Zusammenhang zwischen den Spannungen der Außenleiter und der Spannung zwischen Außenleiter und Neutralleiter.
+- Das Vektordiagramm und die Sinuskurven verdeutlichen die Phasenverschiebungen und die geometrische Differenz der Spannungen.
+- Die handschriftlichen Notizen weisen auf praktische Aspekte wie Spannungsschwankungen und Frequenzgrenzen hin.
+
+Seite 13
+
+Text aus PDF:
+3.3 Drehstromsystem
+3.3.1 Drehstromsystem Kennzeichnung
+Kennzeichnung
+wichtigp
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Seite 1:
+
+Überschrift: 3.3 Drehstromsystem
+
+Diagramm:
+- Ein Dreieck-Schaltbild mit drei Stromkreisen, bezeichnet mit L1, L2, L3.
+- Drei Amperemeter (A) sind in den Leitungen L1, L2, L3 eingezeichnet.
+- Ströme I1, I2, I3 sind in magenta mit Pfeilen nach unten an den Amperemetern dargestellt.
+- Ströme in den Strängen sind mit I_Str (I_31), I_Str (I_12), I_Str (I_23) in magenta an den drei Seiten des Dreiecks eingezeichnet.
+- Spannungen U_23, U_31, U_12 sind in hellblau mit Pfeilen zwischen den Leitungen L3, L1, L2 dargestellt.
+- Spannungen U_Str sind in hellblau an den Seiten des Dreiecks eingezeichnet.
+- Knotenpunkte sind mit W1, W2, U1, U2, V1, V2 bezeichnet.
+
+Formeln rechts neben dem Diagramm:
+1. I = Wurzel(3) * I_Str
+2. U = U_Str
+
+Seite 2:
+
+Überschrift: 3.3.1 Drehstromsystem Kennzeichnung
+
+Text: Kennzeichnung
+
+Tabelle mit der Überschrift: "Tabelle: Kennzeichnung von Drehstromsystemen"
+
+Beispiel: TN-C-System
+
+1. Zeile:
+- Buchstabe: T
+- Text: Erdungsverhältnisse der Stromquelle z.B. in der Transformatorenstation
+  - T: direkte Erdung eines Punktes, z.B. Sternpunkt, über den Betriebserder
+  - I: Isolierung aller aktiven Teile von Erde oder Verbindung des Punktes mit Erde über eine Impedanz
+
+2. Zeile:
+- Buchstabe: N
+- Text: Erdungsverhältnisse der Körper innerhalb der elektrischen Anlage
+  - T: direkte Erdung der Körper der Betriebsmittel
+  - N: Verbindung der Körper mit dem Betriebserder des Spannungserzeugers
+
+3. Zeile:
+- Buchstabe: C
+- Text: Anordnung des Neutralleiters N und des Schutzleiters PE im TN-System
+  - S: PE und N getrennt verlegt
+  - C: PE und N kombiniert in einem Leiter, dem PEN-Leiter
+
+Fußnote:
+Abkürzungen: T von terre (franz.) = Erde, I von isolé (franz.) = isoliert, N von neutre (franz.) = neutral, S von separé (franz.) = getrennt, C von combiné (franz.) = kombiniert
+
+Handschriftliche Notizen in rot:
+- Wort "wichtig"
+- Ein großes Häkchen
+- Ein Kreis
+
+Keine weiteren Tabellen, Bilder oder Diagramme auf der Seite.
+
+Seite 14
+
+Text aus PDF:
+TN-C
+TN-S
+3.3.1 Drehstromsystem Kennzeichnung
+3.3.1 Drehstromsystem Kennzeichnung
+Kombinierter
+PEN
+Separiertes
+PEN
+TNS
+TNC
+-
+kein
+RCD
+N
+und
+PE
+separiert,
+kurz
+vor
+-
+nur
+sicherung
+-
+Zähler
+wird
+- Hauptretz
+TNC
+-
+Im Harsnetz
+↑
+wichtig
+0
+unbedingt
+lernen
+-
+Komplett
+wieder-
+geben
+können
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält technische Informationen zur Kennzeichnung von Drehstromsystemen, insbesondere zu den Systemen TN-C und TN-S. Die Seite ist in zwei Hauptabschnitte gegliedert, die jeweils Schaltpläne und erläuternde Notizen enthalten.
+
+---
+
+**Überschrift:**  
+3.3.1 Drehstromsystem Kennzeichnung
+
+---
+
+**Erster Abschnitt:**
+
+1. **Schaltplan TN-C-System:**  
+   - Drei Phasenleiter L1, L2, L3 und ein PEN-Leiter (Kombination aus Schutzleiter PE und Neutralleiter N).  
+   - Betriebserder R_B ist mit dem PEN-Leiter verbunden.  
+   - Zwei blaue Kästen mit Erdungssymbolen, die die Verteilung der Leiter zeigen.  
+   - Beschriftung: "TN-C" links neben dem Schaltplan.  
+   - Handgeschriebene rote Notiz rechts: "kombinierter PEN".
+
+2. **Schaltplan TN-S-System:**  
+   - Drei Phasenleiter L1, L2, L3, ein Neutralleiter N und ein Schutzleiter PE.  
+   - Betriebserder R_B ist mit dem PE-Leiter verbunden.  
+   - Zwei blaue Kästen mit Erdungssymbolen, die die Verteilung der Leiter zeigen.  
+   - Beschriftung: "TN-S" links neben dem Schaltplan.  
+   - Handgeschriebene rote Notiz rechts: "separierter PEN".
+
+3. **Handschriftliche Notizen unter den Schaltplänen:**  
+   - TN-C:  
+     - "kein RCD"  
+     - "nur Siderung" (vermutlich "nur Siderung" = nur Sicherung)  
+     - "Hauptnetz TN-C"  
+   - TN-S:  
+     - "N und PE separiert, kurz vor Zähler wird" (vermutlich "kurz vor Zähler wird getrennt")  
+     - "Im Hausnetz"
+
+---
+
+**Zweiter Abschnitt:**
+
+1. **Überschrift:**  
+   3.3.1 Drehstromsystem Kennzeichnung (wiederholt)
+
+2. **Schaltplan mit TN-C-System links und TN-S-System rechts:**  
+   - TN-C-System:  
+     - Drei Phasenleiter L1, L2, L3 und ein PEN-Leiter.  
+     - Hausanschlusssicherung ist vor dem Zähler angeordnet.  
+     - Betriebserder R_B ist mit dem PEN-Leiter verbunden.  
+   - TN-S-System:  
+     - Drei Phasenleiter L1, L2, L3, Neutralleiter N und Schutzleiter PE.  
+     - Haupterdungsschiene ist vorhanden.  
+     - Körperanschluss ist dargestellt.  
+     - Zähler (kWh) ist zwischen TN-C- und TN-S-System eingezeichnet.  
+   - Verbindungslinien sind farblich hervorgehoben (rot und schwarz).  
+   - Beschriftungen:  
+     - "Hausanschlusssicherung"  
+     - "Betriebserder"  
+     - "Haupterdungsschiene"  
+     - "Körperanschluss"  
+     - "kWh" (Zähler)  
+     - Leiterbezeichnungen: L1, L2, L3, N, PE
+
+3. **Handschriftliche rote Notizen rechts neben dem Schaltplan:**  
+   - Ein Ausrufezeichen-Symbol mit dem Wort "Wichtig"  
+   - "unbedingt lernen"  
+   - "-> komplett wiedergeben können"
+
+---
+
+**Technische Zusammenhänge:**  
+- Das TN-C-System verwendet einen kombinierten PEN-Leiter, der sowohl Neutralleiter als auch Schutzleiter ist.  
+- Das TN-S-System trennt Neutralleiter (N) und Schutzleiter (PE) bereits kurz vor dem Zähler.  
+- TN-C wird im Hauptnetz verwendet, TN-S im Hausnetz.  
+- Die Erdung erfolgt über den Betriebserder R_B.  
+- Die Hausanschlusssicherung schützt das System vor Überlastungen.  
+- Die Haupterdungsschiene dient als zentraler Erdungspunkt im TN-S-System.  
+- Der Körperanschluss stellt die Verbindung der Schutzleiter mit den Gehäusen der elektrischen Geräte sicher.  
+- Die Zähleranordnung zeigt den Übergang vom TN-C- zum TN-S-System.
+
+---
+
+**Zusammenfassung der sichtbaren Inhalte:**  
+- Zwei Schaltpläne mit TN-C- und TN-S-Systemen, jeweils mit Erdung und Leiterkennzeichnung.  
+- Handgeschriebene Notizen zu den Unterschieden und zur Wichtigkeit des Lernens.  
+- Detaillierte Darstellung der Hausanschlusssicherung, Erdung und Zähleranordnung.  
+- Hervorhebung der Trennung von PEN in N und PE im TN-S-System.  
+- Technische Begriffe: Betriebserder R_B, Hausanschlusssicherung, Haupterdungsschiene, Körperanschluss, Zähler (kWh).
+
+---
+
+Falls weitere Details oder eine genauere Beschreibung einzelner Elemente gewünscht sind, stehe ich zur Verfügung.
+
+Seite 15
+
+Text aus PDF:
+3.3.1 Drehstromsystem Kennzeichnung
+TN-C-S
+TT
+3.3.1 Drehstromsystem Kennzeichnung
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit der Überschrift "3.3.1 Drehstromsystem Kennzeichnung".
+
+1. Tabelle mit dem Titel "Tabelle 1: Zulässige Schutzeinrichtungen":
+   - Spaltenüberschriften:
+     1. "im TN-S-System" (Hintergrund gelb)
+     2. "im TN-C-System" (Hintergrund gelb)
+   - Inhalt der Spalte "im TN-S-System":
+     1. "Überstrom-Schutzeinrichtungen und"
+     2. "Fehlerstromschutzeinrichtungen (RCDs)"
+   - Inhalt der Spalte "im TN-C-System":
+     1. "nur Überstrom-Schutzeinrichtungen (keine RCDs)"
+
+2. Zwei Schaltpläne mit der Überschrift "3.3.1 Drehstromsystem Kennzeichnung":
+
+   a) Schaltplan "TN-C-S":
+      - Drei Phasenleiter L1, L2, L3
+      - Neutralleiter N
+      - Schutzleiter PE
+      - Erdung über "R_B (Betriebserder)"
+      - Darstellung von Wicklungen (vermutlich Transformatorwicklungen) links
+      - Mehrere Verbindungspunkte und Schalter
+      - Drei Steckdosen mit Schutzleiter-Symbolen (Erdungssymbol)
+      - Das Erdungssymbol ist mit "R_B (Betriebserder)" beschriftet
+      - Die Leitungen sind durchgehend verbunden, mit Schaltern an den Steckdosen
+
+   b) Schaltplan "TT":
+      - Drei Phasenleiter L1, L2, L3
+      - Neutralleiter N
+      - Schutzleiter PE
+      - Erdung über "R_B (Betriebserder)" und zusätzlich "R_A (Anlagenerder)"
+      - Darstellung von Wicklungen (vermutlich Transformatorwicklungen) links
+      - Ein Schalter vor der Steckdose
+      - Steckdose mit Schutzleiter-Symbol (Erdungssymbol)
+      - Erdungssymbole mit Beschriftungen "R_B (Betriebserder)" und "R_A (Anlagenerder)"
+
+3. Auf der Seite sind zwei Logos mit der Aufschrift "EUROPA LEHRMITTEL" abgebildet.
+
+Zusammenhang:
+- Die Tabelle beschreibt, welche Schutzeinrichtungen in den jeweiligen Drehstromsystemen zulässig sind.
+- Die Schaltpläne zeigen die typische Verdrahtung und Erdung in den Drehstromsystemen TN-C-S und TT.
+- Die Erdungswiderstände R_B und R_A sind als Betriebserder bzw. Anlagenerder bezeichnet.
+- Die Schutzleiter (PE) sind in den Systemen unterschiedlich ausgeführt und geerdet.
+
+Keine Formeln oder Rechenwege sind auf der Seite sichtbar.
+
+Seite 16
+
+Text aus PDF:
+4.1 Leitungen und Kabeln
+Einflussgrößen auf die Strombelastbarkeit von Kabeln 
+und Leitungen
+Leiterquerschnitt
+Anzahl der belasteten Adern
+Leiterisolierung
+Leitungs- und Kabelaufbau
+Verlegeart
+Umgebungstemperatur
+Häufung von Kabeln oder Leitungen
+4.1.1 Leitungsberechnung
+- Bemessungsspannungen
+können
+-
+01
+nicht
+gut an
+230
+Volt
+-
+Leiterquerschnitt
+00
+O
+↓
+O
+Harmanisiert
+805
+Wichtig
+p
+8
+Paar
+Punkte
+aufzählen
+können
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Hier sind die sichtbaren Informationen aus der PDF-Seite:
+
+---
+
+**4.1 Leitungen und Kabeln**
+
+**Tabelle 1: Typkurzzeichen für harmonisierte isolierte Leitungen (Auswahl) (nach DIN VDE 0292)**
+
+Beispiel: Gummischlauchleitung  
+Typkurzzeichen: H 05 R R - F 3 X 1,5
+
+- **Kennzeichnung**  
+  - Harmonisierte Leitung: H  
+  - Anerkannter nationaler Typ: A**
+
+- **Bemessungsspannung U0/U***  
+  1. 01 = 100/100 V  
+  2. 03 = 300/300 V  
+  3. 05 = 300/500 V  
+  4. 07 = 450/750 V
+
+- **Isolierwerkstoff des Leiters**  
+  1. R = Ethylenpropylen-Gummi  
+  2. S = Silikon-Gummi  
+  3. V = PVC, weich
+
+- **Mantelwerkstoff**  
+  1. J = Glasfasergeflecht  
+  2. N = Polychloropren-Kautschuk  
+  3. R = Ethylenpropylen-Gummi  
+  4. S = Silikon-Gummi  
+  5. T = Textilgeflecht  
+  6. V = PVC, weich
+
+- **Leiterquerschnitt in mm²** (hervorgehoben)
+
+- **Schutzleiter**  
+  1. X = ohne Schutzleiter  
+  2. G = mit Schutzleiter
+
+- **Aderzahl**
+
+- **Leiterform**  
+  1. -F = feindrähtig (flexible Leitung)  
+  2. -H = feinstdrähtig (flexible Leitung)  
+  3. -K = feindrähtig (fest verlegte Leitung)  
+  4. -R = mehrdrähtiger Rundleiter  
+  5. -U = eindrähtiger Rundleiter  
+  6. -Y = Lahnlitzenleiter (hochflexibel)
+
+- **Besonderheiten im Aufbau**  
+  1. H = flache, aufteilbare Leitung  
+  2. H2 = flache, nicht aufteilbare Leitung  
+  3. H6 = flache Leitung mit 3 oder mehr Adern  
+  4. H8 = Wendelleitung
+
+Handschriftliche Notizen:  
+- "Bemessungsspannungen können"  
+- "01 nicht gut an 230 Volt"  
+- "Leiterquerschnitt"  
+- "harmonisiert & 05"  
+- Ausrufezeichen neben "Leiterquerschnitt in mm²"  
+
+---
+
+**4.1.1 Leitungsberechnung**
+
+Einflussgrößen auf die Strombelastbarkeit von Kabeln und Leitungen:
+
+- Leiterquerschnitt  
+- Anzahl der belasteten Adern  
+- Leiterisolierung  
+- Leitungs- und Kabelaufbau  
+- Verlegeart  
+- Umgebungstemperatur  
+- Häufung von Kabeln oder Leitungen
+
+Handschriftliche Notizen:  
+- "Wichtig" oben rechts  
+- "paar Punkte aufzählen können" links neben der Liste mit Ausrufezeichen
+
+---
+
+**Bildbeschreibung:**  
+Rechts neben der Aufzählung ist eine schematische Darstellung eines Kabelquerschnitts mit mehreren Adern und farbigen Isolierungen zu sehen. Das Kabel ist an einer Wand verlegt.
+
+---
+
+Das sind alle sichtbaren Inhalte, Tabellen, Aufzählungen, Beschriftungen und technischen Zusammenhänge auf der Seite.
+
+Seite 17
+
+Text aus PDF:
+Im TN-System muss bei einem Körperschluss die vorgeschaltete 
+Überstrom-Schutzeinrichtung, z.B. ein Leitungsschutzschalter, 
+innerhalb der nach DIN VDE 0100, Teil 410 geforderten 
+Abschaltzeit auslösen.
+5.3 Prüfen der Schutzmaßnahmen
+Die Messung der Schleifenimpedanz muss mit der 
+Bemessungsfrequenz, z. B. 50 Hz, einmal pro Stromkreis an der 
+messtechnisch ungünstigsten Stelle durchgeführt werden.
+Die Schleifenimpedanz ist die Summe aller Widerstände des 
+Verteilungsnetzes und der Leitungen im Endstromkreis. Sie beträgt 
+in der Praxis ca. 1 Ω.
+5.3 Prüfen der Schutzmaßnahmen
+Wichtig
+Wichtig
+12
+merken
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Seite 1:
+
+Überschrift: 5.3 Prüfen der Schutzmaßnahmen
+
+Text:
+- Im TN-System muss bei einem Körperschluss die vorgeschaltete Überstrom-Schutzeinrichtung, z.B. ein Leitungsschutzschalter, innerhalb der nach DIN VDE 0100, Teil 410 geforderten Abschaltzeit auslösen.
+
+Tabelle mit dem Titel: Maximale Abschaltzeiten im TN-System (nach DIN VDE 0100, Teil 410)
+
+Spaltenüberschriften:
+1. Stromkreis
+2. Nennwechselspannung U0
+3. Abschaltzeit
+
+Tabellenzeilen:
+1. Endstromkreise mit einem Bemessungswert der Überstrom-Schutzeinrichtung bis 32 A
+   - 50 V < U0 ≤ 120 V : 0,8 s
+   - 120 V < U0 ≤ 230 V : 0,4 s
+   - 230 V < U0 ≤ 400 V : 0,2 s
+   - U0 > 400 V : 0,1 s
+2. Verteilungsstromkreise
+   - Nennwechselspannung: –
+   - Abschaltzeit: 5 s
+
+Handschriftliche Notiz neben der Tabelle: "Wichtig"
+
+---
+
+Seite 2:
+
+Überschrift: 5.3 Prüfen der Schutzmaßnahmen
+
+Text:
+- Die Messung der Schleifenimpedanz muss mit der Bemessungsfrequenz, z. B. 50 Hz, einmal pro Stromkreis an der messtechnisch ungünstigsten Stelle durchgeführt werden.
+- Die Schleifenimpedanz ist die Summe aller Widerstände des Verteilungsnetzes und der Leitungen im Endstromkreis. Sie beträgt in der Praxis ca. 1 Ω.
+
+Handschriftliche Notizen:
+- "Wichtig"
+- "1 Ω messen"
+
+Diagramm: Schaltbild zur Messung der Schleifenimpedanz
+
+Beschriftungen im Schaltbild:
+- L/N/PE 50 Hz 230 V (oben rechts)
+- L (Leiter)
+- N (Neutralleiter)
+- PE (Schutzleiter)
+- LS-Schalter Typ B, 13A
+- Prüfspitzen
+- Fehlerschleife (markiert)
+- S1 (Schalter)
+- V (Voltmeter)
+- A (Amperemeter)
+- RB (Widerstand Erde)
+- RP (Prüfwiderstand)
+
+Das Schaltbild zeigt den Stromkreis mit Schutzleiter, Neutralleiter und Außenleiter, den Leitungsschutzschalter, die Prüfpunkte für die Messung der Schleifenimpedanz und die Messgeräte (Voltmeter und Amperemeter) sowie die Fehlerschleife, die simuliert wird.
+
+---
+
+Zusammenfassung der technischen Zusammenhänge:
+- Im TN-System muss die vorgeschaltete Überstrom-Schutzeinrichtung bei einem Körperschluss innerhalb bestimmter maximaler Abschaltzeiten auslösen, die von der Nennwechselspannung abhängen.
+- Die Abschaltzeiten sind in der Tabelle nach DIN VDE 0100, Teil 410, definiert.
+- Die Schleifenimpedanzmessung erfolgt mit 50 Hz an der ungünstigsten Stelle im Stromkreis.
+- Die Schleifenimpedanz ist die Summe aller Widerstände im Verteilungsnetz und den Leitungen des Endstromkreises und beträgt in der Praxis etwa 1 Ohm.
+- Das Schaltbild zeigt die Messanordnung zur Bestimmung der Schleifenimpedanz mit den Messgeräten und der Fehlerschleife.
+
+Seite 18
+
+Text aus PDF:
+Wirkungen des Blitzstromes
+thermisch
+dynamisch
+elektromagnetisch
+Blitzschutzsysteme (LPS) haben die Aufgabe bauliche 
+Anlagen vor den Folgen von Blitzeinschlägen zu 
+schützen.
+Blitzschutzsysteme bestehen aus dem äußeren und dem 
+inneren Blitzschutz.
+5.4 Blitzschutz
+Äußerer Blitzschutz
+Auffangvorrichtungen
+Ableitungen
+Erdungsanlage
+Innerer Blitzschutz
+Blitzschutz-Potenzialausgleich
+Überspannungs-Schutzgeräte
+Einhalten von Trennungsabständen
+5.4 Blitzschutz
+Wichtig
+Wichtig
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit der Überschrift "5.4 Blitzschutz".
+
+Erster Abschnitt:
+
+- Überschrift: 5.4 Blitzschutz
+- Aufzählungspunkt: Wirkungen des Blitzstromes
+  1. thermisch
+  2. dynamisch
+  3. elektromagnetisch
+- Text: Blitzschutzsysteme (LPS) haben die Aufgabe bauliche Anlagen vor den Folgen von Blitzeinschlägen zu schützen.
+- Text: Blitzschutzsysteme bestehen aus dem äußeren und dem inneren Blitzschutz.
+- Handgeschriebene Notiz in roter Farbe: "Wichtig"
+
+Zweiter Abschnitt:
+
+- Überschrift: 5.4 Blitzschutz
+- Aufzählungspunkt: Äußerer Blitzschutz
+  1. Auffangvorrichtungen
+  2. Ableitungen
+  3. Erdungsanlage
+- Aufzählungspunkt: Innerer Blitzschutz
+  1. Blitzschutz-Potenzialausgleich
+  2. Überspannungs-Schutzgeräte
+  3. Einhalten von Trennungsabständen
+- Handgeschriebene Notiz in roter Farbe: "Wichtig"
+
+Es sind keine Tabellen, Bilder, Diagramme, Formeln, Formelzeichen oder Rechenwege auf der Seite sichtbar. Die Inhalte beziehen sich auf die Wirkungen des Blitzstromes und die Unterteilung von Blitzschutzsystemen in äußeren und inneren Blitzschutz mit den jeweiligen Komponenten.
+
+Seite 19
+
+Text aus PDF:
+Meldeeinrichtungen zur Raumüberwachung
+Infrarot-Bewegungsmelder
+Ultraschall-Bewegungsmelder
+Fadenzugmelder
+Erschütterungsmelder
+Körperschallmelder
+8.1.1 Einbruchmeldeanlagen
+8.1.1 Einbruchmeldeanlagen
+Wichtig
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit der Überschrift "8.1.1 Einbruchmeldeanlagen".
+
+Erster Abschnitt:
+- Überschrift: 8.1.1 Einbruchmeldeanlagen
+- Aufzählung mit dem Thema "Meldeeinrichtungen zur Raumüberwachung":
+  1. Infrarot-Bewegungsmelder
+  2. Ultraschall-Bewegungsmelder
+  3. Fadenzugmelder
+  4. Erschütterungsmelder
+  5. Körperschallmelder
+- Rechts neben der Aufzählung steht handschriftlich in roter Farbe das Wort "Wichtig".
+
+Zweiter Abschnitt:
+- Überschrift: 8.1.1 Einbruchmeldeanlagen
+- Eine Tabelle mit der Überschrift: "Tabelle 1: Alarmierung in Einbruchmeldeanlagen"
+- Die Tabelle hat zwei Spalten mit den Überschriften:
+  - EMA
+  - Art der Alarmierung
+
+Inhalt der Tabelle:
+
+1. Erste Zeile:
+   - EMA: Grad 1
+   - Art der Alarmierung:
+     • Fernalarm über stehende oder bedarfsgesteuerte Telekommunikationsverbindung oder
+     • Externalarm durch zwei akustische Signalgeber
+
+2. Zweite Zeile:
+   - EMA: Grad 2 und 3
+   - Art der Alarmierung:
+     • Fernalarm über stehende Telekommunikationsverbindung oder
+     • Fernalarm über bedarfsgesteuerte Telekommunikationsverbindung; erfolgt Quittierung nicht innerhalb 240 s, erfolgt zweiter Fernalarm oder Externalarm
+
+3. Dritte Zeile:
+   - EMA: Grad 4
+   - Art der Alarmierung:
+     • Fernalarm über stehende Telekommunikationsverbindung oder
+     • Fernalarm über bedarfsgesteuerte Verbindung; erfolgt Quittierung nicht innerhalb 240 s, erfolgt Fernalarm über einen zweiten Übertragungsweg. Das Ausbleiben der Quittierung löst Externalarm aus.
+
+Am unteren rechten Rand der Tabelle ist ein kleines Logo mit der Aufschrift "EUROPA LEHRMITTEL" zu sehen.
+
+Es sind keine weiteren Bilder, Diagramme, Formeln oder Rechenwege auf der Seite sichtbar.
+
+Seite 20
+
+Text aus PDF:
+Brandmeldeanlagen 
+bestehen aus:
+der Brandmeldezentrale
+den Brandmeldern
+den Alarmgebern
+Eine solche Anlage muss gegen Spannungsunterbrechung
+abgesichert sein (z.B. Akku).
+8.1.2 Brandmeldeanlagen
+8.1.2 Brandmeldeanlagen
+Wichtig
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die sichtbaren Informationen aus der PDF-Seite sind wie folgt:
+
+Überschrift:  
+8.1.2 Brandmeldeanlagen
+
+Textabschnitt:  
+Brandmeldeanlagen  
+- bestehen aus:  
+  1. der Brandmeldezentrale  
+  2. den Brandmeldern  
+  3. den Alarmgebern  
+
+Eine solche Anlage muss gegen Spannungsunterbrechung abgesichert sein (z.B. Akku).
+
+Handschriftliche Notiz in roter Farbe:  
+Wichtig
+
+Markierungen:  
+Der Satzteil "gegen Spannungsunterbrechung abgesichert" ist gelb markiert.
+
+Bildbeschreibung:  
+Das Bild zeigt eine schematische Darstellung eines Rauchmelders.  
+
+Beschriftungen im Bild:  
+- Links: "IR-Empfangsdiode" in roter Schrift  
+- Rechts: "IR-Sendediode" in roter Schrift  
+- In der Mitte unten: "Rauch" als graue Wolke dargestellt  
+
+Im Bild sind zwei Dioden (eine Empfangsdiode und eine Sendediode) dargestellt, die Infrarotstrahlen aussenden und empfangen. Die Strahlen werden als pinke Linien gezeigt, die durch den Rauch gestreut werden. Der Rauch ist als graue Wolke in der Mitte des Sensors dargestellt.
+
+Logo unten rechts im Bild:  
+EUROPA LEHRMITTEL mit einer Weltkugel.
+
+Es sind keine Tabellen, Formeln, Formelzeichen oder Rechenwege auf der Seite sichtbar.
+
+Seite 21
+
+Text aus PDF:
+8.3 Antennen- und Verteilanlagen
+8.3 Antennen- und Verteilanlagen
+Interessantes
+Bild
+wiederstände
+alle
+Gleich
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit dem Titel "8.3 Antennen- und Verteilanlagen".
+
+Erster Abschnitt:
+
+1. Überschrift: "8.3 Antennen- und Verteilanlagen"
+2. Schaltbild einer elektrischen Schaltung mit folgenden Elementen:
+   - Generator G mit Innenwiderstand Ri = 75 Ω
+   - Leitung mit Impedanz Z = 75 Ω
+   - Lastwiderstand RL = 75 Ω
+   - Spannungen U1 und U2 an der Leitung
+3. Handgeschriebene rote Notiz rechts neben der Schaltung: "Interessantes Bild Widerstände alle gleich"
+4. Formeln mit Erklärungen:
+   - Dämpfungsmaß AU = 20 * lg (U1 / U2) [dB]
+   - Verstärkungsmaß GU = 20 * lg (U2 / U1) [dB]
+   - Spannungsspiegel LU = 20 * lg (U / U0) [dBμV]
+   - Leistungsspiegel LP = 10 * lg (P / P0) [dBmW]
+5. Ein kleines Logo mit der Aufschrift "EUROPA LEHRMITTEL"
+
+Zweiter Abschnitt:
+
+1. Überschrift: "8.3 Antennen- und Verteilanlagen"
+2. Zwei schematische Darstellungen von Antennen-Verteilsystemen:
+
+   a) Durchschleifsystem:
+   - Vertikale Linie in Pink mit der Beschriftung "Stammleitung"
+   - Mehrere Kreise auf der Linie, beschriftet als "Antennensteckdose"
+
+   b) Verteiler- und Abzweigsystem:
+   - Drei Kästchen, beschriftet als "Verteiler" (oben) und zwei "Abzweiger" (unten)
+   - Vertikale grüne Linie mit der Beschriftung "Haupt-Stammleitung"
+   - Zwei pinke Linien mit der Beschriftung "Stammleitung"
+   - Blaue Linie mit der Beschriftung "Stichleitung"
+   - Kreise an den Linien, einige mit der Beschriftung "ohne Abschlusswiderstand", andere mit "Abschlusswiderstand"
+3. Ein weiteres kleines Logo mit der Aufschrift "EUROPA LEHRMITTEL" unten rechts
+
+Technische Zusammenhänge:
+
+- Die Schaltung zeigt eine Leitung mit definierten Widerständen (75 Ω) und die Messung von Spannungen U1 und U2 zur Berechnung von Dämpfung, Verstärkung, Spannungsspiegel und Leistungsspiegel.
+- Die Formeln geben die logarithmische Berechnung dieser Größen in Dezibel (dB) oder dB bezogen auf Mikrovolt bzw. Milliwatt an.
+- Die beiden dargestellten Systeme zeigen unterschiedliche Arten von Antennen-Verteilsystemen: das Durchschleifsystem mit einer durchgehenden Stammleitung und das Verteiler- und Abzweigsystem mit Verteilern, Abzweigern und verschiedenen Leitungen (Stammleitung, Haupt-Stammleitung, Stichleitung) sowie der Verwendung von Abschlusswiderständen.
+
+Keine weiteren Tabellen, nummerierten Listen oder Rechenwege sind sichtbar.
+
+Seite 22
+
+Text aus PDF:
+Berechnungszusammenhänge 
+siehe Fachkunde Elektrotechnik
+9.2 Größen der Lichttechnik
+9.2 Größen der Lichttechnik
+Wichtig
+Wann
+hote
+Zahl,
+Wann
+dukler
+(Farblichtkommern)
+
+Informationen aus Bildern, Tabellen und Diagrammen:
+Die PDF-Seite enthält zwei Abschnitte mit dem Titel "9.2 Größen der Lichttechnik" und jeweils eine Tabelle sowie eine Grafik.
+
+---
+
+**Erster Abschnitt:**
+
+- Überschrift: 9.2 Größen der Lichttechnik
+- Tabelle 1: Lichttechnische Größen
+
+  1. Größe: Lichtstrom  
+     Formelzeichen: Φv  
+     Einheit: Lumen (lm)
+
+  2. Größe: Lichtstärke  
+     Formelzeichen: Iv  
+     Einheit: Candela (cd)
+
+  3. Größe: Leuchtdichte  
+     Formelzeichen: Lv  
+     Einheit: cd/m²
+
+  4. Größe: Beleuchtungsstärke  
+     Formelzeichen: Ev  
+     Einheit: Lux (lx) = lm/m²
+
+  5. Größe: Lichtausbeute  
+     Formelzeichen: η  
+     Einheit: lm/W
+
+- Rechts neben der Tabelle steht: "Berechnungszusammenhänge siehe Fachkunde Elektrotechnik"
+- Unten rechts handschriftlich in roter Schrift: "Wichtig"
+- Unten rechts im Tabellenbereich ist ein kleines Logo mit der Aufschrift "EUROPA LEHRMITTEL"
+
+---
+
+**Zweiter Abschnitt:**
+
+- Überschrift: 9.2 Größen der Lichttechnik
+- Tabelle 2: Wartungswerte von Beleuchtungsstärken
+
+  1. Sehaufgaben (Räume/Tätigkeiten) - Ev in lx  
+  2. Lagerräume - 100  
+  3. Büroräume - 500  
+  4. Unterrichtsräume - 500  
+  5. Zeichenbüros - 750  
+  6. grobe Arbeiten - 200  
+  7. Drehen/Fräsen - 300  
+  8. Wickeln von Spulen - 500  
+  9. Farbprüfen - 1000
+
+- Rechts neben der Tabelle ist eine schematische Grafik einer Lichtquelle mit folgenden Beschriftungen:
+
+  - Oben eine Lichtquelle (gelb mit schwarzem Kreuz)
+  - Von der Lichtquelle gehen pinkfarbene Linien nach unten zu einer Fläche
+  - Auf der Fläche steht: Ev = 1 lx
+  - Ein Pfeil von der Lichtquelle zur Fläche mit der Beschriftung: Φv = 1 lm
+  - Fläche A = 1 m²
+
+- Oben rechts handschriftlich in roter Schrift:  
+  "Wann hohe Zahl, wann dunkler (Farblichtkammern)"
+
+- Unten rechts im Tabellenbereich ist wieder das Logo "EUROPA LEHRMITTEL"
+
+---
+
+**Technische Zusammenhänge:**
+
+- Die Tabelle 1 gibt die wichtigsten lichttechnischen Größen mit ihren Formelzeichen und Einheiten an.
+- Die Beleuchtungsstärke Ev wird in Lux angegeben, wobei 1 Lux = 1 Lumen pro Quadratmeter ist.
+- Die Tabelle 2 gibt typische Wartungswerte der Beleuchtungsstärke für verschiedene Räume und Tätigkeiten an, z.B. 100 lx für Lagerräume, 500 lx für Büroräume und Unterrichtsräume, bis zu 1000 lx für Farbprüfen.
+- Die Grafik illustriert den Zusammenhang zwischen Lichtstrom Φv (in Lumen), Beleuchtungsstärke Ev (in Lux) und der beleuchteten Fläche A (in Quadratmetern).
+
+---
+
+Das sind alle sichtbaren Informationen, Tabelleninhalte, Formelzeichen, Einheiten, Zahlenwerte, handschriftlichen Notizen und die Grafikbeschriftungen auf der Seite.

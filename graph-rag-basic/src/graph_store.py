@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -44,8 +45,14 @@ class KnowledgeGraphExtractor:
     def __init__(self, model_name: str | None = None) -> None:
         load_dotenv()
         self.model_name = model_name or os.getenv("OPENAI_LLM_MODEL", "gpt-4.1-mini")
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        # self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+        self.client = OpenAI(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            timeout=60.0,
+            max_retries=1,
+        )
+        
     def extract(self, chunk: str) -> dict[str, list[dict[str, str]]]:
         response = self.client.chat.completions.create(
             model=self.model_name,
@@ -89,16 +96,67 @@ class KnowledgeGraphStore:
         self.relationships: list[GraphRelationship] = []
         self.chunk_entities: dict[int, list[str]] = {}
 
-    def build_from_chunks(self, chunks: list[str], extractor: KnowledgeGraphExtractor) -> None:
+
+    def build_from_chunks(
+        self,
+        chunks: list[str],
+        extractor: KnowledgeGraphExtractor,
+    ) -> None:
         self.entities = {}
         self.relationships = []
         self.chunk_entities = {}
 
+        total_chunks = len(chunks)
+
         for chunk_id, chunk in enumerate(chunks):
-            extracted = extractor.extract(chunk)
-            chunk_entity_names = self._merge_entities(extracted.get("entities", []), chunk_id)
-            self.chunk_entities[chunk_id] = sorted(set(chunk_entity_names))
-            self._add_relationships(extracted.get("relationships", []), chunk_id)
+            print(f"Chunk {chunk_id + 1}/{total_chunks} wird verarbeitet...")
+
+            start_time = time.time()
+
+            try:
+                extracted = extractor.extract(chunk)
+
+            except Exception as error:
+                duration = time.time() - start_time
+
+                print(
+                    f"Chunk {chunk_id + 1}/{total_chunks} fehlgeschlagen "
+                    f"({duration:.1f} Sekunden): {error}"
+                )
+
+                continue
+
+            duration = time.time() - start_time
+
+            print(
+                f"Chunk {chunk_id + 1}/{total_chunks} fertig "
+                f"({duration:.1f} Sekunden)"
+            )
+
+            chunk_entity_names = self._merge_entities(
+                extracted.get("entities", []),
+                chunk_id,
+            )
+
+            self.chunk_entities[chunk_id] = sorted(
+                set(chunk_entity_names)
+            )
+
+            self._add_relationships(
+                extracted.get("relationships", []),
+                chunk_id,
+            )
+
+    # def build_from_chunks(self, chunks: list[str], extractor: KnowledgeGraphExtractor) -> None:
+    #     self.entities = {}
+    #     self.relationships = []
+    #     self.chunk_entities = {}
+
+    #     for chunk_id, chunk in enumerate(chunks):
+    #         extracted = extractor.extract(chunk)
+    #         chunk_entity_names = self._merge_entities(extracted.get("entities", []), chunk_id)
+    #         self.chunk_entities[chunk_id] = sorted(set(chunk_entity_names))
+    #         self._add_relationships(extracted.get("relationships", []), chunk_id)
 
     def save(self) -> None:
         self.storage_dir.mkdir(parents=True, exist_ok=True)

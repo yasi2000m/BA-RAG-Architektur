@@ -29,7 +29,7 @@ Frage:
 
 Antwort:"""
 
-    def generate_answer(self, query: str, graph_context: str) -> str:
+    def generate_answer(self, query: str, graph_context: str) -> tuple[str, int]:
         """
         Uebergibt den Prompt an das Large Language Model und gibt die Antwort zurueck.
         """
@@ -42,6 +42,15 @@ Antwort:"""
             ],
             temperature=0.2,
         )
+        answer = response.choices[0].message.content or "" 
+        used_tokens = ( 
+            response.usage.total_tokens 
+            if response.usage is not None 
+            else 0 
+            ) 
 
-        return response.choices[0].message.content or ""
+        return answer, used_tokens
+        
+
+        # return response.choices[0].message.content or ""
 

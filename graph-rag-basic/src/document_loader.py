@@ -1,5 +1,6 @@
 import base64
 import os
+import time
 
 import fitz
 from dotenv import load_dotenv
@@ -23,7 +24,14 @@ def describe_page_image(client: OpenAI, model: str, image_bytes: bytes) -> str:
                             "Beschreibe besonders Tabellen, Bilder, Diagramme, "
                             "Beschriftungen, Formeln, Formelzeichen, Rechenwege, "
                             "Zahlenwerte und technische Zusammenhaenge. "
-                            "Gib Tabellen wenn moeglich als Markdown-Tabelle aus. "
+                            "Lies alle Inhalte aus Tabellen und Bildern"
+                            "Wenn eine Tabelle, Aufzaehlung oder nummerierte Liste sichtbar ist, "
+                            "gib alle einzelnen Eintraege vollstaendig und in ihrer Reihenfolge wieder. "
+                            "Fasse die Eintraege nicht nur zusammen. "
+                            "Gib Tabellen nicht als Markdown-Tabelle aus. "
+                            "Gib jede Tabellenzeile als eigenen nummerierten Punkt aus. "
+                            "Uebernimm alle sichtbaren Eintraege vollstaendig. "
+                            "Erzeuge keine Trennlinien aus Bindestrichen oder Sonderzeichen. "
                             "Gib Formeln in gut lesbarer Textform aus. "
                             "Erfinde keine Informationen."
                         ),
@@ -43,13 +51,13 @@ def describe_page_image(client: OpenAI, model: str, image_bytes: bytes) -> str:
     return response.choices[0].message.content or ""
 
 
-def load_pdf_text(pdf_path: str, max_pages: int | None = None) -> str:
+def load_pdf_text(pdf_path: str) -> str:
     """Laedt ein PDF und gibt den direkt auslesbaren Text zurueck."""
     document = fitz.open(pdf_path)
 
     pages = [
         f"Seite {page_number}\n\n{page.get_text('text').strip()}"
-        for page_number, page in _iter_pages(document, max_pages)
+        for page_number, page in enumerate(document, start=1)
     ]
 
     return "\n\n".join(pages).strip()
@@ -58,7 +66,6 @@ def load_pdf_text(pdf_path: str, max_pages: int | None = None) -> str:
 def load_pdf_text_with_targeted_visuals(
     pdf_path: str,
     visual_keywords: list[str] | None = None,
-    max_pages: int | None = None,
 ) -> str:
     """
     Laedt den PDF-Text und analysiert visuell nur Seiten,
@@ -74,7 +81,7 @@ def load_pdf_text_with_targeted_visuals(
     document = fitz.open(pdf_path)
     pages: list[str] = []
 
-    for page_number, page in _iter_pages(document, max_pages):
+    for page_number, page in enumerate(document, start=1):
         page_text = page.get_text("text").strip()
         visual_text = ""
 
@@ -106,7 +113,8 @@ def load_pdf_text_with_targeted_visuals(
 
     return "\n\n".join(pages).strip()
 
-def load_pdf_with_visuals(pdf_path: str, max_pages: int | None = None) -> str:
+
+def load_pdf_with_visuals(pdf_path: str) -> str:
     """Laedt ein PDF und gibt Text plus beschriebene Bild- und Tabelleninhalte zurueck."""
 
     load_dotenv()
@@ -116,7 +124,7 @@ def load_pdf_with_visuals(pdf_path: str, max_pages: int | None = None) -> str:
     document = fitz.open(pdf_path)
     pages: list[str] = []
 
-    for page_number, page in _iter_pages(document, max_pages):
+    for page_number, page in enumerate(document, start=1):
         page_text = page.get_text("text").strip()
 
         page_image = page.get_pixmap(
@@ -139,48 +147,28 @@ def load_pdf_with_visuals(pdf_path: str, max_pages: int | None = None) -> str:
     return "\n\n".join(pages).strip()
 
 
-def _iter_pages(document: fitz.Document, max_pages: int | None = None):
-    """Iteriert ueber PDF-Seiten und begrenzt optional die Seitenanzahl."""
-    page_limit = len(document) if max_pages is None else min(max_pages, len(document))
-    for page_index in range(page_limit):
-        yield page_index + 1, document[page_index]
-
-
-# ==========================================================
-# Variante 1:
-# Nur direkt auslesbarer PDF-Text
-# ==========================================================
-
-# def load_pdf(pdf_path: str, max_pages: int | None = None) -> str:
-#     """Standard-Loader: nur direkt auslesbarer PDF-Text."""
-#     return load_pdf_text(pdf_path, max_pages=max_pages)
-
-
-# ==========================================================
-# Variante 2:
-# PDF-Text + Vision nur fuer Seiten mit Schluesselwoertern
-# ==========================================================
-
-# def load_pdf(pdf_path: str, max_pages: int | None = None) -> str:
-#     """Standard-Loader: Text sowie Vision nur auf relevanten Seiten."""
-#     return load_pdf_text_with_targeted_visuals(
-#         pdf_path,
-#         visual_keywords=[
-#             "diagramm",
-#             "abbildung",
-#             "tabelle",
-#             "figure",
-#             "chart",
-#         ],
-#         max_pages=max_pages,
-#     )
-
-
-# ==========================================================
-# Variante 3 (Standard):
+# # ==========================================================
+# Variante 3:
 # Vollstaendige visuelle Analyse aller Seiten
 # ==========================================================
 
-def load_pdf(pdf_path: str, max_pages: int | None = None) -> str:
-    """Standard-Loader: Text sowie Bild-, Tabellen- und Diagramminformationen aller Seiten."""
-    return load_pdf_with_visuals(pdf_path, max_pages=max_pages)
+def load_pdf(pdf_path: str) -> str:
+    start_time = time.perf_counter()
+
+    text = load_pdf_with_visuals(pdf_path)
+
+    duration = time.perf_counter() - start_time
+
+    print(f"Laufzeit: {duration:.2f} Sekunden")
+    print(f"Textgroesse: {len(text.encode('utf-8')) / 1024:.2f} KB")
+
+    # with open("standard-rag/data/geladener_text.txt", "w", encoding="utf-8") as file:
+    #     file.write(text)
+
+    return text
+
+
+
+if __name__ == "__main__":
+    pdf_path = "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf"
+    load_pdf(pdf_path)

@@ -8,7 +8,7 @@ def retrieve_relevant_chunks(
     query: str,
     embedding_model: EmbeddingModel,
     vector_store: LocalVectorStore,
-    top_k: int = 3,
+    top_k: int = 5,
 ) -> list[str]:
     """
     Vektorisiert die Nutzeranfrage und ruft die relevantesten Chunks ab.

@@ -1,4 +1,0 @@
-﻿loader;loader_bezeichnung;pdf_datei;pdf_seiten;wiederholung;laufzeit_sekunden;visuell_analysierte_seiten;vision_api_aufrufe;text_zeichen;text_woerter;text_speicher_bytes;text_speicher_kib;geschaetzte_kosten;waehrung
-text;Nur direkt auslesbarer PDF-Text;/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf;22;1;0.1088;0;0;8528;1190;8722;8.52;0.0;USD
-targeted_visual;PDF-Text mit gezielter visueller Analyse;/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf;22;1;0.0986;0;0;8836;1256;9030;8.82;0.0;USD
-full_visual;PDF-Text mit vollständiger visueller Analyse;/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf;22;1;763.2898;22;22;2137824;8560;2138660;2088.54;0.0;USD
