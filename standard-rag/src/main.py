@@ -18,65 +18,81 @@ def get_directory_size(path: Path) -> int:
     )
 
 
-def main() -> None:
+def main(query: str) -> str:
 
-    pdf_path = (
-        "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf"
-    )
+    project_dir = Path(__file__).resolve().parents[1]
+    root_dir = Path(__file__).resolve().parents[2]
 
-    saved_text_path = Path(
-        "/Users/yasi/Documents/New project/BA-RAG-Architektur/"
-        "standard-rag/data/geladener_text.txt"
-    )
+    pdf_path = project_dir / "data" / "ErneuerbareEnergien.pdf"
+    saved_text_path = project_dir / "data" / "geladener_text2.txt"
+    vector_db_path = root_dir / "vector_db_ErneuebareEnergien"
+    
+    # pdf_path = (
+    #     "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf"
+    # )
 
-    if saved_text_path.exists():
-        print("Gespeicherter Dokumenttext wird verwendet.")
-        document_text = saved_text_path.read_text(encoding="utf-8")
+    # saved_text_path = Path(
+    #     "/Users/yasi/Documents/New project/BA-RAG-Architektur/"
+    #     "standard-rag/data/geladener_text.txt"
+    # )
 
+    # Vector DB bereits vorhanden -> nur laden
+    if vector_db_path.exists():
+        print("Vector DataBank found")
+        vector_store.load()
+
+    # Vector DB fehlt -> einmalig erstellen
     else:
-        print("Kein gespeicherter Text gefunden. PDF-Loader wird ausgefuehrt.")
-
-        document_text = load_pdf(pdf_path)
-
-        if document_text:
-            saved_text_path.write_text(
-                document_text,
-                encoding="utf-8",
-            )
-
-    if not document_text:
-        print("Keine Inhalte im PDF gefunden.")
-        return
-
-
-    # Document Loader wird nicht mitgemessen
-    total_start_time = time.perf_counter()
-
-
-    chunks = chunk_text(
-        document_text,
-        chunk_size=250,
-        overlap=25,
-    )
-
-
-    embedding_model = EmbeddingModel()
-
-    chunk_embeddings = embedding_model.embed_texts(chunks)
-
-
-    vector_db_path = Path("vector_db_ErneuebareEnergien")
-
-    vector_store = LocalVectorStore(
-        str(vector_db_path)
-    )
-
-    vector_store.add(
-        chunks,
-        chunk_embeddings,
-    )
-
-    vector_store.save()
+        print("Vector DataBank not found. generating...")
+    
+        if saved_text_path.exists():
+            print("Gespeicherter Dokumenttext wird verwendet.")
+            document_text = saved_text_path.read_text(encoding="utf-8")
+    
+        else:
+            print("Kein gespeicherter Text gefunden. PDF-Loader wird ausgefuehrt.")
+    
+            document_text = load_pdf(pdf_path)
+    
+            if document_text:
+                saved_text_path.write_text(
+                    document_text,
+                    encoding="utf-8",
+                )
+    
+        if not document_text:
+            print("Keine Inhalte im PDF gefunden.")
+            return
+    
+    
+        # Document Loader wird nicht mitgemessen
+        total_start_time = time.perf_counter()
+    
+    
+        chunks = chunk_text(
+            document_text,
+            chunk_size=250,
+            overlap=25,
+        )
+    
+    
+        embedding_model = EmbeddingModel()
+    
+        chunk_embeddings = embedding_model.embed_texts(chunks)
+    
+    
+        vector_db_path = Path("vector_db_ErneuebareEnergien")
+    
+        vector_store = LocalVectorStore(
+            str(vector_db_path)
+        )
+    
+        vector_store.add(
+            chunks,
+            chunk_embeddings,
+        )
+    
+        vector_store.save()
 
 
     # Speicherbedarf der Vektordatenbank
@@ -86,6 +102,26 @@ def main() -> None:
 
     generator = AnswerGenerator()
 
+    top_k = 5
+    relevant_chunks = retrieve_relevant_chunks(
+        query=query,
+        embedding_model=embedding_model,
+        vector_store=vector_store,
+        top_k=top_k,
+    )
+
+    answer, used_tokens = generator.generate_answer(
+        query,
+        relevant_chunks,
+    )
+
+    return {
+        "answer": answer,
+        "used_tokens": used_tokens,
+        "top_k": top_k,
+    }
+
+'''
     total_generation_tokens = 0
     total_answer_time = 0.0
 
@@ -171,7 +207,7 @@ def main() -> None:
         f"Speicherbedarf der RAG-Datenstruktur: "
         f"{storage_mb:.2f} MB"
     )
-
+'''
 
 if __name__ == "__main__":
     main()
