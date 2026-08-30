@@ -58,7 +58,7 @@ def generate_query_variants(
     query: str,
     num_variants: int = 4,
     model_name: str | None = None,
-) -> list[str]:
+) -> tuple[list[str], int]:
     """
     Erzeugt semantisch unterschiedliche Suchvarianten fuer Fusion RAG.
     """
@@ -86,28 +86,36 @@ Nutzerfrage:
     )
 
     content = response.choices[0].message.content or "[]"
-    return _parse_query_variants(
+    query_generation_tokens = (
+        response.usage.total_tokens
+        if response.usage
+        else 0
+    )
+
+    variants = _parse_query_variants(
         content,
         original_query=query,
         num_variants=num_variants,
     )
 
+    return variants, query_generation_tokens
 
 def build_fusion_queries(
     query: str,
     num_query_variants: int,
-) -> list[str]:
+) -> tuple[list[str], int]:
     """
     Kombiniert Originalfrage und LLM-Varianten fuer paralleles Retrieval.
     """
     try:
-        variants = generate_query_variants(
+        variants, query_generation_tokens = generate_query_variants(
             query,
             num_variants=num_query_variants,
         )
     except Exception as error:
         print(f"Query-Varianten konnten nicht erzeugt werden: {error}")
         variants = []
+        query_generation_tokens = 0
 
     queries: list[str] = []
     seen: set[str] = set()
@@ -120,7 +128,7 @@ def build_fusion_queries(
         seen.add(key)
         queries.append(fusion_query)
 
-    return queries
+    return queries, query_generation_tokens
 
 
 def reciprocal_rank_fusion(
@@ -178,7 +186,7 @@ def retrieve_relevant_chunks(
     Fusion RAG:
     Erzeugt Query-Varianten, sucht pro Variante und fusioniert die Rankings per RRF.
     """
-    fusion_queries = build_fusion_queries(
+    fusion_queries, query_generation_tokens = build_fusion_queries(
         query,
         num_query_variants=num_query_variants,
     )
@@ -225,23 +233,23 @@ def retrieve_relevant_chunks(
     # print(f"Final Top K nach RRF: {top_k}")
     # print(f"Anzahl Kontext-Tokens: {token_count}")
 
-    return relevant_chunks
+    return relevant_chunks, query_generation_tokens
 
 
-if __name__ == "__main__":
-    from embeddings import EmbeddingModel
-    from vector_store import LocalVectorStore
+# if __name__ == "__main__":
+#     from embeddings import EmbeddingModel
+#     from vector_store import LocalVectorStore
 
-    query = "Was ist der Unterschied zwischen Strom und Spannung?"
+#     query = "Was ist der Unterschied zwischen Strom und Spannung?"
 
-    embedding_model = EmbeddingModel()
+#     embedding_model = EmbeddingModel()
 
-    vector_store = LocalVectorStore("vector_db_elektrotechnik_3")
-    vector_store.load()
+#     vector_store = LocalVectorStore("vector_db_elektrotechnik_3")
+#     vector_store.load()
 
-    retrieve_relevant_chunks(
-        query=query,
-        embedding_model=embedding_model,
-        vector_store=vector_store,
-        top_k=5,
-    )
+#     retrieve_relevant_chunks(
+#         query=query,
+#         embedding_model=embedding_model,
+#         vector_store=vector_store,
+#         top_k=5,
+#     )

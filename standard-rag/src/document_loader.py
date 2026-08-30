@@ -1,14 +1,25 @@
-import base64
-import os
-import time
+# Der Document Loader wandelt das ursprüngliche PDF-Dokument in einen möglichst vollständigen maschinenlesbaren Text um.
+# Dieser Text wird anschließend an das nächste Modul, typischerweise den Chunker, übergeben.
 
-import fitz
+
+import base64     # Wandelt ein Seitenbild in einen Base64-String um, damit es an das Vision-Modell geschickt werden kann.
+import os         # Liest Umgebungsvariablen wie den OpenAI-API-Key aus.
+import time       # Wird zur Messung der Laufzeit des Document Loaders verwendet.
+import fitz       # PyMuPDF. Öffnet PDFs, extrahiert Text und rendert PDF-Seiten als Bilder.
+
 from dotenv import load_dotenv
 from openai import OpenAI
 
 
+# Diese Funktion bekommt eine PDF-Seite als Bild und lässt deren sichtbaren Inhalt durch ein Vision-Modell in Text umwandeln.
+# --> Parameter: 
+# client: bereits erzeugter OpenAI-Client
+# model: Name des verwendeten Vision-Modells
+# image_bytes: Bilddaten der PDF-Seite
+# -> str: Die Funktion gibt einen Text zurück
+
 def describe_page_image(client: OpenAI, model: str, image_bytes: bytes) -> str:
-    """Wandelt sichtbare Tabellen, Bilder und Diagramme einer PDF-Seite in Text um."""
+
     image_base64 = base64.b64encode(image_bytes).decode("utf-8")
 
     response = client.chat.completions.create(
@@ -51,8 +62,12 @@ def describe_page_image(client: OpenAI, model: str, image_bytes: bytes) -> str:
     return response.choices[0].message.content or ""
 
 
+# Variante1:
+# Öffnet eine PDF-Datei und extrahiert den direkt enthaltenen Text seitenweise. 
+# Visuelle Inhalte wie Bilder oder Diagramme werden dabei nicht zusätzlich analysiert.
+
 def load_pdf_text(pdf_path: str) -> str:
-    """Laedt ein PDF und gibt den direkt auslesbaren Text zurueck."""
+
     document = fitz.open(pdf_path)
 
     pages = [
@@ -62,6 +77,9 @@ def load_pdf_text(pdf_path: str) -> str:
 
     return "\n\n".join(pages).strip()
 
+# Variante 2: 
+#   Extrahiert den Text jeder PDF-Seite und führt nur für Seiten, die festgelegte Schlüsselwörter enthalten, zusätzlich eine visuelle Analyse durch. 
+#   Dadurch können Tabellen und Diagramme erfasst werden, ohne jede Seite durch das Vision-Modell zu senden.
 
 def load_pdf_text_with_targeted_visuals(
     pdf_path: str,
@@ -114,8 +132,12 @@ def load_pdf_text_with_targeted_visuals(
     return "\n\n".join(pages).strip()
 
 
+
+# Variante 3: 
+# Extrahiert den direkt verfügbaren Text jeder PDF-Seite und analysiert zusätzlich jede Seite vollständig mit einem Vision-Modell. 
+# Beide Informationsquellen werden anschließend zu einem gemeinsamen Text zusammengeführt.
+
 def load_pdf_with_visuals(pdf_path: str) -> str:
-    """Laedt ein PDF und gibt Text plus beschriebene Bild- und Tabelleninhalte zurueck."""
 
     load_dotenv()
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -150,6 +172,7 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
 # ==========================================================
 # Variante 1:
 # Nur direkt auslesbarer PDF-Text
+# Ablauf: PDF --> PyMuPDF --> Text
 # ==========================================================
 
 # def load_pdf(pdf_path: str) -> str:
@@ -171,6 +194,7 @@ def load_pdf_with_visuals(pdf_path: str) -> str:
 # ==========================================================
 # Variante 2:
 # PDF-Text + Vision nur fuer Seiten mit Schluesselwoertern
+# Ablauf: PDF --> Text extrahieren --> schlüsselwort vorhanden? --> Nein: nur Text / Ja: Vision
 # ==========================================================
 
 # def load_pdf(pdf_path: str) -> str:

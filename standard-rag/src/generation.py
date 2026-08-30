@@ -64,7 +64,7 @@ Antwort:"""
             messages=[
                 {"role": "user", "content": prompt},
             ],
-            temperature=0.3,
+            temperature=0.2,
         )
 
         answer = response.choices[0].message.content or ""

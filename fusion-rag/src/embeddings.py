@@ -1,5 +1,4 @@
 import os
-
 from dotenv import load_dotenv
 from openai import OpenAI
 
@@ -18,20 +17,8 @@ class EmbeddingModel:
             "text-embedding-3-small")
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-
-    # def embed_texts(self, texts: list[str]) -> list[list[float]]:
-    #     """
-    #     Erstellt Embeddings fuer mehrere Texte.
-    #     """
-    #     if not texts:
-    #         return []
-
-    #     response = self.client.embeddings.create(
-    #         model=self.model_name,
-    #         input=texts,
-    #     )
-
-    #     return [item.embedding for item in response.data]
+        # Tokenverbrauch der Embeddings speichern
+        self.total_tokens = 0
 
 
     def embed_texts(self, texts: list[str]) -> list[list[float]]:
@@ -52,14 +39,13 @@ class EmbeddingModel:
                 input=batch,
             )
 
+            # Tokenverbrauch addieren
+            if response.usage:
+                self.total_tokens += response.usage.total_tokens
+                
             embeddings.extend(
                 item.embedding for item in response.data
             )
-
-            # print(
-            #     f"Embeddings erstellt: "
-            #     f"{min(start + batch_size, len(texts))}/{len(texts)}"
-            # )
 
         return embeddings
 

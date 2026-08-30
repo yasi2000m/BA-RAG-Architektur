@@ -52,6 +52,7 @@ class KnowledgeGraphExtractor:
             timeout=60.0,
             max_retries=1,
         )
+        self.total_tokens = 0
         
     def extract(self, chunk: str) -> dict[str, list[dict[str, str]]]:
         response = self.client.chat.completions.create(
@@ -60,6 +61,9 @@ class KnowledgeGraphExtractor:
             temperature=0,
             response_format={"type": "json_object"},
         )
+        if response.usage:
+            self.total_tokens += response.usage.total_tokens
+
         return _parse_graph_json(response.choices[0].message.content or "{}")
 
     def _build_prompt(self, chunk: str) -> str:

@@ -18,6 +18,9 @@ class EmbeddingModel:
             "text-embedding-3-small")
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+        # Tokenverbrauch der Embeddings speichern
+        self.total_tokens = 0
+
 
     # def embed_texts(self, texts: list[str]) -> list[list[float]]:
     #     """
@@ -55,11 +58,9 @@ class EmbeddingModel:
             embeddings.extend(
                 item.embedding for item in response.data
             )
-
-            # print(
-            #     f"Embeddings erstellt: "
-            #     f"{min(start + batch_size, len(texts))}/{len(texts)}"
-            # )
+            # Tokenverbrauch addieren
+            if response.usage:
+                self.total_tokens += response.usage.total_tokens
 
         return embeddings
 
