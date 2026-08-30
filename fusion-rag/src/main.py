@@ -18,7 +18,16 @@ def get_directory_size(path: Path) -> int:
     )
 
 
-def main() -> None:
+def main(query: str) -> str:
+    project_dir = Path(__file__).resolve().parents[1]
+    root_dir = Path(__file__).resolve().parents[2]
+
+    pdf_path = project_dir / "data" / "ErneuerbareEnergien.pdf"
+    saved_text_path = project_dir / "data" / "geladener_text2.txt"
+
+    vector_db_path = root_dir / "vector_db_ErneuebareEnergien_Fusion"
+
+    '''
     pdf_path = (
         "/Users/yasi/Documents/New project/BA-RAG-Architektur/"
         "fusion-rag/data/ErneuerbareEnergien.pdf"
@@ -28,52 +37,61 @@ def main() -> None:
         "/Users/yasi/Documents/New project/BA-RAG-Architektur/"
         "fusion-rag/data/geladener_text2.txt"
     )
+    '''
 
-    # Bereits gespeicherten Dokumenttext verwenden.
-    if saved_text_path.exists():
-        print("Gespeicherter Dokumenttext wird verwendet.")
-        document_text = saved_text_path.read_text(encoding="utf-8")
+    # Vector DB bereits vorhanden -> nur laden
+    if vector_db_path.exists():
+        print("Vector DataBank found")
+        vector_store.load()
 
-    # Falls noch kein Text gespeichert wurde, PDF-Loader einmalig ausfuehren.
+    # Vector DB fehlt -> einmalig erstellen
     else:
-        print("Kein gespeicherter Text gefunden. PDF-Loader wird ausgefuehrt.")
-
-        document_text = load_pdf(pdf_path)
-
-        if document_text:
-            saved_text_path.write_text(
-                document_text,
-                encoding="utf-8",
-            )
-            print(f"Dokumenttext gespeichert unter: {saved_text_path}")
-
-    if not document_text:
-        print(f"Keine Inhalte im PDF gefunden. Pruefe die Datei: {pdf_path}")
-        return
-
-
-    # Gesamtlaufzeit startet nach dem Document Loader.
-    total_start_time = time.perf_counter()
-
-
-    chunks = chunk_text(
-        document_text,
-        chunk_size=250,
-        overlap=25,
-    )
-
-    embedding_model = EmbeddingModel()
-    chunk_embeddings = embedding_model.embed_texts(chunks)
-
-    vector_db_path = Path(
-        "vector_db_ErneuebareEnergien_Fusion"
-    )
-
-    vector_store = LocalVectorStore(
-        str(vector_db_path)
-    )
-    vector_store.add(chunks, chunk_embeddings)
-    vector_store.save()
+        print("Vector DataBank not found. generating...")
+        # Bereits gespeicherten Dokumenttext verwenden.
+        if saved_text_path.exists():
+            print("Gespeicherter Dokumenttext wird verwendet.")
+            document_text = saved_text_path.read_text(encoding="utf-8")
+    
+        # Falls noch kein Text gespeichert wurde, PDF-Loader einmalig ausfuehren.
+        else:
+            print("Kein gespeicherter Text gefunden. PDF-Loader wird ausgefuehrt.")
+    
+            document_text = load_pdf(pdf_path)
+    
+            if document_text:
+                saved_text_path.write_text(
+                    document_text,
+                    encoding="utf-8",
+                )
+                print(f"Dokumenttext gespeichert unter: {saved_text_path}")
+    
+        if not document_text:
+            print(f"Keine Inhalte im PDF gefunden. Pruefe die Datei: {pdf_path}")
+            return
+    
+    
+        # Gesamtlaufzeit startet nach dem Document Loader.
+        total_start_time = time.perf_counter()
+    
+    
+        chunks = chunk_text(
+            document_text,
+            chunk_size=250,
+            overlap=25,
+        )
+    
+        embedding_model = EmbeddingModel()
+        chunk_embeddings = embedding_model.embed_texts(chunks)
+    
+        vector_db_path = Path(
+            "vector_db_ErneuebareEnergien_Fusion"
+        )
+    
+        vector_store = LocalVectorStore(
+            str(vector_db_path)
+        )
+        vector_store.add(chunks, chunk_embeddings)
+        vector_store.save()
 
 
     # Speicherbedarf der Vektordatenbank.
@@ -87,7 +105,33 @@ def main() -> None:
     total_query_generation_tokens = 0
     total_answer_time = 0.0
 
+    top_k = 5
+    num_query_variants = 5
+    relevant_chunks = retrieve_relevant_chunks(
+        query=query,
+        embedding_model=embedding_model,
+        vector_store=vector_store,
+        top_k=top_k,
+        num_query_variants=num_query_variants,
+        fusion_search_k=10,
+        rrf_k=60,
+    )
+    
+    answer, used_tokens = generator.generate_answer(
+        query,
+        relevant_chunks,
+    )
 
+
+    return {
+        "answer": answer,
+        "used_tokens": used_tokens,
+        "top_k": top_k,
+        "retrieval_time": retrieval_time,
+        "num_query_variants": num_query_variants,
+    }
+
+'''
     for number, query in enumerate(QUESTIONS, start=1):
         print(f"\n{'=' * 70}")
         print(f"Frage {number}: {query}")
@@ -175,7 +219,7 @@ def main() -> None:
         f"Speicherbedarf der RAG-Datenstruktur: "
         f"{storage_mb:.2f} MB"
     )
-
+'''
 
 if __name__ == "__main__":
     main()
