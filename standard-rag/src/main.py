@@ -83,12 +83,7 @@ def main(query: str) -> str:
     
         chunk_embeddings = embedding_model.embed_texts(chunks)
     
-    
-        vector_db_path = Path("vector_db_ErneuerbareEnergien")
-    
-        vector_store = LocalVectorStore(
-            str(vector_db_path)
-        )
+        # vector_store = LocalVectorStore(str(vector_db_path))
     
         vector_store.add(
             chunks,
