@@ -104,7 +104,9 @@ def main(query: str) -> str:
     total_generation_tokens = 0
     total_query_generation_tokens = 0
     total_answer_time = 0.0
-
+    
+    start_time = time.perf_counter()
+    
     top_k = 5
     num_query_variants = 5
     relevant_chunks = retrieve_relevant_chunks(
@@ -116,6 +118,8 @@ def main(query: str) -> str:
         fusion_search_k=10,
         rrf_k=60,
     )
+
+    retrieval_time = time.perf_counter() - start_time
 
     generator = AnswerGenerator()
     
