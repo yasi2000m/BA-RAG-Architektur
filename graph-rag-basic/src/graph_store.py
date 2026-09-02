@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 
+# häufige Wörter ohne hohe inhaltliche Relevanz. 
+# Diese Begriffe werden bei der Suche nach passenden Entitäten ignoriert
 STOP_TERMS = set(
     "aber alle als auf aus bei das den der des die ein eine einer eines fuer für "
     "ist mit nenne oder sind und von was welche zu zum zur".split()
@@ -17,6 +19,9 @@ STOP_TERMS = set(
 
 @dataclass
 class GraphEntity:
+# Repräsentiert eine Entität im Knowledge Graph. 
+# Speichert den Namen, den Entitätstyp, eine Beschreibung sowie die IDs der Chunks, in denen die Entität vorkommt.
+
     name: str
     entity_type: str
     description: str
@@ -25,6 +30,9 @@ class GraphEntity:
 
 @dataclass
 class GraphRelationship:
+# Repräsentiert eine Beziehung zwischen zwei Entitäten. 
+# Speichert Ausgangs und Zielentität, die Art der Beziehung, eine Beschreibung sowie den Chunk, aus dem die Beziehung stammt.
+
     source: str
     target: str
     relation: str
@@ -34,14 +42,19 @@ class GraphRelationship:
 
 @dataclass
 class GraphQueryResult:
+# Bündelt das Ergebnis einer Knowledge-Graph Abfrage. 
+# Enthält den formatierten Graph-Kontext, die ausgewählten Entitätsnamen sowie die zugehörigen Beziehungen.
+
     context: str
     entity_names: list[str]
     relationships: list[GraphRelationship]
 
 
 class KnowledgeGraphExtractor:
-    """Extrahiert Entitaeten und Beziehungen aus Text-Chunks."""
+# Extrahiert mithilfe eines Large Language Models Entitäten und Beziehungen aus einzelnen Text-Chunks.
 
+
+    # Initialisiert das für die Graph-Extraktion verwendete LLM, den OpenAI-Client sowie den Zähler für den Tokenverbrauch.
     def __init__(self, model_name: str | None = None) -> None:
         load_dotenv()
         self.model_name = model_name or os.getenv("OPENAI_LLM_MODEL", "gpt-4.1-mini")
@@ -53,7 +66,9 @@ class KnowledgeGraphExtractor:
             max_retries=1,
         )
         self.total_tokens = 0
-        
+
+
+    # Übergibt einen Text-Chunk an das LLM und extrahiert daraus Entitäten und Beziehungen in strukturierter JSON-Form.   
     def extract(self, chunk: str) -> dict[str, list[dict[str, str]]]:
         response = self.client.chat.completions.create(
             model=self.model_name,
@@ -66,6 +81,9 @@ class KnowledgeGraphExtractor:
 
         return _parse_graph_json(response.choices[0].message.content or "{}")
 
+    
+    # Erstellt den Prompt für die Knowledge-Graph-Extraktion. 
+    # Der Prompt definiert das gewünschte JSON-Format, die erlaubten Entitätstypen sowie Regeln für die Extraktion von Entitäten und Beziehungen.
     def _build_prompt(self, chunk: str) -> str:
         return f"""Extrahiere aus dem Text einen einfachen Knowledge Graph.
 Antworte nur als valides JSON:
@@ -91,8 +109,12 @@ Text:
 
 
 class KnowledgeGraphStore:
-    """Speichert Entitaeten, Beziehungen und Chunk-Zuordnungen als lokalen JSON-Graph."""
+# Verwaltet den lokalen Knowledge Graph. 
+# Speichert Entitäten, Beziehungen und Chunk Zuordnungen, 
+# ermöglicht das Speichern und Laden des Graphen und führt Abfragen auf relevanten Teilgraphen durch.
 
+
+    # Initialisiert den lokalen Graph Speicher und legt Speicherpfade sowie interne Datenstrukturen an.
     def __init__(self, storage_dir: str = "graph_db") -> None:
         self.storage_dir = Path(storage_dir)
         self.graph_path = self.storage_dir / "knowledge_graph.json"
@@ -100,7 +122,9 @@ class KnowledgeGraphStore:
         self.relationships: list[GraphRelationship] = []
         self.chunk_entities: dict[int, list[str]] = {}
 
-
+    # Erstellt den Knowledge Graph aus allen Text-Chunks. 
+    # Jeder Chunk wird durch den KnowledgeGraphExtractor analysiert. 
+    # Gefundene Entitäten werden zusammengeführt und Beziehungen anschließend in den Graph aufgenommen.
     def build_from_chunks(
         self,
         chunks: list[str],
@@ -151,17 +175,8 @@ class KnowledgeGraphStore:
                 chunk_id,
             )
 
-    # def build_from_chunks(self, chunks: list[str], extractor: KnowledgeGraphExtractor) -> None:
-    #     self.entities = {}
-    #     self.relationships = []
-    #     self.chunk_entities = {}
-
-    #     for chunk_id, chunk in enumerate(chunks):
-    #         extracted = extractor.extract(chunk)
-    #         chunk_entity_names = self._merge_entities(extracted.get("entities", []), chunk_id)
-    #         self.chunk_entities[chunk_id] = sorted(set(chunk_entity_names))
-    #         self._add_relationships(extracted.get("relationships", []), chunk_id)
-
+  
+    # Speichert den vollständigen Knowledge Graph lokal als JSON-Datei
     def save(self) -> None:
         self.storage_dir.mkdir(parents=True, exist_ok=True)
         payload = {
@@ -171,6 +186,8 @@ class KnowledgeGraphStore:
         }
         self.graph_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
+
+    # Lädt einen bereits gespeicherten Knowledge Graph aus der lokalen JSON-Datei.
     def load(self) -> None:
         if not self.graph_path.exists():
             raise FileNotFoundError("Kein gespeicherter Knowledge Graph gefunden.")
@@ -200,6 +217,10 @@ class KnowledgeGraphStore:
             for chunk_id, entity_names in payload.get("chunk_entities", {}).items()
         }
 
+
+    # Ermittelt einen für die Nutzeranfrage relevanten Teilgraphen. 
+    # Zunächst werden passende Start-Entitäten bestimmt. 
+    # Anschließend wird der Graph bis zur angegebenen Tiefe traversiert und auf eine maximale Anzahl an Entitäten und Beziehungen begrenzt.
     def query_subgraph(self, query: str, max_depth: int = 2, max_entities: int = 12, max_relationships: int = 20) -> GraphQueryResult:
         selected_entities = self._traverse_entities(
             start_entities=self._find_entities_for_query(query),
@@ -213,6 +234,11 @@ class KnowledgeGraphStore:
             relationships=relationships,
         )
 
+
+
+    # Fügt extrahierte Entitäten in den bestehenden Graphen ein. 
+    # Bereits vorhandene Entitäten werden nicht doppelt gespeichert. 
+    # Stattdessen werden zusätzliche Chunk-IDs und Beschreibungen ergänzt.
     def _merge_entities(self, entities: list[dict[str, str]], chunk_id: int) -> list[str]:
         names: list[str] = []
         for item in entities:
@@ -236,6 +262,9 @@ class KnowledgeGraphStore:
 
         return names
 
+
+
+    # Prüft extrahierte Beziehungen und fügt gültige Beziehungen zum Knowledge Graph hinzu.
     def _add_relationships(self, relationships: list[dict[str, str]], chunk_id: int) -> None:
         known_entities = set(self.entities)
         for item in relationships:
@@ -256,6 +285,10 @@ class KnowledgeGraphStore:
                 )
             )
 
+
+
+    # Sucht Entitäten, deren Name, Typ oder Beschreibung Begriffe aus der Nutzeranfrage enthält. 
+    # Die gefundenen Entitäten werden anhand der Anzahl gemeinsamer Begriffe bewertet und sortiert.
     def _find_entities_for_query(self, query: str) -> list[str]:
         query_terms = _terms(query)
         scored = []
@@ -266,6 +299,10 @@ class KnowledgeGraphStore:
                 scored.append((score, entity.name))
         return [name for _score, name in sorted(scored, reverse=True)]
 
+
+    
+    # Traversiert den Knowledge Graph ausgehend von Start-Entitäten. 
+    # In jedem Schritt werden direkt verbundene Nachbarentitäten aufgenommen, bis die maximale Tiefe oder maximale Anzahl an Entitäten erreicht ist.
     def _traverse_entities(self, start_entities: list[str], max_depth: int, max_entities: int) -> list[str]:
         selected: list[str] = []
         frontier = _unique(start_entities)
@@ -291,6 +328,8 @@ class KnowledgeGraphStore:
 
         return selected[:max_entities]
 
+    
+    # Wählt Beziehungen aus, bei denen sowohl Quell- als auch Zielentität im relevanten Teilgraphen enthalten sind.
     def _relationships_for_entities(self, selected_entities: list[str], max_relationships: int) -> list[GraphRelationship]:
         selected = set(selected_entities)
         return [
@@ -299,6 +338,8 @@ class KnowledgeGraphStore:
             if relationship.source in selected and relationship.target in selected
         ][:max_relationships]
 
+    
+    # Wandelt den gefundenen Teilgraphen in einen lesbaren Textkontext für die spätere Antwortgenerierung um.
     def _format_context(self, entity_names: list[str], relationships: list[GraphRelationship]) -> str:
         if not entity_names and not relationships:
             return ""
@@ -323,6 +364,9 @@ class KnowledgeGraphStore:
         return "\n".join(lines)
 
 
+    
+
+# Prüft die vom LLM erzeugte JSON-Antwort und stellt sicher, dass Entitäten und Beziehungen als Listen vorliegen.
 def _parse_graph_json(content: str) -> dict[str, list[dict[str, str]]]:
     try:
         payload = json.loads(content)
@@ -338,11 +382,13 @@ def _parse_graph_json(content: str) -> dict[str, list[dict[str, str]]]:
         "relationships": relationships if isinstance(relationships, list) else [],
     }
 
-
+# Vereinheitlicht Entitätsnamen, indem überflüssige Leerzeichen entfernt beziehungsweise zusammengefasst werden.
 def _normalize_name(name: str) -> str:
     return re.sub(r"\s+", " ", name).strip()
 
 
+# Extrahiert relevante Suchbegriffe aus einem Text. 
+# Die Begriffe werden kleingeschrieben und häufige Stop-Wörter werden entfernt.
 def _terms(text: str) -> set[str]:
     return {
         term.lower()
@@ -351,11 +397,14 @@ def _terms(text: str) -> set[str]:
     }
 
 
+# Fügt einen Wert nur dann zu einer Liste hinzu, wenn dieser noch nicht enthalten ist.
 def _append_unique(values: list[str], value: str) -> None:
     if value not in values:
         values.append(value)
 
 
+
+# Entfernt doppelte Einträge aus einer Liste, wobei die ursprüngliche Reihenfolge erhalten bleibt.
 def _unique(values: list[str]) -> list[str]:
     result: list[str] = []
     for value in values:

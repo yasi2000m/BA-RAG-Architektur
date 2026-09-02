@@ -12,12 +12,17 @@ class LocalVectorStore:
     Die Aehnlichkeitssuche nutzt Cosine Similarity.
     """
 
+    # Bereitet die lokale Vektordatenbank vor und legt fest, wo Chunks und Embeddings gespeichert werden.
+    
     def __init__(self, storage_dir: str = "vector_db") -> None:
         self.storage_dir = Path(storage_dir)
         self.chunks_path = self.storage_dir / "chunks.json"
         self.embeddings_path = self.storage_dir / "embeddings.npy"
         self.chunks: list[str] = []
         self.embeddings: np.ndarray | None = None
+
+
+    # Übernimmt Chunks und ihre Embeddings und hält sie gemeinsam im Speicher.
 
     def add(self, chunks: list[str], embeddings: list[list[float]]) -> None:
         """
@@ -30,6 +35,9 @@ class LocalVectorStore:
         self.chunks = chunks
         self.embeddings = np.array(embeddings, dtype=np.float32)
 
+
+    # Speichert Chunks und Embeddings dauerhaft auf der Festplatte.
+
     def save(self) -> None:
         """
         Persistiert die Vektordatenbank lokal auf der Festplatte.
@@ -41,6 +49,9 @@ class LocalVectorStore:
         self.chunks_path.write_text(json.dumps(self.chunks, ensure_ascii=False, indent=2), encoding="utf-8")
         np.save(self.embeddings_path, self.embeddings)
 
+
+    # Lädt eine bereits gespeicherte Vektordatenbank wieder.    
+
     def load(self) -> None:
         """
         Laedt eine bereits gespeicherte lokale Vektordatenbank.
@@ -50,6 +61,9 @@ class LocalVectorStore:
 
         self.chunks = json.loads(self.chunks_path.read_text(encoding="utf-8"))
         self.embeddings = np.load(self.embeddings_path)
+
+
+     # Vergleicht das Embedding einer Nutzerfrage mit allen Chunk-Embeddings, sortiert sie nach semantischer Ähnlichkeit und gibt die besten Chunks zurück.   
 
     def similarity_search(self, query_embedding: list[float], top_k: int = 3) -> list[str]:
         """

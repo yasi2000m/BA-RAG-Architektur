@@ -10,17 +10,19 @@ from embeddings import EmbeddingModel
 from vector_store import LocalVectorStore
 
 
+# Definiert den Datentyp eines einzelnen Retrieval-Treffers: 
+# Chunk-Index, Chunk-Text und Similarity-Score.
 RankedChunk = tuple[int, str, float]
 
-
+# Verarbeitet die vom LLM erzeugten Query-Varianten. 
+# Die Varianten werden bevorzugt aus einer JSON-Liste gelesen. 
+# Falls kein gültiges JSON vorliegt, wird versucht, nummerierte oder zeilenweise ausgegebene Varianten aus dem Text zu extrahieren. 
+# Doppelte Varianten und die ursprüngliche Nutzerfrage werden entfernt
 def _parse_query_variants(
     content: str,
     original_query: str,
     num_variants: int,
 ) -> list[str]:
-    """
-    Liest Query-Varianten robust aus JSON oder nummerierten Textzeilen.
-    """
     variants: list[str] = []
 
     try:
@@ -54,14 +56,14 @@ def _parse_query_variants(
     return deduplicated
 
 
+# Erzeugt mithilfe eines LLM mehrere semantisch unterschiedliche Varianten der ursprünglichen Nutzerfrage. 
+# Zusätzlich wird der Tokenverbrauch der Query-Generierung zurückgegeb
 def generate_query_variants(
     query: str,
     num_variants: int = 4,
     model_name: str | None = None,
 ) -> tuple[list[str], int]:
-    """
-    Erzeugt semantisch unterschiedliche Suchvarianten fuer Fusion RAG.
-    """
+
     if num_variants <= 0:
         return []
 
@@ -100,6 +102,9 @@ Nutzerfrage:
 
     return variants, query_generation_tokens
 
+
+# Erstellt die vollständige Query-Liste für Fusion RAG. 
+# Kombiniert die ursprüngliche Nutzerfrage mit den vom LLM erzeugten Suchvarianten und entfernt doppelte Einträge.
 def build_fusion_queries(
     query: str,
     num_query_variants: int,
@@ -130,7 +135,8 @@ def build_fusion_queries(
 
     return queries, query_generation_tokens
 
-
+# Führt mehrere Retrieval-Rankings mithilfe von Reciprocal Rank Fusion (RRF) zu einem Gesamtranking zusammen. 
+# Chunks, die in mehreren Ergebnislisten weit oben vorkommen, erhalten einen höheren Gesamtwert.
 def reciprocal_rank_fusion(
     ranked_result_lists: list[list[RankedChunk]],
     top_k: int = 5,
@@ -173,6 +179,9 @@ def reciprocal_rank_fusion(
     ]
 
 
+# Führt den vollständigen Fusion-RAG-Retrieval-Prozess aus. 
+# Die Nutzerfrage wird erweitert, jede Query wird separat vektorbasiert durchsucht und die einzelnen Rankings werden anschließend mithilfe von Reciprocal Rank Fusion zusammengeführt. 
+# Gibt die final ausgewählten Chunks und den Tokenverbrauch der Query-Generierung zurück.
 def retrieve_relevant_chunks(
     query: str,
     embedding_model: EmbeddingModel,

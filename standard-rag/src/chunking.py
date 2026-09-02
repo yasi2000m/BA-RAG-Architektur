@@ -1,14 +1,26 @@
+
+
+# Diese Funktion zerlegt einen längeren Text in mehrere kleinere Chunks. Die Aufteilung erfolgt wortbasiert.
+# Teilt einen Text wortbasiert in überlappende Textabschnitte auf.
+# chunk_size bestimmt die maximale Anzahl der Wörter pro Chunk.
+# overlap bestimmt, wie viele Wörter zwischen zwei aufeinanderfolgenden Chunks wiederholt werden. 
+# Zusätzlich werden ungewöhnlich lange Zeichenfolgen in kleinere Abschnitte zerlegt.
+# Gibt eine Liste der erzeugten Text-Chunks zurück.
+
+# Parameter:
+# text: der gesamte Text, der aufgeteilt werden soll
+# chunk_size: maximale Anzahl an Wörtern pro Chunk
+# overlap: Anzahl der Wörter, die sich zwei aufeinanderfolgende Chunks überlappen
+# -> list[str]: die Funktion gibt eine Liste von Text-Chunks zurück
+
 def chunk_text(
     text: str,
     chunk_size: int = 100,
     overlap: int = 50,
 ) -> list[str]:
-    """
-    Teilt einen einzelnen Text in einfache, ueberlappende Chunks auf.
 
-    Die Aufteilung erfolgt wortbasiert. Das ist bewusst einfach gehalten,
-    damit der Schritt gut nachvollziehbar bleibt.
-    """
+    ## Prüft, ob eine gültige Chunk-Größe angegeben wurde.
+
     if chunk_size <= 0:
         raise ValueError("chunk_size muss groesser als 0 sein.")
 
@@ -17,6 +29,10 @@ def chunk_text(
 
     if overlap >= chunk_size:
         raise ValueError("overlap muss kleiner als chunk_size sein.")
+
+
+# Zerlegt den Text in Wörter und teilt ungewöhnlich lange
+# Zeichenfolgen zusätzlich in Abschnitte von maximal 200 Zeichen.
 
     words = []
 
@@ -30,9 +46,6 @@ def chunk_text(
             words.append(word)
 
     chunks: list[str] = []
-
-    # words = text.split()
-    # chunks: list[str] = []
 
     start = 0
     while start < len(words):

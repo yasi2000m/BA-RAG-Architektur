@@ -21,12 +21,12 @@ def get_directory_size(path: Path) -> int:
 def main() -> None:
 
     pdf_path = (
-        "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdff"
+        "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/ErneuerbareEnergien.pdf"
     )
 
     saved_text_path = Path(
         "/Users/yasi/Documents/New project/BA-RAG-Architektur/"
-        "standard-rag/data/geladener_text.txt"
+        "standard-rag/data/geladener_text2.txt"
     )
 
     if saved_text_path.exists():

@@ -1,3 +1,6 @@
+# Dieses Modul ist dein Retrieval-Modul. Es bekommt eine Nutzerfrage, wandelt sie in ein Embedding um,
+# sucht damit im Vector Store nach den passendsten Chunks und zählt anschließend, wie viele Tokens diese gefundenen Chunks insgesamt enthalten.
+
 import tiktoken
 
 from embeddings import EmbeddingModel
