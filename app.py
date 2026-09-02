@@ -42,20 +42,7 @@ with col1:
 
 with col2:
     st.image(str(LOGO_PATH), width=480)
-    
-'''
-# Hochschule-Aalen-Logo
-st.image(
-    str(LOGO_PATH),
-    width=280,
-)
 
-st.title("RAG Chatbot")
-
-st.write(
-    "Wählen Sie eine RAG-Architektur und stellen Sie eine Frage."
-)
-'''
 
 # --------------------------------------------------
 # RAG auswählen
