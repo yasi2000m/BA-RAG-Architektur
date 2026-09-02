@@ -20,7 +20,7 @@ RAG_PATHS = {
 }
 
 # Hochschule-Aalen-Bilder
-LOGO_PATH = ROOT_DIR / "assets" / "hs_aalen_logo.png"
+LOGO_PATH = ROOT_DIR / "assets" / "LOGO_Hs-Aalen-scaled.png"
 ICON_PATH = ROOT_DIR / "assets" / "hs_aalen_icon.png"
 
 
@@ -38,7 +38,7 @@ st.set_page_config(
 # Hochschule-Aalen-Logo
 st.image(
     str(LOGO_PATH),
-    width=300,
+    width=280,
 )
 
 st.title("RAG Chatbot")
