@@ -101,8 +101,6 @@ def main(query: str) -> str:
     storage_mb = storage_bytes / (1024 * 1024)
 
 
-    generator = AnswerGenerator()
-
     total_generation_tokens = 0
     total_query_generation_tokens = 0
     total_answer_time = 0.0
@@ -118,6 +116,8 @@ def main(query: str) -> str:
         fusion_search_k=10,
         rrf_k=60,
     )
+
+    generator = AnswerGenerator()
     
     answer, used_tokens = generator.generate_answer(
         query,
