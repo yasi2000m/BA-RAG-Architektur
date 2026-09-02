@@ -20,8 +20,8 @@ RAG_PATHS = {
 }
 
 # Hochschule-Aalen-Bilder
-LOGO_PATH = ROOT_DIR / "hs_aalen_logo.png"
-ICON_PATH = ROOT_DIR / "hs_aalen_icon.png"
+LOGO_PATH = ROOT_DIR / "assets" / "hs_aalen_logo.png"
+ICON_PATH = ROOT_DIR / "assets" / "hs_aalen_icon.png"
 
 
 # --------------------------------------------------
