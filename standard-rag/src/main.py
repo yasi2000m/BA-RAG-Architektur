@@ -102,9 +102,6 @@ def main(query: str) -> str:
     storage_bytes = get_directory_size(vector_db_path)
     storage_mb = storage_bytes / (1024 * 1024)
 
-
-    generator = AnswerGenerator()
-
     top_k = 5
     relevant_chunks = retrieve_relevant_chunks(
         query=query,
@@ -112,6 +109,8 @@ def main(query: str) -> str:
         vector_store=vector_store,
         top_k=top_k,
     )
+
+    generator = AnswerGenerator()
 
     answer, used_tokens = generator.generate_answer(
         query,
