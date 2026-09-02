@@ -41,7 +41,7 @@ with col1:
     st.write("Wählen Sie eine RAG-Architektur und stellen Sie eine Frage.")
 
 with col2:
-    st.image(str(LOGO_PATH), width=320)
+    st.image(str(LOGO_PATH), width=480)
     
 '''
 # Hochschule-Aalen-Logo
