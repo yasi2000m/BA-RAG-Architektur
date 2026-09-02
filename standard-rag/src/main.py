@@ -25,7 +25,7 @@ def main(query: str) -> str:
 
     pdf_path = project_dir / "data" / "ErneuerbareEnergien.pdf"
     saved_text_path = project_dir / "data" / "geladener_text2.txt"
-    vector_db_path = root_dir / "vector_db_ErneuerbareEnergien"
+    vector_db_path = root_dir / "vector_db_ErneuebareEnergien"
     
     # pdf_path = (
     #     "/Users/yasi/Documents/New project/BA-RAG-Architektur/standard-rag/data/Elektrotechnik 3.pdf"
