@@ -38,7 +38,9 @@ def main(query: str) -> str:
         "fusion-rag/data/geladener_text2.txt"
     )
     '''
-
+    embedding_model = EmbeddingModel()
+    vector_store = LocalVectorStore(str(vector_db_path))
+    
     # Vector DB bereits vorhanden -> nur laden
     if vector_db_path.exists():
         print("Vector DataBank found")
