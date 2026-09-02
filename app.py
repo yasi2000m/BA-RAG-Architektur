@@ -19,8 +19,8 @@ RAG_PATHS = {
     "Fusion RAG": ROOT_DIR / "fusion-rag" / "src",
 }
 
-LOGO_PATH = ROOT_DIR / "assets" / "hs_aalen_logo.png"
-ICON_PATH = ROOT_DIR / "assets" / "hs_aalen_icon.png"
+LOGO_PATH = ROOT_DIR / "hs_aalen_logo.png"
+ICON_PATH = ROOT_DIR / "hs_aalen_icon.png"
 
 
 # --------------------------------------------------
