@@ -35,17 +35,23 @@ st.set_page_config(
 
 
 # --------------------------------------------------
-# Design / CSS
+# Design
 # --------------------------------------------------
 
 st.markdown(
     """
     <style>
 
-    /* Gesamter Hintergrund */
-    .stApp {
-        background-color: #ffffff;
-        color: #30343b;
+    /* --------------------------------------------------
+       Allgemein
+       -------------------------------------------------- */
+
+    html,
+    body,
+    .stApp,
+    [data-testid="stAppViewContainer"] {
+        background-color: #FFFFFF !important;
+        color: #262730 !important;
     }
 
 
@@ -53,97 +59,140 @@ st.markdown(
     .block-container {
         max-width: 950px;
         padding-top: 2rem;
-        padding-bottom: 4rem;
+        padding-bottom: 5rem;
     }
 
 
     /* Streamlit Header */
     [data-testid="stHeader"] {
-        background-color: #ffffff;
+        background-color: #FFFFFF !important;
     }
 
 
-    /* Titel */
+    /* --------------------------------------------------
+       Überschriften und Text
+       -------------------------------------------------- */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #2F333B !important;
+    }
+
+
     h1 {
-        color: #30343b;
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 0.2rem;
     }
 
 
-    /* Hochschule-Aalen Farbverlauf */
-    .hs-gradient {
-        height: 5px;
-        width: 100%;
-        border-radius: 10px;
-
-        background: linear-gradient(
-            90deg,
-            #62b5dc 0%,
-            #527cc5 35%,
-            #5749a6 65%,
-            #bd1585 100%
-        );
-
-        margin-top: 15px;
-        margin-bottom: 30px;
+    p,
+    li,
+    label {
+        color: #2F333B;
     }
 
 
-    /* Untertitel */
     .subtitle {
-        color: #666666;
+        color: #666A73;
         font-size: 1.05rem;
         margin-bottom: 0;
     }
 
 
-    /* Allgemeine Input-Felder */
-    .stTextInput input {
-        background-color: #ffffff !important;
-        color: #30343b !important;
+    /* --------------------------------------------------
+       Hochschule-Aalen Farbverlauf
+       -------------------------------------------------- */
 
-        border: 1px solid #d9dce3;
+    .hs-gradient {
+        width: 100%;
+        height: 5px;
+
+        margin-top: 15px;
+        margin-bottom: 35px;
+
         border-radius: 10px;
+
+        background: linear-gradient(
+            90deg,
+            #62B5DC 0%,
+            #527CC5 35%,
+            #5749A6 65%,
+            #BD1585 100%
+        );
     }
 
 
-    .stTextInput input:focus {
-        border-color: #527cc5 !important;
-        box-shadow: 0 0 0 1px #527cc5 !important;
-    }
+    /* --------------------------------------------------
+       Radio / RAG Auswahl
+       -------------------------------------------------- */
 
-
-    /* Radio Auswahl */
     [data-testid="stRadio"] {
-        background-color: #f7f8fb;
+        background-color: #F6F7FA !important;
+
+        border: 1px solid #DDE1E8;
+        border-radius: 12px;
 
         padding: 15px 20px;
-
-        border-radius: 12px;
-        border: 1px solid #e5e7eb;
     }
 
 
-    /* Chat Input */
-    [data-testid="stChatInput"] {
-        background-color: #ffffff;
+    [data-testid="stRadio"] label,
+    [data-testid="stRadio"] label p,
+    [data-testid="stRadio"] span {
+        color: #2F333B !important;
     }
 
 
-    [data-testid="stChatInput"] textarea {
-        background-color: #ffffff !important;
-        color: #30343b !important;
+    /* --------------------------------------------------
+       Text Input / API Key
+       -------------------------------------------------- */
 
-        border-radius: 12px;
+    [data-testid="stTextInput"] div[data-baseweb="input"] {
+        background-color: #FFFFFF !important;
+
+        border-color: #CDD1D8 !important;
+        border-radius: 10px !important;
     }
 
 
-    /* Chatnachrichten */
+    [data-testid="stTextInput"] input {
+        background-color: #FFFFFF !important;
+
+        color: #262730 !important;
+        -webkit-text-fill-color: #262730 !important;
+    }
+
+
+    [data-testid="stTextInput"] input::placeholder {
+        color: #8A8D94 !important;
+        opacity: 1 !important;
+    }
+
+
+    /* Passwort-Auge */
+    [data-testid="stTextInput"] button {
+        background-color: transparent !important;
+        color: #5F6368 !important;
+    }
+
+
+    [data-testid="stTextInput"] svg {
+        color: #5F6368 !important;
+    }
+
+
+    /* --------------------------------------------------
+       Chat Nachrichten
+       -------------------------------------------------- */
+
     [data-testid="stChatMessage"] {
-        background-color: #f8f9fc;
+        background-color: #F8F9FC !important;
 
-        border: 1px solid #e7e9ef;
+        border: 1px solid #E2E5EB;
         border-radius: 14px;
 
         padding: 10px 15px;
@@ -151,31 +200,81 @@ st.markdown(
     }
 
 
-    /* Expander */
+    [data-testid="stChatMessage"] p,
+    [data-testid="stChatMessage"] li,
+    [data-testid="stChatMessage"] span {
+        color: #2F333B;
+    }
+
+
+    /* --------------------------------------------------
+       Chat Input unten
+       -------------------------------------------------- */
+
+    [data-testid="stBottom"] {
+        background-color: #FFFFFF !important;
+    }
+
+
+    [data-testid="stBottomBlockContainer"] {
+        background-color: #FFFFFF !important;
+    }
+
+
+    [data-testid="stChatInput"] {
+        background-color: #F6F7FA !important;
+
+        border: 1px solid #DDE1E8 !important;
+        border-radius: 14px !important;
+    }
+
+
+    [data-testid="stChatInput"] textarea {
+        background-color: transparent !important;
+
+        color: #262730 !important;
+        -webkit-text-fill-color: #262730 !important;
+    }
+
+
+    [data-testid="stChatInput"] textarea::placeholder {
+        color: #8A8D94 !important;
+        opacity: 1 !important;
+    }
+
+
+    [data-testid="stChatInput"] button {
+        color: #5749A6 !important;
+    }
+
+
+    /* --------------------------------------------------
+       Expander
+       -------------------------------------------------- */
+
     [data-testid="stExpander"] {
-        background-color: #fafafa;
+        background-color: #FAFBFC !important;
 
-        border: 1px solid #e6e6e6;
+        border: 1px solid #E2E5EB;
         border-radius: 10px;
     }
 
 
-    /* Success Nachricht */
-    [data-testid="stAlert"] {
-        border-radius: 10px;
+    [data-testid="stExpander"] p,
+    [data-testid="stExpander"] span {
+        color: #2F333B;
     }
 
 
-    /* Caption / Kennzahlen */
-    .stCaption {
-        color: #5749a6;
+    /* --------------------------------------------------
+       Caption / Kennzahlen
+       -------------------------------------------------- */
+
+    [data-testid="stCaptionContainer"],
+    [data-testid="stCaptionContainer"] p {
+        color: #666A73 !important;
     }
 
-
-    /* Links */
-    a {
-        color: #527cc5 !important;
-    }
 
     </style>
     """,
@@ -187,7 +286,10 @@ st.markdown(
 # Header
 # --------------------------------------------------
 
-st.image(LOGO_PATH, width=320)
+st.image(
+    LOGO_PATH,
+    width=320,
+)
 
 st.title("RAG Chatbot")
 
@@ -207,7 +309,7 @@ st.markdown(
 # RAG auswählen
 # --------------------------------------------------
 
-st.markdown("### RAG-Architektur auswählen")
+st.subheader("RAG-Architektur auswählen")
 
 rag = st.radio(
     "RAG-Architektur",
@@ -221,7 +323,7 @@ rag = st.radio(
 # API-Key
 # --------------------------------------------------
 
-st.markdown("### OpenAI API-Key")
+st.subheader("OpenAI API-Key")
 
 api_key = st.text_input(
     "API-Key",
@@ -238,11 +340,22 @@ if api_key:
 # Session State
 # --------------------------------------------------
 
-st.session_state.setdefault("messages", [])
-st.session_state.setdefault("last_rag", rag)
+st.session_state.setdefault(
+    "messages",
+    [],
+)
 
+st.session_state.setdefault(
+    "last_rag",
+    rag,
+)
+
+
+# Chat leeren, wenn RAG gewechselt wird
 if st.session_state.last_rag != rag:
+
     st.session_state.messages = []
+
     st.session_state.last_rag = rag
 
 
@@ -254,39 +367,62 @@ for message in st.session_state.messages:
 
     with st.chat_message(message["role"]):
 
-        st.markdown(message["content"])
+        st.markdown(
+            message["content"]
+        )
 
         if "metrics" in message:
-            st.caption(message["metrics"])
+
+            st.caption(
+                message["metrics"]
+            )
 
 
 # --------------------------------------------------
 # Eingabe
 # --------------------------------------------------
 
-query = st.chat_input("Stellen Sie eine Frage...")
+query = st.chat_input(
+    "Stellen Sie eine Frage..."
+)
 
+
+# --------------------------------------------------
+# Frage verarbeiten
+# --------------------------------------------------
 
 if query:
 
+    # API-Key prüfen
     if not api_key:
-        st.error("Bitte zuerst einen API-Key eingeben.")
+
+        st.error(
+            "Bitte zuerst einen API-Key eingeben."
+        )
+
         st.stop()
 
 
+    # --------------------------------------------------
     # Nutzerfrage speichern
-    st.session_state.messages.append({
-        "role": "user",
-        "content": query,
-    })
+    # --------------------------------------------------
+
+    st.session_state.messages.append(
+        {
+            "role": "user",
+            "content": query,
+        }
+    )
 
 
+    # Nutzerfrage anzeigen
     with st.chat_message("user"):
+
         st.markdown(query)
 
 
     # --------------------------------------------------
-    # RAG vorbereiten
+    # Umgebung für RAG vorbereiten
     # --------------------------------------------------
 
     env = os.environ.copy()
@@ -319,7 +455,9 @@ print(json.dumps({
 
     with st.chat_message("assistant"):
 
-        with st.spinner("Antwort wird generiert..."):
+        with st.spinner(
+            "Antwort wird generiert..."
+        ):
 
             process = subprocess.run(
                 [
@@ -345,7 +483,9 @@ print(json.dumps({
                 "Bei der Ausführung ist ein Fehler aufgetreten."
             )
 
-            st.code(process.stderr)
+            st.code(
+                process.stderr
+            )
 
             st.stop()
 
@@ -366,7 +506,9 @@ print(json.dumps({
                 "Die RAG-Ausgabe konnte nicht verarbeitet werden."
             )
 
-            st.code(process.stdout)
+            st.code(
+                process.stdout
+            )
 
             st.stop()
 
@@ -422,20 +564,30 @@ print(json.dumps({
             )
 
 
-        st.caption(metrics_text)
+        st.caption(
+            metrics_text
+        )
 
 
-        # Technische Ausgaben eher sekundär darstellen
-        with st.expander("Technische Ausgaben"):
+        # --------------------------------------------------
+        # Technische Ausgaben
+        # --------------------------------------------------
+
+        with st.expander(
+            "Technische Ausgaben"
+        ):
+
             st.text(logs)
 
 
     # --------------------------------------------------
-    # Antwort speichern
+    # Antwort im Verlauf speichern
     # --------------------------------------------------
 
-    st.session_state.messages.append({
-        "role": "assistant",
-        "content": answer,
-        "metrics": metrics_text,
-    })
+    st.session_state.messages.append(
+        {
+            "role": "assistant",
+            "content": answer,
+            "metrics": metrics_text,
+        }
+    )
