@@ -34,7 +34,16 @@ st.set_page_config(
     layout="centered",
 )
 
+col1, col2 = st.columns([3, 1])
 
+with col1:
+    st.title("RAG Chatbot")
+    st.write("Wählen Sie eine RAG-Architektur und stellen Sie eine Frage.")
+
+with col2:
+    st.image(str(LOGO_PATH), width=320)
+    
+'''
 # Hochschule-Aalen-Logo
 st.image(
     str(LOGO_PATH),
@@ -46,7 +55,7 @@ st.title("RAG Chatbot")
 st.write(
     "Wählen Sie eine RAG-Architektur und stellen Sie eine Frage."
 )
-
+'''
 
 # --------------------------------------------------
 # RAG auswählen
