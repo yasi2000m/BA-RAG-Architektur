@@ -38,7 +38,7 @@ col1, col2 = st.columns([3, 1])
 
 with col1:
     st.title("RAG Chatbot")
-    st.write("Wählen Sie eine RAG-Architektur und stellen Sie eine Frage. Achten Sie drauf, dass nur die erneuerbare Energien als Wissenbasis hinterlegt ist.")
+    st.write("Wählen Sie eine RAG-Architektur und stellen Sie eine Frage. Achten Sie drauf, dass nur das Skript der erneuerbaren Energien als Wissenbasis hinterlegt ist.")
 
 with col2:
     st.image(str(LOGO_PATH), width=480)
