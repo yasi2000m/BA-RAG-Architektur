@@ -5,7 +5,7 @@
 import base64     # Wandelt ein Seitenbild in einen Base64-String um, damit es an das Vision-Modell geschickt werden kann.
 import os         # Liest Umgebungsvariablen wie den OpenAI-API-Key aus.
 import time       # Wird zur Messung der Laufzeit des Document Loaders verwendet.
-import fitz       # PyMuPDF. Öffnet PDFs, extrahiert Text und rendert PDF-Seiten als Bilder.
+import pymupdf as fitz       # PyMuPDF. Öffnet PDFs, extrahiert Text und rendert PDF-Seiten als Bilder.
 
 from dotenv import load_dotenv
 from openai import OpenAI
