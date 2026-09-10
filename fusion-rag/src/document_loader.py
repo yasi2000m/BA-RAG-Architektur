@@ -2,7 +2,7 @@ import base64
 import os
 import time
 
-import fitz
+import pymupdf as fitz
 from dotenv import load_dotenv
 from openai import OpenAI
 
